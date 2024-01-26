@@ -15,9 +15,11 @@
     /* font-family: 'Montserrat'; */
     font-weight: 700
 } 
-p{
-    /* font-family: 'Montserrat'; */
-}
-h1{
-    /* font-family: 'Montserrat'; */
+
+.heading-left{
+    font-weight: 700;
+    font-size: 70px;
+    margin: 0px;
+    height: 80px;
+    text-transform: uppercase ;
 }

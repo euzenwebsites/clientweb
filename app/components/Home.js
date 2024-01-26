@@ -39,7 +39,7 @@ function Home({ selectedMenu }) {
 
         // var heroHeight = document.getElementById("hero_section").getBoundingClientRect().height;
         // var headerHeight = document.getElementById("header_section").getBoundingClientRect().height;
-        
+
 
         // document.getElementsByClassName("main-title")[0].style.height = `${heroHeight - headerHeight}px`;
         // return () => {
@@ -50,59 +50,37 @@ function Home({ selectedMenu }) {
     return (
         <div ref={homeRef}>
             <div className="main" >
-
-                <div style={{ backgroundColor: "hsl(223, 11%, 87%)", display:"flex", flexDirection:"column" , height: "100vh"}} id="hero_section">
-                    <Header type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}></Header>
-                    <div className="main-title" style={{display:"flex", flexDirection: "column", justifyContent: "space-between"}}>
-                        
-                        <div>
-                        <p style={{  fontSize:"12vw", fontWeight: 713, margin: 0, lineHeight: 0.9 }}>WE ARE <br></br>AVY<span style={{ fontSize: "6vw", fontWeight: 712, verticalAlign: "top"}}>®</span></p>
-                        <p style={{ width: "50%", padding: "0,60px", color: '#727272', fontSize: "1.4vw", fontWeight: "712" }}>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
-                        </div>
-                        <div>
-                            <img src="/assets/img/bg-vector.png" style={{ height: "90%", bottom: "0", zIndex: "0", position: "absolute", right: "20px", bottom: "0px" }}></img>
-                        </div>
-                        
-                        <div className="services" style={{width: "50%" }}>
-                            <h2 style={{ padding: "0,60px", color: '#727272', margin: 0, padding: "0.5vw 0vw", fontSize: "1vw", fontWeight: "712",  borderBottom: "solid" }}>CORE SERVICES :</h2>
-                            <p style={{ fontWeight: "700", color: '#1A1A1A', margin: 0, padding: "0.5vw 0vw", borderBottom: "solid", borderColor: "#727272",  fontSize: "1vw" }}>Design<span style={{ float: "right", color: "red" }}>01</span></p>
-                            <p style={{ fontWeight: "700", color: '#1A1A1A', margin: 0, padding: "0.5vw 0vw", borderBottom: "solid", borderColor: "#727272",  fontSize: "1vw" }}>Brand Strategy <span style={{ float: "right", color: "red" }}>02</span></p>
-                            <p style={{ fontWeight: "700", color: '#1A1A1A', margin: 0, padding: "0.5vw 0vw", borderBottom: "solid", borderColor: "#727272",  fontSize: "1vw" }}>Motion Design & Animation<span style={{ float: "right", color: "red" }}>03</span></p>
-                        </div>
-                        <div>
-                            <img src="/assets/img/man.png" style={{ height: "90%", bottom: "0", zIndex: "2000", position: "absolute", right: "20px", bottom: "0px", zIndex: "0" }}></img>
-                        </div>
-                    </div>
-                </div>
                 {
                     popup && (<PopupHeader setSmallMenu = {setSmallMenu}/>)
                 }
 
                 <div className="begin" style={{ marginTop: "40px", padding: "0 60px" }}>
                     <div style={{ textAlign: "right", padding: "48px", paddingRight: "10vw", backgroundColor: "hsl(223, 11%, 87%)", borderBottom: "10px solid" }}>
-                        <p style={{ fontWeight: "700", fontSize: "70px", margin: 0 }}>LEL'S BEGIN</p>
+                        <p style={{ fontWeight: "700", fontSize: "70px", margin: 0 }}>LEL&apos;S BEGIN</p>
 
                     </div>
                     <div className="difference" style={{ marginTop: "60px" }}>
                         <div style={{ width: "50%", display: "inline-block" }}>
-                            <p style={{ fontWeight: "700", fontSize: "48px", margin:0 }}>"THE DIFFERENCE <br></br>BETWEEN ORDINARY <br></br>AND EXTRAORDINARY <br></br>IS THAT LITTLE EXTRA."</p>
+                            <p style={{ fontWeight: "700", fontSize: "48px", margin:0 }}> &quot;THE DIFFERENCE <br></br>BETWEEN ORDINARY <br></br>AND EXTRAORDINARY <br></br>IS THAT LITTLE EXTRA. &quot;</p>
                             <p style={{ fontSize: 22, color: "grey"}}>- JIMMY JOHNSON</p>
                         </div>
                         <div style={{ width: "50%", display: "inline-block", verticalAlign:"top", fontSize: 22, }}>
-                            <p style={{lineHeight: 1.5}}>We transform your ideas into reality through cutting-edge design, branding, and motion. We're not just experts; we're passionate strategists and visionary storytellers committed to excellence.
+                            <p style={{lineHeight: 1.5}}>We transform your ideas into reality through cutting-edge design, branding, and motion. We're not just experts; we&apos;re passionate strategists and visionary storytellers committed to excellence.
                                 <br></br><br></br>
-                                Our collaborative ethos thrives in today's creative landscape, serving startups and enterprises.
+                                Our collaborative ethos thrives in today&apos;s creative landscape, serving startups and enterprises.
                                 <br></br><br></br>
-                                Let's embark on your creative journey to happiness together.</p>
+                                Let&apos;s embark on your creative journey to happiness together.</p>
                         </div>
                     </div>
 
                     <div style={{ textAlign: "left", backgroundColor: "hsl(223, 11%, 87%)", borderBottom: "10px solid", marginTop: "120px", padding: "40px" }}>
                         <div style={{ width: "50%", display: "inline-flex" }}></div>
                         <div style={{ width: "50%", display: "inline-block" }}>
-                            <p style={{ fontWeight: "700", fontSize: "70px", margin: "0px", height: "80px" }}>HOW</p>
-                            <p style={{ fontWeight: "700", fontSize: "70px", margin: "0px", height: "80px" }}>WE THINK</p>
-                            <p style={{ fontWeight: "700", fontSize: "70px", margin: 0,  height: "80px" }}>LOREM IPSUM</p>
+                            <p className="heading-left">
+                                how <br></br>
+                                we think<br></br>
+                                lorem ipsum
+                            </p>
                         </div>
                     </div>
 
