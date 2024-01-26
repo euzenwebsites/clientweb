@@ -121,7 +121,7 @@ function HomeInsights({ selectedMenu }) {
                                 <img src="/assets/img/shops/shop (4).png"/>
                             </Col>
                             <Col span={16} className="shop_description">
-                                <p>Our new Trustpilot partnership, and how it’ll help your business</p>
+                                <p>Our new Trustpilot partnership, and how it&quot;ll help your business</p>
                                 <div>
                                     <ul>
                                         <li>30 June 2021</li>

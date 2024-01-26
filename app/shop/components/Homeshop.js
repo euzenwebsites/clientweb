@@ -100,7 +100,7 @@ function HomeShop({selectedMenu}) {
                         </Col>
                         <Col span={8} className="latest_item">
                             <img src="/assets/img/shops/shop (4).png"></img>
-                            <p>Our new Trustpilot partnership, and how it’ll help your business</p>
+                            <p>Our new Trustpilot partnership, and how it&quot;ll help your business</p>
                             <ul>
                                         <li>30 June 2021</li>
                                         <li>Business</li>
