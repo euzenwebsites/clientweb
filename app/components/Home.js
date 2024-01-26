@@ -7,6 +7,7 @@ import Footer from "./ui/Footer"
 import ReadyToWork from "./ui/ReadyToWork"
 import PopupHeader from "./ui/PopupHeader";
 import { useEffect, useRef } from "react";
+import LeftHeading from "./ui/LeftHeading";
 
 function Home({ selectedMenu }) {
     const homeRef = useRef(null)
@@ -73,7 +74,7 @@ function Home({ selectedMenu }) {
                         </div>
                     </div>
 
-                    <div style={{ textAlign: "left", backgroundColor: "hsl(223, 11%, 87%)", borderBottom: "10px solid", marginTop: "120px", padding: "40px" }}>
+                    {/* <div style={{ textAlign: "left", backgroundColor: "hsl(223, 11%, 87%)", borderBottom: "10px solid", marginTop: "120px", padding: "40px" }}>
                         <div style={{ width: "50%", display: "inline-flex" }}></div>
                         <div style={{ width: "50%", display: "inline-block" }}>
                             <p className="heading-left">
@@ -82,8 +83,8 @@ function Home({ selectedMenu }) {
                                 lorem ipsum
                             </p>
                         </div>
-                    </div>
-
+                    </div> */}
+                    <LeftHeading/>
 
                     <div style={{ display: "flex", flexWrap: "nowrap", marginTop: "60px", overflowY: "scroll" }}  id="think_div">
                         <div style={{ flex: "0 0 50%", padding: 24, boxSizing: "border-box", border: "1px solid black" }} className="lorem_element">
