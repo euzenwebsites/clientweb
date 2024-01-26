@@ -65,7 +65,7 @@ function Home({ selectedMenu }) {
                             <p style={{ fontSize: 22, color: "grey"}}>- JIMMY JOHNSON</p>
                         </div>
                         <div style={{ width: "50%", display: "inline-block", verticalAlign:"top", fontSize: 22, }}>
-                            <p style={{lineHeight: 1.5}}>We transform your ideas into reality through cutting-edge design, branding, and motion. We're not just experts; we&apos;re passionate strategists and visionary storytellers committed to excellence.
+                            <p style={{lineHeight: 1.5}}>We transform your ideas into reality through cutting-edge design, branding, and motion. We&apos;re not just experts; we&apos;re passionate strategists and visionary storytellers committed to excellence.
                                 <br></br><br></br>
                                 Our collaborative ethos thrives in today&apos;s creative landscape, serving startups and enterprises.
                                 <br></br><br></br>
@@ -88,7 +88,7 @@ function Home({ selectedMenu }) {
                     <div style={{ display: "flex", flexWrap: "nowrap", marginTop: "60px", overflowY: "scroll" }}  id="think_div">
                         <div style={{ flex: "0 0 50%", padding: 24, boxSizing: "border-box", border: "1px solid black" }} className="lorem_element">
                             <div>
-                                <p style={{ width: "60px", height: "60px", backgroundColor: "#FF3600", borderRadius: "50%", color: "white", fontSize: "32px", fontWeight: "700", display: "flex", alignItems: "center", justifyContent: "center" }}>01</p>
+                                <p className="number-circle">01</p>
                                 <h1>Lörem ipsum rilåning ångerrösta teraning, i rerina mudöl: fasade. Du kan vara drabbad?</h1>
                                 <span style={{ fontSize: 18, color: "grey" }}>Lorem Ipsum</span><br></br><br></br>
                                 <span style={{ fontSize: 18, color: "black" }}>Client</span><br></br>
@@ -251,7 +251,7 @@ function Home({ selectedMenu }) {
                     <div className="difference" style={{ marginTop: "60px", display: "flex" }}>
                         <div style={{ width: "50%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <div>
-                                <p style={{ fontWeight: "700", fontSize: "48px", margin: "0px 0px 0px 0px" }}>WHO WE'VE</p>
+                                <p style={{ fontWeight: "700", fontSize: "48px", margin: "0px 0px 0px 0px" }}>WHO WE&apos;VE</p>
                                 <p style={{ fontWeight: "700", fontSize: "48px", margin: "0px 0px 0px 0px" }}>DONE IT FOR</p>
                             </div>
                             <div style={{ paddingRight: "20px", bottom: "0px", paddingBottom: "50px" }}>

@@ -63,7 +63,7 @@ function Header({showContactUs, setShowContactUs, setSelectedMenu, selectedMenu}
 
             <div className={`contact_us--container ${ showContactUs? "contact_us--container-show" : "contact_us--container-hidden"}`}>
                 <div className="contact_us--title">
-                    <p>LET'S <br></br>GET IN TOUCH</p>
+                    <p>LET&apos;S <br></br>GET IN TOUCH</p>
                     <Button danger size="large" shape="round" onClick={()=> setShowContactUs(false)}>CLOSE</Button>
                 </div>
                 <div className="contact_us--form">

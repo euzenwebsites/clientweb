@@ -49,7 +49,7 @@ function Footer(props) {
             </div>
             <Row className="footer_title--container">
                 <Col span={7} className="footer_title">
-                        <p style={{ margin: "auto"}}>LET'S STAY<br/>CONNECTED</p>
+                        <p style={{ margin: "auto"}}>LET&apos;S STAY<br/>CONNECTED</p>
                 </Col>
                 <Col span={17} className="site_list">
                         <Link href="/"><img src={`${linkedinHover ? "/assets/img/State=Hovered.png" : "/assets/img/mdi_linkedin.png"}`} onMouseEnter={()=>setLinkedinHover(true)} onMouseLeave={()=>setLinkedinHover(false)}/></Link>
