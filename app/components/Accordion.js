@@ -1,15 +1,17 @@
 import React from 'react'
-import Accordionitem from './ui/Accordionitem';
+import AccordionItem from './ui/AccordionItem.js'
+
+
 const Accordion = () => {
   return (
     <section className='w-[100%] flex justify-center mt-20'>
     <div className='w-[90%]'>
     <h3 className='font-bold text-7xl mb-20'>INSIGHTS</h3>
         <div>
-            <Accordionitem/>
-            <Accordionitem/>
-            <Accordionitem/>
-            <Accordionitem/>
+            <AccordionItem/>
+            <AccordionItem/>
+            <AccordionItem/>
+            <AccordionItem/>
 
         </div>
                         

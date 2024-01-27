@@ -2,21 +2,24 @@ import React from 'react'
 
 const CTABanner = () => {
   return (
-    <section>
-        <div className="begin" style={{ marginTop: "40px", padding: "0 60px" }}>
-                    <div style={{ textAlign: "left", backgroundColor: "hsl(223, 11%, 87%)", borderBottom: "10px solid", marginTop: "120px", padding: "94px 60px"}}>
-                        <div style={{ width: "50%", display: "inline-flex", verticalAlign: "top", boxSizing: "border-box", padding: "0px 20px" }}>
-                            <p style={{ fontWeight: "700", fontSize: "40px", margin: "0px" }}>NOW LETS FIND OUT ABOUT YOU</p>
-                        </div>
-                        <div style={{ width: "50%", display: "inline-block" }}>
-                            <p style={{ fontWeight: "700", fontSize: "40px", margin: "0px" }}>Lörem ipsum</p>
-                            <p style={{ fontWeight: "700", fontSize: "40px", margin: "0px" }}>Lörem ipsum</p>
-                            <p style={{ fontWeight: "700", fontSize: "40px", margin: 0 }}>Lörem ipsum</p>
-                            
-                            <button>START SURVEY</button>
-                        </div>
-                </div>
+    <section className='bg-[#DBDDE2] w-[100%] flex justify-center py-20 mt-20 '>
+
+      <div className='w-[90%]  grid grid-cols-2 uppercase'>
         
+        <div className='text-black font-bold text-5xl'>
+          <h3 className=''>NOW LETS FIND OUT ABOUT YOU</h3>
+        </div>
+
+        <div >
+          <div className='text-black font-bold text-5xl'>
+          <h3>lorem ipsum</h3>
+          <h3>lorem ipsum</h3>
+          <h3>lorem ipsum</h3>
+          </div>
+          
+          <button className='bg-orange p-4 rounded-full text-white font-bold mt-10 uppercase'>start a surway</button>
+        </div>
+
         </div>
     </section>
   )

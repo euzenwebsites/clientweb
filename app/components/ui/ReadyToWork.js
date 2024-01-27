@@ -3,24 +3,21 @@ import { Row, Col, Input,Select, Button } from "antd";
 import "../stylessheets/About.css"
 function ReadyToWork() {
     return (
-        <div className="readytowork_container">
-                <div className="readytowork_title">
-                    <p>ARE YOU READY TO</p>
-                    <div className="dashed-line">
-                        <hr/>
-                        <span>WORK</span>
-                        <hr/>
-                    </div>
-                    <div className="dashed-line">
-                        <span>WITH</span>
-                        <hr/>
-                        <div>
-                            <img src="/assets/img/us.png"></img>
-                            <span style={{paddingLeft: 10}}>?</span>
-                        </div>
-                        
-                    </div>
+        <section className='w-[100%] flex justify-center mt-20'>
+        <div className="readytowork_container w-[90%]">
+
+                <div className="grid grid-cols-3">
+                    <div className="col-span-3"><h3 className="text-9xl font-black font-bold">ARE YOU READY TO</h3></div>
+                    <div className="h-[2px] bg-black flex items-center justify-center"></div>
+                    <div ><h3 className="text-9xl font-black font-bold uppercase">work</h3></div>
+                    <div className="h-[2px] bg-black "></div>
+                    <div ><h3 className="text-9xl font-black font-bold uppercase">with</h3></div>
+                    <div className="h-[2px] bg-black "></div>
+                    <div className="bg-orange rounded-full"><h3 className="text-7xl text-white  font-bold uppercase p-10">Us
+                    <span className="text-black">?</span></h3></div>
+                    
                 </div>
+
                 <Row className="form_container">
                     <Col span={3}>
                         <label>SUBJECT</label>
@@ -66,6 +63,7 @@ function ReadyToWork() {
                     
                 </Row>
             </div>
+        </section>
     );
 }
 
