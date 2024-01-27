@@ -1,6 +1,6 @@
 import React from "react"
 import { Row, Col, Input,Select, Button } from "antd";
-
+import "../stylessheets/About.css"
 function ReadyToWork() {
     return (
         <div className="readytowork_container">

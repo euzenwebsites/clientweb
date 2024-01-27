@@ -21,8 +21,8 @@ const Hero = ({ selectedMenu }) => {
             document.body.style.overflow = 'auto';
         }, 100);
         const handleScroll = (e) => {
-            const scrollTrigger = document.getElementById("hero_section");
-            const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
+            // const scrollTrigger = document.getElementById("hero_section");
+            // const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
             if(triggerPosition <= 0){
                 setPopup(true);
 

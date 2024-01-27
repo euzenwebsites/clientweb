@@ -1,17 +1,14 @@
 import React from 'react'
 
-const LeftHeading = () => {
+const LeftHeading = (props) => {
   return (
-    <div  className='left-heading__banner'>
-        {/* <div style={{ width: "50%",  }}></div> */}
-            <div style={{ width: "40%", display: "inline-block" }}> 
-                <p className="heading-left">
-                        how 
-                        we think
-                        lorem ipsum
-                </p>
+    <section className='w-[100%] flex justify-center '>
+    <div  className='left-heading__banner w-[90%]'>
+            <div className="left-heading__banner-inner" > 
+                <p className="heading-left"> {props.heading}</p>
             </div>
     </div>
+    </section>
   )
 }
 
