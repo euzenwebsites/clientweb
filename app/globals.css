@@ -40,8 +40,9 @@
 }
 .heading-left{
   font-weight: 700;
-  line-height: 1rem;
-  font-size: 68px;
+  line-height: 4rem;
+  font-size: 72px;
   text-transform: uppercase ;
+  padding: 12px 0px;
   
 }
