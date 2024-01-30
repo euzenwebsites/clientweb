@@ -2,7 +2,9 @@
 import { useRef, useState, useEffect } from 'react'
 import React from 'react'
 import Header from './ui/Header'
-
+import Image from 'next/image'
+import Vector from "../../public//assets/img/bg-vector.png"
+import Man from "../../public/assets/img/man.png"
 const Hero = ({ selectedMenu }) => {
     
     const [popup, setPopup] = useState(false);
@@ -44,27 +46,40 @@ const Hero = ({ selectedMenu }) => {
     // console.log("//////////////////", selectedMenu)
     
   return (
-    <div style={{ backgroundColor: "hsl(223, 11%, 87%)", display:"flex", flexDirection:"column" , height: "100vh"}} id="hero_section">
+    <div className='bg-[#dadce1] flex flex-col h-full relative px-10 pb-10'  id="hero_section">
                     <Header type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}></Header>
-                    <div className="main-title" style={{display:"flex", flexDirection: "column", justifyContent: "space-between"}}>
+                    <div className=" flex flex-col " >
+                        
+                        <div className='w-[70%]'>
+                        <h1 className='text-[120px] font-bold text-black ' style={{lineHeight:"7rem"}}>WE ARE <br></br>AVY<span className='text-xl' >®</span></h1>
+                        <p className='text-gray text-lg font-bold pr-36'>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
+                        
+                        </div>
                         
                         <div>
-                        <p style={{  fontSize:"12vw", fontWeight: 713, margin: 0, lineHeight: 0.9 }}>WE ARE <br></br>AVY<span style={{ fontSize: "6vw", fontWeight: 712, verticalAlign: "top"}}>®</span></p>
-                        <p style={{ width: "50%", padding: "0,60px", color: '#727272', fontSize: "1.4vw", fontWeight: "712" }}>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
-                        </div>
-                        <div>
-                            <img src="/assets/img/bg-vector.png" style={{ height: "90%", bottom: "0", zIndex: "0", position: "absolute", right: "20px", bottom: "0px" }}></img>
+                            <Image src={Vector} height={600} className='absolute right-0 bottom-0 z-5'></Image>
+                            <Image src={Man} height={600} className='absolute right-0 bottom-0 z-10'/>
                         </div>
                         
-                        <div className="services" style={{width: "50%" }}>
-                            <h2 style={{ padding: "0,60px", color: '#727272', margin: 0, padding: "0.5vw 0vw", fontSize: "1vw", fontWeight: "712",  borderBottom: "solid" }}>CORE SERVICES :</h2>
-                            <p style={{ fontWeight: "700", color: '#1A1A1A', margin: 0, padding: "0.5vw 0vw", borderBottom: "solid", borderColor: "#727272",  fontSize: "1vw" }}>Design<span style={{ float: "right", color: "red" }}>01</span></p>
-                            <p style={{ fontWeight: "700", color: '#1A1A1A', margin: 0, padding: "0.5vw 0vw", borderBottom: "solid", borderColor: "#727272",  fontSize: "1vw" }}>Brand Strategy <span style={{ float: "right", color: "red" }}>02</span></p>
-                            <p style={{ fontWeight: "700", color: '#1A1A1A', margin: 0, padding: "0.5vw 0vw", borderBottom: "solid", borderColor: "#727272",  fontSize: "1vw" }}>Motion Design & Animation<span style={{ float: "right", color: "red" }}>03</span></p>
+                        <div className="w-[50%] mt-20" >
+                            <h2 className='text-gray pb-10 border-b border-b-gray-500 font-bold '>CORE SERVICES :</h2>
+                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
+                                <p className='font-semibold text-black padding-10  text-2xl'>Design</p>
+                                <p className='text-orange font-bold'>01</p>
+                            </div>
+                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
+                                <p className='font-semibold text-black padding-10  text-2xl'>Brand Strategy</p>
+                                <p className='text-orange font-bold'>02</p>
+                            </div>
+                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
+                                <p className='font-semibold text-black padding-10  text-2xl'>Motion Design & Animation</p>
+                                <p className='text-orange font-bold'>03</p>
+                            </div>
                         </div>
-                        <div>
+
+                        {/* <div>
                             <img src="/assets/img/man.png" style={{ height: "90%", bottom: "0", zIndex: "2000", position: "absolute", right: "20px", bottom: "0px", zIndex: "0" }}></img>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
   )

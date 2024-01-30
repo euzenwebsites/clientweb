@@ -22,7 +22,7 @@ const page = () => {
                 <LeftHeading heading="services that we offer"/>
                 <Service/>
                 <Service/>
-                <Service/>
+                <Service/> 
                 <LeftHeading heading="how we do things"/>
                 <HowWeDoSec/>
                 <LeftHeading heading="clients we have work with"/>

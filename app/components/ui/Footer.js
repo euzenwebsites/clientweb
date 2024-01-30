@@ -3,13 +3,18 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Row, Col } from "antd";
 import "../stylessheets/Footer.css"
+import Image from "next/image";
+import Logo from "../../../public/icon.png"
 
 function Footer(props) {
     const [linkedinHover, setLinkedinHover] = useState(false);
     const [behance, setBehance] = useState(false);
     const [instagram, setInstagram] = useState(false);
     return (
-        <div className="footer_container">
+        <section className="w-[100%] flex flex-col items-center justify-center mt-20">
+        <div className="footer_container w-[90%] ">
+
+
             <div className="footer_link">
                 <div>
                     <img src="/icon.png"></img>
@@ -47,10 +52,11 @@ function Footer(props) {
                     
                 </div>
             </div>
+
             <Row className="footer_title--container">
                 <Col span={7} className="footer_title">
                         <p style={{ margin: "auto"}}>LET&apos;S STAY<br/>CONNECTED</p>
-                </Col>
+                </Col> 
                 <Col span={17} className="site_list">
                         <Link href="/"><img src={`${linkedinHover ? "/assets/img/State=Hovered.png" : "/assets/img/mdi_linkedin.png"}`} onMouseEnter={()=>setLinkedinHover(true)} onMouseLeave={()=>setLinkedinHover(false)}/></Link>
                         <Link href="/"><img src={`${behance ? "/assets/img/State=Hovered (2).png" : "/assets/img/ri_behance-fill.png"}`}  onMouseEnter={()=>setBehance(true)} onMouseLeave={()=>setBehance(false)}/></Link>
@@ -94,6 +100,7 @@ function Footer(props) {
                 </div>
             </div>
         </div>
+        </section>
     )
 }
 

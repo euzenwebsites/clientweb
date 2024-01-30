@@ -1,7 +1,6 @@
 "use client"
 import React, { useRef, useState, useEffect } from "react";
 import { Row, Col, Button } from "antd"
-import "../../components/stylessheets/Header.css"
 import "../../components/stylessheets/About.css"
 import "../../components/stylessheets/OurWork.css"
 import Header from "@/app/components/ui/Header"
@@ -10,6 +9,7 @@ import ReadyToWork from "@/app/components/ui/ReadyToWork.js"
 import Footer from "@/app/components/ui/Footer.js"
 import Image from "next/image";
 import Image01 from "../../../public/assets/img/Number1.png"
+import WorkItem from "./WorkItem";
 
 function HomeWork({ selectedMenu }) {
 
@@ -57,63 +57,108 @@ function HomeWork({ selectedMenu }) {
     }, []);
     return (
         <div style={{ padding: "0px 60px"}}>
+            
             <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
+            
             <div id="our_work--header">
-            <div className="ourwork_title">
-                <p>OUR WORK</p>
+
+            {/* <div  className={`flex flex-row gap-4 img_item ${ imgNum === 1 ? "img_item--show" : "img_item--hidden"}`}>
+                <div>
+                    <p className='number-circle'>01</p>
+                </div>
+                <div>
+                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                    <p className="uppercase">branding</p>
+                </div>
+            </div> */}
+
+            <div>
+                
             </div>
+
+
+            <div className="ourwork_title">
+                <h1>OUR WORK</h1>
+            </div>
+
             <div className="ourwork_img">
+
                 <div className={`img_item ${ imgNum === 1 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
                     setImgNum(1)  
                     setImgDetail(true)
-                    
                 }}>
-                    <Image src={Image01}></Image>
-                    <div ref={img1}>
-                        <p>BLK PIZZA</p>
-                        <p>BRANDING</p>
-                    </div>
                     
+                <div ref={img1} className="flex flex-row gap-4 ">
+                <div>
+                    <p className='number-circle'>01</p>
                 </div>
+                <div>
+                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                    <p className="uppercase">branding</p>
+                </div>
+                </div>
+
+                </div>
+               
                 <div className={`img_item ${ imgNum === 2 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
                     setImgNum(2)  
                     setImgDetail(true);
                 }}>
-                    <img src="/assets/img/Number2.png"></img>
-                    <div ref={img2}>
-                        <p>SAMPLEY & SONS</p>
-                        <p>BRANDING</p>
+                    <div ref={img2} className="flex flex-row gap-4 ">
+                        <div>
+                        <p className='number-circle'>01</p>
+                     </div>
+                        <div>
+                     <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                        <p className="uppercase">branding</p>
+                     </div>
                     </div>
+
                 </div>
+
                 <div className={`img_item ${ imgNum === 3 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
                     setImgNum(3)  
                     setImgDetail(true)
                 }}>
-                    <img src="/assets/img/Number3.png"></img>
-                    <div ref={img3}>
-                        <p >LITTLE BOBBINS BOUTIQUE</p>
-                        <p>BRANDING</p>
-                    </div>
+                        <div ref={img3} className="flex flex-row gap-4 ">
+                            <div>
+                                <p className='number-circle'>01</p>
+                            </div>
+                            <div>
+                                <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                <p className="uppercase">branding</p>
+                            </div>
+                        </div>
                 </div>
+
                 <div className={`img_item ${ imgNum === 4 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
                     setImgNum(4)  
                     setImgDetail(true);
                 }}>
-                    <img src="/assets/img/Number4.png"></img>
-                    <div ref={img4}>
-                        <p >LOREM IPSUM</p>
-                        <p>BRANDING</p>
-                    </div>
+                        <div ref={img4} className="flex flex-row gap-4 ">
+                            <div>
+                                <p className='number-circle'>01</p>
+                            </div>
+                            <div>
+                                <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                <p className="uppercase">branding</p>
+                            </div>
+                        </div>
                 </div>
+
                 <div className={`img_item ${ imgNum === 5 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
                     setImgDetail(true)
                     setImgNum(5)
                 }}>
-                    <img src="/assets/img/Number5.png"></img>
-                    <div ref={img5}>
-                        <p>LOREM IPSUM</p>
-                        <p>BRANDING</p>
-                    </div>
+                    <div ref={img5} className="flex flex-row gap-4 ">
+                <div>
+                    <p className='number-circle'>01</p>
+                </div>
+                <div>
+                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                    <p className="uppercase">branding</p>
+                </div>
+                </div>
                 </div>
             </div>
             </div>
@@ -186,15 +231,7 @@ function HomeWork({ selectedMenu }) {
                     </div>
                 </div>
             </div>
-            {/* <div className={`contactus_overlay ${contactus ? "contactus_overlay--show" : "contactus_overlay--hidden"}`}>
-                <div className="img_detail--header">
-                    <div>
-                    <p className="img_detail--header-title">LET'S</p>
-                    <p className="img_detail--header-title">GET IN TOUCH</p>
-                    </div>
-                    <Button size="large" danger shape="round">CLOSE</Button>
-                </div>
-            </div> */}
+            
             <div className={`overlay ${imgDetai ? "overlay-show" : "overlay-hidden"}`} onClick={() => {
                 setImgDetail(false);
             }}></div>

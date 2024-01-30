@@ -5,10 +5,9 @@ import "../../components/stylessheets/Header.css"
 import "../../components/stylessheets/About.css"
 import Header from "@/app/components/ui/Header"
 import PopupHeader from "@/app/components/ui/PopupHeader"
-import Footer from "@/app/components/ui/Footer.js"
+
 import "../../components/stylessheets/Insights.css"
-import { Button, Col, Row } from "antd";
-import Link from "next/link";
+
 
 
 function HomeInsights({ selectedMenu }) {
@@ -56,7 +55,9 @@ function HomeInsights({ selectedMenu }) {
             {
                 popup && (<PopupHeader setSmallMenu = {setPopupMenu}/>)
             }
-            <div className="shop_list">
+
+            {/* <div className="shop_list">
+
                 <ul className="shop_category">
                     <li>ALL</li>
                     <li>BUSINESS</li>
@@ -67,8 +68,11 @@ function HomeInsights({ selectedMenu }) {
                     <li>PARTNERS</li>
                     <li>VIDEOS</li>
                 </ul>
+
                 <div className="shop_img--list">
-                        <Row className="shop_img--item">
+                       
+                        
+                        {/* <Row className="shop_img--item">
                             <Col span={8} className="shop_img">
                                 <img src="/assets/img/shops/shop (1).png"/>
                             </Col>
@@ -85,6 +89,7 @@ function HomeInsights({ selectedMenu }) {
                                 </div>
                             </Col>
                         </Row>
+
                         <Row className="shop_img--item">
                             <Col span={8} className="shop_img">
                                 <img src="/assets/img/shops/shop (2).png"/>
@@ -101,6 +106,7 @@ function HomeInsights({ selectedMenu }) {
                                 </div>
                             </Col>
                         </Row>
+
                         <Row className="shop_img--item">
                             <Col span={8} className="shop_img">
                                 <img src="/assets/img/shops/shop (3).png"/>
@@ -116,6 +122,7 @@ function HomeInsights({ selectedMenu }) {
                                 </div>
                             </Col>
                         </Row>
+
                         <Row className="shop_img--item">
                             <Col span={8} className="shop_img">
                                 <img src="/assets/img/shops/shop (4).png"/>
@@ -132,6 +139,7 @@ function HomeInsights({ selectedMenu }) {
                                 </div>
                             </Col>
                         </Row>
+
                         <Row className="shop_img--item">
                             <Col span={8} className="shop_img">
                                 <img src="/assets/img/shops/shop (5).png"/>
@@ -148,13 +156,14 @@ function HomeInsights({ selectedMenu }) {
                                     <button style={{border: "none", fontSize: 18, fontWeight: 500, padding: "18px 36px", backgroundColor: "#FF3600",  borderRadius: 30, color: "white", cursor: "pointer", marginTop: 40, }}>
                                         <Link href="/shop" style={{ color: "white"}}>READ ARTICLE</Link>
                                     </button>
-                                    
+                                     
                                 </div>
                             </Col>
-                        </Row>                   
+                        </Row>  */}
+{/* 
                 </div>
-            </div>
-            <Footer setMenu = {setPopupMenu} flag={popupMenu} setShowContactUs = {setShowContactUs}></Footer>
+            </div> */} 
+            {/* <Footer setMenu = {setPopupMenu} flag={popupMenu} setShowContactUs = {setShowContactUs}></Footer> */}
         </div>
     )
 }

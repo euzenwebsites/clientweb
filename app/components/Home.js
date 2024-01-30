@@ -59,7 +59,7 @@ function Home({ selectedMenu }) {
     return (
         <div ref={homeRef}>
             <div className="main" >
-                {
+                { 
                     popup && (<PopupHeader setSmallMenu = {setSmallMenu}/>)
                 }
        <Footer setMenu = {setSmallMenu} flag={showSmallMenu} setShowContactUs = {setShowContactUs}></Footer>

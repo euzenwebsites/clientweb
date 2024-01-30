@@ -6,15 +6,31 @@ function ReadyToWork() {
         <section className='w-[100%] flex justify-center mt-20'>
         <div className="readytowork_container w-[90%]">
 
-                <div className="grid grid-cols-3">
-                    <div className="col-span-3"><h3 className="text-9xl font-black font-bold">ARE YOU READY TO</h3></div>
-                    <div className="h-[2px] bg-black flex items-center justify-center"></div>
-                    <div ><h3 className="text-9xl font-black font-bold uppercase">work</h3></div>
-                    <div className="h-[2px] bg-black "></div>
-                    <div ><h3 className="text-9xl font-black font-bold uppercase">with</h3></div>
-                    <div className="h-[2px] bg-black "></div>
-                    <div className="bg-orange rounded-full"><h3 className="text-7xl text-white  font-bold uppercase p-10">Us
-                    <span className="text-black">?</span></h3></div>
+                <div className="flex flex-col">
+
+                    <div className="[100%]">
+                        <h3 className="text-9xl font-black font-bold">ARE YOU READY TO</h3>
+                    </div>
+
+                    <div className="flex flex-row items-center">
+                        <div className="w-1/3 h-[2px] bg-black flex items-center justify-center"></div>
+                        <div ><h3 className="w-1/3 text-9xl font-black font-bold uppercase">work</h3></div>
+                        <div className="w-1/3 h-[2px] bg-black "></div>
+                    </div>
+
+                    <div className="flex flex-row items-center">
+                        <div className="w-[30%]" ><h3 className="text-9xl font-black font-bold uppercase">with</h3></div>
+                        <div className="w-[50%] h-[2px] bg-black "></div>
+
+                        <div className=" flex flex-row items-center">
+                        <div className="w-[50%] h-[50%] ml-10 bg-orange rounded-full">
+                            <h3 className="text-7xl text-white  font-bold uppercase p-10">Us
+                        </h3>
+                        </div>
+                        <span className="text-black inline-flex font-bold text-9xl ml-10">?</span>
+                        </div>
+                    </div>
+                    
                     
                 </div>
 

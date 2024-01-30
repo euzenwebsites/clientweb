@@ -2,10 +2,10 @@
     position: relative;
     z-index: -2;
 }
-.ourwork_title p{
+.ourwork_title h1{
     font-size: 196px;
     line-height: 1;
-    letter-spacing: 10px;
+    letter-spacing: 10px; 
     margin: 0px;
     font-weight: 600;
 }
@@ -20,6 +20,7 @@
     background-size: cover;
     position: relative;
     background-color: black;
+    color: #fff;
 }
 .img_item--show:nth-child(1) {
     background-image: url('../../../public/assets/img/1.png');
@@ -53,26 +54,23 @@
 }
 .img_item--hidden {
     background-image: none;
-    height: 70px;
     transition: height, 0.5s;
 }
 
-.img_item div{
-    display: inline-block;
+.img_item .our-work__heading{
     color: white;
-    margin-left: 40px;
 }
-.img_item div p:first-child {
+.img_item .our-work__heading h3:first-child {
     font-size: 32px;
     margin: 0px;
     height: 40px;
     font-weight: 600;
 }
-.img_item div p:last-child {
+.img_item .our-work__heading p:last-child {
     font-size: 22px;
     margin: 0px;
     height: 30px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .img_item--detail {

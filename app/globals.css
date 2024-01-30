@@ -14,7 +14,7 @@
 .number-circle{
   width: 60px;
   height: 60px;
-  background-color: #FF3600;
+  background-color: #FF3600; 
   border-radius: 50%;
   color: #fff;
   font-size: 32px;
@@ -25,11 +25,12 @@
 }
 .left-heading__banner{
   background-color: hsl(223, 11%, 87%);
+  margin-top: 36px;
   border-bottom: 10px solid;
-  margin-top: 120px;
-  padding: 40px;
   display: flex;
   justify-content: end;
+  padding: 20px;
+  gap: 20px;
 
 }
 .left-heading__banner-inner{
@@ -39,6 +40,7 @@
 }
 .heading-left{
   font-weight: 700;
-  font-size: 70px;
+  font-size: 64px;
   text-transform: uppercase ;
+  
 }
