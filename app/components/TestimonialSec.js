@@ -15,14 +15,14 @@ const TestimonialSec = () => {
   return (
     <>
     <section className="relative h-[300vh]  mt-20 " ref={targetRef}>
-      <div className="sticky top-20 flex h-screen items-center overflow-hidden ">
+      <div className="sticky top-20 flex h-[90vh] items-center overflow-hidden ">
+
         <motion.div style={{ x }} className='flex w-[100%]'>
           <Testimonials />
           <Testimonials />
           <Testimonials />
           <Testimonials />
           
-
           
         </motion.div>
       </div>

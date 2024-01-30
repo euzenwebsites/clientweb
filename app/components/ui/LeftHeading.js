@@ -5,9 +5,9 @@ const LeftHeading = (props) => {
     <section className='w-[100%] flex justify-center '>
     <div  className='left-heading__banner w-[90%] '>
             <div className="left-heading__banner-inner" > 
-                <p className="heading-left"> {props.heading}</p>
+                <h3 className="heading-left"> {props.heading}</h3>
             </div>
-    </div>
+    </div> 
     </section> 
   )
 }

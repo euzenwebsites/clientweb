@@ -3,12 +3,13 @@ import React, {useState} from "react"
 import Link from "next/link";
 import "../stylessheets/Header.css"
 import { Button, Col, Row } from "antd";
-
+import { RevealWrapper } from  'next-reveal'
 function Header({showContactUs, setShowContactUs, setSelectedMenu, selectedMenu}) {
 
     const [showSmallMenu, setSmallMenu] = useState(false);
     
     return (
+        
         <div>
             <div className={`small_header--menu  ${ showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
                 <p style={{ padding: "0px 20px"}}>
@@ -34,6 +35,9 @@ function Header({showContactUs, setShowContactUs, setSelectedMenu, selectedMenu}
                 setShowContactUs(false);
             }}>
             </div>
+
+            <RevealWrapper origin="bottom" delay={1500} duration={4000}>
+
             <div className="lg_header mx-8 my-4">
                 <Link href="/"><img src="/icon.png"></img></Link>
                 <ul>
@@ -49,6 +53,8 @@ function Header({showContactUs, setShowContactUs, setSelectedMenu, selectedMenu}
                     
                 </ul>
             </div>
+
+            </RevealWrapper>
             <div className={`small_header`}>
                 <Link href="/"><img src="/icon.png"></img></Link>
                 <ul>

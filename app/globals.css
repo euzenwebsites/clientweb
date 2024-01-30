@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-
+ 
 
 
 @layer utilities {
@@ -35,12 +35,13 @@
 }
 .left-heading__banner-inner{
     width: 50%;
-    padding-right: 120px;
+    padding-right: 140px;
   
 }
 .heading-left{
   font-weight: 700;
-  font-size: 64px;
+  line-height: 1rem;
+  font-size: 68px;
   text-transform: uppercase ;
   
 }

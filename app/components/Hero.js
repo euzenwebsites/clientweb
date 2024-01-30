@@ -1,10 +1,13 @@
 "use client"
+import { RevealWrapper} from  'next-reveal'
 import { useRef, useState, useEffect } from 'react'
 import React from 'react'
 import Header from './ui/Header'
 import Image from 'next/image'
 import Vector from "../../public//assets/img/bg-vector.png"
 import Man from "../../public/assets/img/man.png"
+import HeroDes from './HeroDes'
+import HeroHeading from './HeroHeading'
 const Hero = ({ selectedMenu }) => {
     
     const [popup, setPopup] = useState(false);
@@ -46,40 +49,26 @@ const Hero = ({ selectedMenu }) => {
     // console.log("//////////////////", selectedMenu)
     
   return (
-    <div className='bg-[#dadce1] flex flex-col h-full relative px-10 pb-10'  id="hero_section">
+    <div className='bg-[#dadce1] flex flex-col h-full relative pl-10 '  id="hero_section">
                     <Header type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}></Header>
+                    
+                    <div className='flex flex-row '>
+                        
                     <div className=" flex flex-col " >
-                        
-                        <div className='w-[70%]'>
-                        <h1 className='text-[120px] font-bold text-black ' style={{lineHeight:"7rem"}}>WE ARE <br></br>AVY<span className='text-xl' >®</span></h1>
-                        <p className='text-gray text-lg font-bold pr-36'>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
-                        
-                        </div>
-                        
-                        <div>
+
+                        <HeroHeading/>
+                        <HeroDes/>
+                    </div>
+
+                    
+                        <RevealWrapper origin='right' delay={300} duration={3000} className=' w-[50%]' >
+                            
                             <Image src={Vector} height={600} className='absolute right-0 bottom-0 z-5'></Image>
                             <Image src={Man} height={600} className='absolute right-0 bottom-0 z-10'/>
-                        </div>
                         
-                        <div className="w-[50%] mt-20" >
-                            <h2 className='text-gray pb-10 border-b border-b-gray-500 font-bold '>CORE SERVICES :</h2>
-                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
-                                <p className='font-semibold text-black padding-10  text-2xl'>Design</p>
-                                <p className='text-orange font-bold'>01</p>
-                            </div>
-                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
-                                <p className='font-semibold text-black padding-10  text-2xl'>Brand Strategy</p>
-                                <p className='text-orange font-bold'>02</p>
-                            </div>
-                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
-                                <p className='font-semibold text-black padding-10  text-2xl'>Motion Design & Animation</p>
-                                <p className='text-orange font-bold'>03</p>
-                            </div>
-                        </div>
+                        </RevealWrapper>
+                   
 
-                        {/* <div>
-                            <img src="/assets/img/man.png" style={{ height: "90%", bottom: "0", zIndex: "2000", position: "absolute", right: "20px", bottom: "0px", zIndex: "0" }}></img>
-                        </div> */}
                     </div>
                 </div>
   )
