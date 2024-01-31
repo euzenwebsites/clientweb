@@ -8,45 +8,38 @@ import Vector from "../../public//assets/img/bg-vector.png"
 import Man from "../../public/assets/img/man.png"
 import HeroDes from './HeroDes'
 import HeroHeading from './HeroHeading'
+import ImageReveal from './utils/ImageReveal'
 const Hero = ({ selectedMenu }) => {
     
     const [popup, setPopup] = useState(false);
     const [showSmallMenu, setSmallMenu] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
-    useEffect(() => {
-        setTimeout(() => {
-            window.scrollTo(0, 0);
-        }, 0);
+    
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         window.scrollTo(0, 0);
+    //     }, 0);
 
-        // Prevent scrolling during page loading
-        document.body.style.overflow = 'hidden';
+    //     // Prevent scrolling during page loading
+    //     document.body.style.overflow = 'hidden';
 
-        // Re-enable scrolling after a short delay
-        setTimeout(() => {
-            document.body.style.overflow = 'auto';
-        }, 100);
-        const handleScroll = (e) => {
-            // const scrollTrigger = document.getElementById("hero_section");
-            // const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
-            if(triggerPosition <= 0){
-                setPopup(true);
+    //     // Re-enable scrolling after a short delay
+    //     setTimeout(() => {
+    //         document.body.style.overflow = 'auto';
+    //     }, 100);
+    //     const handleScroll = (e) => {
+    //         // const scrollTrigger = document.getElementById("hero_section");
+    //         // const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
+    //         if(triggerPosition <= 0){
+    //             setPopup(true);
 
-            }
+    //         }
                 
-            else setPopup(false);
-        }
-        window.addEventListener("scroll", handleScroll);
-
-        // var heroHeight = document.getElementById("hero_section").getBoundingClientRect().height;
-        // var headerHeight = document.getElementById("header_section").getBoundingClientRect().height;
-        
-
-        // document.getElementsByClassName("main-title")[0].style.height = `${heroHeight - headerHeight}px`;
-        // return () => {
-        //     window.removeEventListener('scroll', handleScroll); 
-        // }
-    }, [])
-    // console.log("//////////////////", selectedMenu)
+    //         else setPopup(false);
+    //     }
+    //     window.addEventListener("scroll", handleScroll);
+    // }, [])
+ 
     
   return (
     <div className='bg-[#dadce1] flex flex-col h-full relative pl-10 '  id="hero_section">
@@ -61,12 +54,12 @@ const Hero = ({ selectedMenu }) => {
                     </div>
 
                     
-                        <RevealWrapper origin='right' delay={300} duration={3000} className=' w-[50%]' >
+                    <RevealWrapper origin='right' delay={300} duration={3000} className=' w-[50%]' >
                             
                             <Image src={Vector} height={600} className='absolute right-0 bottom-0 z-5'></Image>
                             <Image src={Man} height={600} className='absolute right-0 bottom-0 z-10'/>
                         
-                        </RevealWrapper>
+                    </RevealWrapper>
                    
 
                     </div>

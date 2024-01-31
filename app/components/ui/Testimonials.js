@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonials = () => {
   return (
-    <div className='border p-10 flex flex-col gap-12 w-1/3' >
+    <div className='border p-10 flex flex-col gap-12 w-[50vw]' >
 
         <div className='flex flex-col gap-8'>
         <p className="number-circle">01</p>

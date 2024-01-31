@@ -1,4 +1,5 @@
 import React from 'react'
+import Reveal from '../utils/Reveal'
 
 const CTABanner = () => {
   return (
@@ -6,15 +7,23 @@ const CTABanner = () => {
 
       <div className='w-[90%]  grid grid-cols-2 uppercase'>
         
+        <Reveal>
         <div className='text-black font-bold text-5xl'>
           <h3 className=''>NOW LETS FIND OUT ABOUT YOU</h3>
         </div>
+        </Reveal>
 
         <div >
           <div className='text-black font-bold text-5xl'>
+            <Reveal>
           <h3>lorem ipsum</h3>
+          </Reveal>
+          <Reveal>
           <h3>lorem ipsum</h3>
+          </Reveal>
+          <Reveal>
           <h3>lorem ipsum</h3>
+          </Reveal>
           </div>
           
           <button className='bg-orange p-4 rounded-full text-white font-bold mt-10 uppercase'>start a surway</button>

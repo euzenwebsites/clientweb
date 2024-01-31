@@ -2,17 +2,19 @@ import Card from '@/app/components/ui/Card'
 import React from 'react'
 import { Row, Col, Button, Input, Select } from "antd"
 import "../../components/stylessheets/About.css"
+import HorizontalScroll from '@/app/components/utils/HorizontalScroll'
 const CardSec = () => {
   return (
-    <section className='w-[100%] flex justify-center mt-20'>
+    <section className='w-[100%] flex justify-center '>
         <div className='w-[90%]'>
-        <Col span={24} className="card_container">
-                    <div className="card_panel">
+                    <div >
+                      <HorizontalScroll>
                         <Card/>
                         <Card/>
                         <Card/>
+                      </HorizontalScroll>
                     </div>
-        </Col>
+       
         </div>
         
     </section>

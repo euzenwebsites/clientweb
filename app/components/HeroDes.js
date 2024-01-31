@@ -10,7 +10,7 @@ const HeroDes = () => {
         <p className='text-gray text-lg font-bold pr-32'>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
     </div>
 
-    <div>
+    <div className='pb-10'>
             <h2 className='text-gray pb-10 border-b border-b-gray-500 font-bold '>CORE SERVICES :</h2>
                             <div className='flex justify-between border-b py-2 border-b-gray-500'>
                                 <p className='font-semibold text-black padding-10  text-2xl'>Design</p>
@@ -24,8 +24,9 @@ const HeroDes = () => {
                                 <p className='font-semibold text-black padding-10  text-2xl'>Motion Design & Animation</p>
                                 <p className='text-orange font-bold'>03</p>
                             </div>
-                            </div>
-                        </div>
+    </div>
+
+    </div>
     </RevealWrapper>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Reveal from './utils/Reveal'
 
 const Client = () => {
   return (
@@ -18,20 +19,35 @@ const Client = () => {
     </div>
 
     <div className='w-[50%] leading-normal'>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
-                            <p className='font-bold text-5xl' >XXXXXX</p>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >DUBAI EXPO</p>
+                            </Reveal>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >BRITISH CHAMBER</p>
+                            </Reveal>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >TECH SALARIES</p>
+                            </Reveal>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >REVIVEBOT</p>
+                            </Reveal>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >CADENT</p>
+                            </Reveal>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >ACCUTEMP</p>
+                            </Reveal>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >RAILWEIGHT</p>
+                            </Reveal>
+                            <Reveal>
+                            <p className='font-bold text-5xl' >EXACTRAK</p>
+                            </Reveal>
                             
-    <button className='text-white bg-orange p-4 rounded-full font-bold mt-10'>WORK WITH US</button>
+    <button className='text-white bg-orange p-4 rounded-full font-bold mt-10 '>
+      
+      WORK WITH US
+      </button>
     </div>
 </div>
 </section>

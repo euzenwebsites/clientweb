@@ -10,7 +10,7 @@ const OurTeam = () => {
         <Row className="members_list">
                 <Col lg={4} sm={0} xs={0} />
                 <Col lg={8} sm={24} xs={24} style={{ padding: 20}}>
-                    <Member leaveImg="/assets/img/members/doodle-ed-normal.png" hoverImg="/assets/img/members/doodle-ed-mouseover.png" />
+                 <Member leaveImg="/assets/img/members/doodle-ed-normal.png" hoverImg="/assets/img/members/doodle-ed-mouseover.png" />
                 </Col>
                 <Col lg={8} sm={24} xs={24} style={{ padding: 20}}>
                 <Member leaveImg="/assets/img/members/doodle-kay-normal.png" hoverImg="/assets/img/members/doodle-kay-mouseover.png" />

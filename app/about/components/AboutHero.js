@@ -5,6 +5,9 @@ import { Row, Col, Button, Input, Select } from "antd"
 import "../../components/stylessheets/Header.css"
 import "../../components/stylessheets/About.css"
 import { useState } from 'react';
+import AboutHeading from './AboutHeading';
+import { RevealWrapper } from 'next-reveal';
+
 const AboutHero = ({selectedMenu}) => {
     const [scrollEnd, setScrollEnd] = useState(false);
     const [popup, setPopup] = useState(false);
@@ -16,10 +19,7 @@ const AboutHero = ({selectedMenu}) => {
         <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
             
             <div id="about_header">
-                <div className="about_title">
-                    <p>ABOUT AVY</p>
-                    <p>®</p>
-                </div>
+                <AboutHeading/>
             <Row style={{  borderBottom: "1px solid black", marginTop: 60}} className="title_description">
                     <Col lg={12} sm={24} xs={24} className="title_description--text">
                         <p>
@@ -30,9 +30,12 @@ const AboutHero = ({selectedMenu}) => {
                             Founder & CEO
                         </p>
                     </Col>
+
+                    <RevealWrapper origin='right' delay={300} duration={3000} className=' w-[50%]' >
                     <Col lg={12} sm={24} xs={24} className="title_description--image">
                         <img src="/user.png"></img>
                     </Col>
+                    </RevealWrapper>
             </Row>
 
 

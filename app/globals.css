@@ -31,11 +31,13 @@
   justify-content: end;
   padding: 20px;
   gap: 20px;
+  position: relative;
 
 }
 .left-heading__banner-inner{
     width: 50%;
     padding-right: 140px;
+    position: relative;
   
 }
 .heading-left{
@@ -46,3 +48,4 @@
   padding: 12px 0px;
   
 }
+

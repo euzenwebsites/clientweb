@@ -9,10 +9,11 @@ import CardSec from './components/CardSec'
 import OurTeam from './components/OurTeam'
 import CTABanner from '../components/ui/CTABanner'
 import ReadyToWork from '../components/ui/ReadyToWork'
-
+import SmoothScroll from '../components/utils/SmoothScroll'
 const page = () => {
   return (
     <div>
+      <SmoothScroll/>
       <AboutHero/>
       <AboutDetail/>
       <LeftHeading heading="philosophy" />
@@ -23,9 +24,11 @@ const page = () => {
       <OurTeam/>
       <CTABanner/>
       <ReadyToWork/>
+
     
 
       <HomeAbout/>
+      
     </div>
   )
 }

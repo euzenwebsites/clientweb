@@ -10,17 +10,19 @@ import Client from './components/Client'
 import Accordion from './components/Accordion'
 import CTABanner from './components/ui/CTABanner'
 import ReadyToWork from './components/ui/ReadyToWork'
+import SmoothScroll from './components/utils/SmoothScroll'
 
 const page = () => {
   return (
     <div>
-      <Hero/>
-      <LeftHeading heading="let's begin"/>
+                <SmoothScroll/> 
+                <Hero/> 
+                <LeftHeading heading="let's begin"/>
                 <CEOSec/>
                 <LeftHeading heading="how we think lorem ipsum"/>
                 <TestimonialSec/>
                 <LeftHeading heading="services that we offer"/>
-                <Service/>
+                <Service/>   
                 <Service/>
                 <Service/> 
                 <LeftHeading heading="how we do things"/>
