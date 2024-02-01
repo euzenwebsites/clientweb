@@ -31,7 +31,7 @@ const TestimonialSec = () => {
     
     <div className="mt-10">
 
-    <ButtonFlip />
+  
 
     <button className="bg-orange p-4 rounded-full uppercase text-white font-semibold">
       contact us for more work
