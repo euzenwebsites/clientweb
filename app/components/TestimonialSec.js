@@ -5,6 +5,7 @@ import Testimonials from './ui/Testimonials';
 import ButtonFlip from './utils/ButtonFlip';
 import HorizontalScroll from './utils/HorizontalScroll';
 
+
 const TestimonialSec = () => {
   // const targetRef = useRef();
   // const { scrollYProgress } = useScroll({
@@ -18,11 +19,13 @@ const TestimonialSec = () => {
     
     <section className=''>
     <div>
-      <HorizontalScroll>
+      <HorizontalScroll width="-55">
+        
         <Testimonials />
         <Testimonials />
         <Testimonials />
         <Testimonials />
+       
       </HorizontalScroll>
     </div>
     

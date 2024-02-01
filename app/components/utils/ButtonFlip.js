@@ -15,11 +15,11 @@ const ButtonFlip = () => {
   };
 
   return (
-    <button>
+    <button
     className="bg-orange text-white font-bold py-2 px-4 rounded"
     onMouseEnter={flipText}
      onMouseLeave={flipText}
-    
+      >
      <span className="flip-text">
        {isFlipped ? 'Flip Text' : 'Original Text'}
        </span>

@@ -5,9 +5,9 @@ const Service = () => {
   return (
     
     <section className='w-[100%] flex  justify-center mt-20 '>
-    <div className='w-[90%] flex  flex-row items-start border-b items-start ' >
+    <div className='w-[90%] flex  flex-col sm:flex-row items-start sm:border-b  ' >
 
-    <div className='sticky top-20 w-[50%] '>
+    <div className='sm:sticky top-28 w-[50%] '>
     <div className=' flex flex-row gap-2  '>
         <p className='number-circle'>01</p>
         <p className='font-bold text-6xl'>DESIGN</p>
@@ -15,7 +15,7 @@ const Service = () => {
     </div>
     
 
-    <div className='border-l pl-4 pb-10 sm:w-[50%] w-[100%]' >
+    <div className='sm:border-l py-4 sm:pl-4 sm:pb-10 sm:w-[50%] w-[100%]' >
       
         <Reveal>
         <div> 

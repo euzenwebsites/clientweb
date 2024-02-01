@@ -38,7 +38,7 @@ const RevealSlide = ({children}) => {
       }}
       initial="hidden"
       animate={slideControls}
-      transition={{duration:0.9,ease:"easeIn"}}
+      transition={{duration:1.3,ease:"easeIn",delay:0.50}}
       style={{
         position:"absolute",
         top:4,

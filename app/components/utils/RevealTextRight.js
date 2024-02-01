@@ -18,7 +18,7 @@ const RevealTextRight = ({children}) => {
     },[isInView])
 
   return (
-    <div ref={ref}  style={{position:"relative",width:"100%",}} >
+    <div ref={ref}  style={{position:"relative",width:"100%",overflow:"hidden",margin:"0"}} >
         <motion.div
       variants={{
         hidden: {opacity:0, x:0},

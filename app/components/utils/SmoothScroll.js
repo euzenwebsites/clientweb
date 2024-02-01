@@ -3,9 +3,11 @@ import { useEffect, useRef } from 'react'
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import gsap from 'gsap'
 
-function SmoothScroll() {
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
+
+function SmoothScroll({children}) {
+  const lenis = useLenis(({ scroll}) => {
+    console.log(scroll)
+
   })
   const lenisRef = useRef()
   
@@ -22,8 +24,14 @@ function SmoothScroll() {
   })
 
   return (
-    <ReactLenis root>
-      { /* content */ }
+    <ReactLenis  root options={{
+      lerp:0.1,
+      duration:1.7,
+      smoothWheel:true,
+      
+
+    }}>
+          {children}
     </ReactLenis>
   )
 }

@@ -18,7 +18,7 @@ const Client = () => {
         </div>
     </div>
 
-    <div className='w-[50%] leading-normal'>
+    <div className='w-[100%] sm:w-[50%] leading-normal'>
                             <Reveal>
                             <p className='font-bold text-5xl' >DUBAI EXPO</p>
                             </Reveal>

@@ -48,4 +48,22 @@
   padding: 12px 0px;
   
 }
-
+.text-height{
+    line-height: 9.5rem;
+}
+@media (max-width: 640px) {
+  .left-heading__banner-inner{
+    width: 100%;
+    padding-right:0px;
+  }
+  .text-height{
+    line-height: 5rem;
+  }
+  .left-heading__banner{
+    justify-content: center;
+  }
+  .heading-left{
+    font-size: 56px;
+    line-height: 4rem;
+  }
+}

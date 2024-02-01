@@ -4,12 +4,11 @@ import { RevealWrapper } from  'next-reveal'
 const HeroDes = () => {
   return (
 
-    <RevealWrapper origin='left' delay={300} duration={3000}>
+    
     <div className="w-[80%]" >
-    <div className='mb-20'>
-        <p className='text-gray text-lg font-bold pr-32'>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
-    </div>
+    
 
+    <RevealWrapper origin='left' delay={800} duration={3000} distance='450px' >
     <div className='pb-10'>
             <h2 className='text-gray pb-10 border-b border-b-gray-500 font-bold '>CORE SERVICES :</h2>
                             <div className='flex justify-between border-b py-2 border-b-gray-500'>
@@ -25,9 +24,10 @@ const HeroDes = () => {
                                 <p className='text-orange font-bold'>03</p>
                             </div>
     </div>
+    </RevealWrapper>
 
     </div>
-    </RevealWrapper>
+  
   )
 }
 

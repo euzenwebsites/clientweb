@@ -42,10 +42,10 @@ const Hero = ({ selectedMenu }) => {
  
     
   return (
-    <div className='bg-[#dadce1] flex flex-col h-full relative pl-10 '  id="hero_section">
+    <div className='w-[100%] bg-[#dadce1] flex flex-col h-full relative pl-10 '  id="hero_section">
                     <Header type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}></Header>
                     
-                    <div className='flex flex-row '>
+                    <div className='flex flex-col sm:flex-row '>
                         
                     <div className=" flex flex-col " >
 
@@ -54,7 +54,8 @@ const Hero = ({ selectedMenu }) => {
                     </div>
 
                     
-                    <RevealWrapper origin='right' delay={300} duration={3000} className=' w-[50%]' >
+                    <RevealWrapper origin='right' delay={800} duration={4000} distance='450px' reset={true}
+                     className=' w-[50%]'  >
                             
                             <Image src={Vector} height={600} className='absolute right-0 bottom-0 z-5'></Image>
                             <Image src={Man} height={600} className='absolute right-0 bottom-0 z-10'/>
