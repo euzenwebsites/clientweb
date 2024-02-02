@@ -5,12 +5,26 @@ import RevealTextRight from '../utils/RevealTextRight'
 
 const WorkWithUs = () => {
     return (
-        <section className='w-[100%] flex  justify-center mt-20 '>
+        <section className='w-[100%]  '>
 
-            <div className="w-[90%] flex flex-col gap-10">
+                <div className='w-full flex flex-col justify-center'>
 
+                <div className='w-[100%] flex flex-row box-border'>
+                <RevealTextRight>
+                  
+                    <h3 className=" text-9xl font-black font-bold uppercase">are you</h3>  
+                   
+                </RevealTextRight>
+                <RevealText>
+                    <h3 className=" text-9xl font-black font-bold uppercase">ready to</h3> 
+                </RevealText>
+                </div>
 
-                <div className="w-[100%] flex flex-row items-center  ">
+                <div></div>
+                <div></div>
+                </div>
+
+                {/* <div className="w-[100%] flex flex-row items-center  ">
                     <RevealTextRight>
                     <div className='w-[50%]' >
                             <h3 className=" text-9xl font-black font-bold uppercase">ready</h3>    
@@ -56,10 +70,10 @@ const WorkWithUs = () => {
                             <span className="text-black inline-flex font-bold text-9xl ml-10">?</span>
                         </div>
                     </div>
-                </RevealText>
+                </RevealText> */}
 
 
-            </div>
+            
         </section>
     )
 }

@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Man from "@/public/assets/img/man.png"
 
 const AboutHero = ({ selectedMenu }) => {
+   const [scrollEnd, setScrollEnd] = useState(false);
     const [popup, setPopup] = useState(false);
     const [showSmallMenu, setSmallMenu] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
@@ -40,7 +41,7 @@ const AboutHero = ({ selectedMenu }) => {
                     </RevealWrapper>
                 </div>
 
-
+               
             </div>
         </section>
     )

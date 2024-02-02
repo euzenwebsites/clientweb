@@ -16,7 +16,7 @@ const Reveal = ({children}) => {
     },[isInView])
 
   return (
-    <div ref={ref} style={{position:"relative ", overflow:"hidden", width:"100%"}}>
+    <div ref={ref} style={{position:"relative ", overflow:"hidden"}}>
       <motion.div
       variants={{
         hidden: {opacity:0, y:90},

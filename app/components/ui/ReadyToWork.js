@@ -20,27 +20,27 @@ function ReadyToWork() {
                             </select>
                         </div>
 
-                        <div className=" flex flex-row gap-8">
-                            <label>NAME</label>
-                            <input type="text" placeholder="Enter Your Name" className="border-b w-full pb-4"/> 
+                        <div className=" flex flex-row items-center gap-4">
+                            <label className="w-[30%]">NAME</label>
+                            <input type="text" placeholder="Enter Your Name" className="w-[70%] border-b w-full pb-4"/> 
                         </div>
 
-                        <div className=" flex flex-row gap-8">
-                            <label>EMAIL</label>
-                            <input type="email" placeholder="Enter Your Email" className="border-b w-full pb-4"/>
+                        <div className=" flex flex-row gap-4">
+                            <label className="w-[30%]">EMAIL</label>
+                            <input type="email" placeholder="Enter Your Email" className="w-[70%] border-b w-full pb-4"/>
                         </div>
 
-                        <div className=" flex flex-row gap-8">
-                            <label>PHONE</label>
-                            <input type="text" placeholder="Enter Your Phone" className="border-b w-full pb-4"/>
+                        <div className=" flex flex-row gap-4">
+                            <label className="w-[30%]">PHONE</label>
+                            <input type="text" placeholder="Enter Your Phone" className="w-[70%] border-b w-full pb-4"/>
                         </div>
 
-                        <div className=" flex flex-row gap-8">
-                            <label>BUDGET</label>
-                             <input type="text" placeholder="What did you have in mind?" className="border-b w-full pb-4"/>
+                        <div className=" flex flex-row gap-4">
+                            <label className="w-[30%]">BUDGET</label>
+                             <input type="text" placeholder="What did you have in mind?" className=" w-[70%] border-b w-full pb-4"/>
                         </div>
 
-                        <div className="sm:col-span-2 flex flex-row gap-8">
+                        <div className="sm:col-span-2 flex flex-row gap-4">
                          <label>Message</label>
                           <input type="text" placeholder="Tell us about you amazing idea!" className="border-b w-full pb-4"/>
 

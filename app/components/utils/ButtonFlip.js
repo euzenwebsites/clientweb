@@ -4,13 +4,12 @@ import "./Animation.css"
 
 const ButtonFlip = () => {
   return (
-    <div>
-      <Link href="/" class="button">
-      <div class="qube">
-         <div class="front">mouse over me!</div>
-         <div class="back">mouse over me!</div>
-      </div>
-   </Link>
+    <div className='container'>
+    <div className='box'>
+          <div className='upside btn'>3d effect</div>
+          <div className='front btn'>hover me</div>
+
+    </div>
     </div>
   )
 }

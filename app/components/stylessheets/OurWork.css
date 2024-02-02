@@ -5,7 +5,7 @@
 .ourwork_title h1{
     font-size: 196px;
     line-height: 1;
-    letter-spacing: 10px; 
+    letter-spacing: 10px;  
     margin: 0px;
     font-weight: 600;
 }
@@ -19,7 +19,7 @@
     cursor: pointer;
     background-size: cover;
     position: relative;
-    background-color: black;
+    background-color: #191919;
     color: #fff;
 }
 .img_item--show:nth-child(1) {
@@ -120,15 +120,8 @@
     display: flex;
     justify-content: space-between;
 }
-.img_detail--header p:first-child {
-    font-size: 48px;
-    margin: 0px;
-}
-.img_detail--header p:last-child {
-    font-size: 18px;
-    margin: 0;
-    color: grey;
-}
+
+
 .img_detail--content {
     margin-top: 47px;
     padding: 0px 60px;
@@ -139,18 +132,15 @@
     display: inline-block;
     vertical-align: top;
 }
-.project p:nth-child(1) {
-    font-size: 32px;
-    margin:0
-}
+
 .project p:nth-child(2) {
     font-size: 22px;
-    color: grey;
+    color: #000000;
     margin: 0;
 }
 .project p:nth-child(3) {
     font-size: 22px;
-    color: grey;
+    color: #000000;
     margin: 0;
 }
 .service {
@@ -159,27 +149,22 @@
     vertical-align: top;
 }
 
-.service p:nth-child(1) {
-    font-size: 32px;
-    margin:0
-}
+
 .service p:nth-child(2) {
     font-size: 22px;
-    color: grey;
+    color: #000000;
     margin: 0;
 }
 .challenge_container {
     margin-top: 60px;
 }
-.challenge_container p:first-child {
-    font-size: 32px;
-    margin: 0;
-}
+
 .challenge_container p:last-child {
     font-size: 22px;
-    color: grey;
+    color: #000000;
     margin: 0;
 }
+
 .img_list {
     margin-top: 60px;
 }
@@ -203,26 +188,20 @@
 .approach_container {
     margin-top: 60px;
 }
-.approach_container p:first-child {
-    font-size: 32px;
-    margin: 0;
-}
+
 .approach_container p:last-child {
     font-size: 22px;
-    color: grey;
+    color: #000000;
     margin: 0;
 }
 
 .result_container {
     margin-top: 60px;
 }
-.result_container p:first-child {
-    font-size: 32px;
-    margin: 0;
-}
+
 .result_container p:last-child {
     font-size: 22px;
-    color: grey;
+    color: #000000;
     margin: 0;
 }
 .site {
@@ -247,4 +226,101 @@
 .contactus_overlay-hidden {
     left: -69vw;
     transition: left, 0.5s;
+}
+@media (max-width: 640px){
+    .img_detail--header {
+        padding: 16px;
+    }
+    .project {
+        width: 100%;
+        
+    }
+    .service {
+        width: 100%;
+    }
+    .img_item--detail {
+        position: fixed;
+        left: 0vw;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .img_detail--content {
+        margin-top: 20px;
+        padding: 0px 16px;
+    }
+    .service p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 8px;
+        
+    }
+    .challenge_container {
+        margin-top: 16px;
+    }
+    .challenge_container p:last-child {
+        font-size: 16px;
+        
+    }
+    .project p:nth-child(2) {
+        font-size: 16px;
+        
+    }
+    .project p:nth-child(3) {
+        font-size: 16px;
+        
+    }
+    .challenge_container {
+        margin-top: 20px;
+    }
+    
+    .challenge_container p:last-child {
+        font-size: 16px;
+        color: #000000;
+        margin: 0;
+    }
+    
+    .img_list {
+        margin-top: 20px;
+    }
+    .main_img img{
+        width: 100%;
+    }
+    .sub_img {
+        margin-top: 16px;
+    }
+    .sub_img img:first-child {
+        width: 100%;
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+    .sub_img img:last-child {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 12px;
+    }
+    
+    .approach_container {
+        margin-top: 60px;
+    }
+    
+    .approach_container p:last-child {
+        font-size: 16px;
+        
+    }
+    
+    .result_container {
+        margin-top: 20px;
+    }
+    
+    .result_container p:last-child {
+        font-size: 16px;
+        
+    }
+    .site {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    
 }

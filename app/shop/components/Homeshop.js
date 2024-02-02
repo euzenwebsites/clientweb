@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "../../components/stylessheets/ShopIntro.css"
 import Link from "next/link";
 import { Col, Row } from "antd";
@@ -7,8 +7,10 @@ import Header from "@/app/components/ui/Header"
 import PopupHeader from "@/app/components/ui/PopupHeader"
 import ReadyToWork from "@/app/components/ui/ReadyToWork.js"
 import Footer from "@/app/components/ui/Footer.js"
+import InsightSec from "@/app/insights/components/InsightSec";
+import InsightsSec from "./InsightsSec";
 
-function HomeShop({selectedMenu}) {
+function HomeShop({ selectedMenu }) {
     const [popup, setPopup] = useState(false);
     const [showSmallMenu, setSmallMenu] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
@@ -34,7 +36,7 @@ function HomeShop({selectedMenu}) {
     //             setPopup(true);
 
     //         }
-                
+
     //         else setPopup(false);
     //     }
     //     window.addEventListener("scroll", handleScroll);
@@ -44,17 +46,26 @@ function HomeShop({selectedMenu}) {
     //     }
     // }, []);
     return (
-        <div style={{ padding: "0px 60px"}}>
-            <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
-            <div className="shop_detail">
-                <div className="shop_intro--img" id="shop_header">
-                    <img src="/assets/img/shops/shop1_detail.png" width={"100%"}/>
-                    <p className="shop_description">AVY Pruthi, Nuneaton business owner – Coventry & Warwickshire Chamber workshops</p>
-                    <div className="sub_detail">
-                        <ul>
-                            <li>30 June 2021</li>
-                            <li>Business</li>
-                        </ul>
+        <section className="w-[100%] flex justify-center ">
+        <div className="w-[90%]" >
+            <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu} />
+
+            <div className=" flex flex-col gap-8">
+
+                    <div>
+                    <img src="/assets/img/shops/shop1_detail.png"  />
+                    </div>
+
+                    <div>
+                    <h1 className="font-bold text-2xl sm:text-5xl ">AVY Pruthi, Nuneaton business owner – Coventry & Warwickshire Chamber workshops</h1>
+                    </div>
+
+                    <div className='mt-2  flex flex-col sm:flex-row justify-between max-sm:items-start'>
+                    <ul className='flex flex-row items-center gap-10 text-gray font-bold max-sm:py-8'>
+              <li>30 June 2021</li>
+              <li className='border-l border-l-gray pl-4'>Business</li>
+              <li className='border-l border-l-gray pl-4'>Design</li>
+            </ul>
                         <div className="links">
                             <span>Share: </span>
                             <Link href="/"><img src="/assets/img/icons/fa6-brands_square-x-twitter.png"></img></Link>
@@ -63,56 +74,30 @@ function HomeShop({selectedMenu}) {
                             <Link href="/"><img src="/assets/img/icons/mdi_share-variant.png"></img></Link>
                         </div>
                     </div>
-                </div>
+
+               
                 {
-                    popup && (<PopupHeader setSmallMenu = {setSmallMenu}/>)
+                    popup && (<PopupHeader setSmallMenu={setSmallMenu} />)
                 }
-                <div className="shop_detail--text">
+                <div className="font-medium text-lg sm:text-xl">
                     <p>
-                    New and small business owners in Nuneaton and Bedworth can benefit from a series of free clinics.<br></br>
-                    The clinics, presented by Coventry and Warwickshire Chamber of Commerce are fully funded and aim to help people who want to start a business and micro business owners who have started one in the last 24 months.<br></br>
-                    One Nuneaton based business owner who has gained is Avy Pruthi, who has set up a design and digital experiences company called Avy Consultancy.
-                    <br></br>
-                    <br></br>
-                    Through the sessions and access to a wide programme of masterclasses and workshops, he is now director of a business that helps bring businesses to life using creative design for all touch-points.<br></br>
-                    The business continues to grow and is pushing forward with plans for further growth. <br></br>Avy was introduced to the Coventry & Warwickshire Chamber of Commerce’s Start-Up Programme in February after deciding to resign from full-time employment to pursue his dream of starting his own business.<br></br>
-                    Avy felt it was time to act on his passion for design and dream of being a business owner and explained:.
+                        New and small business owners in Nuneaton and Bedworth can benefit from a series of free clinics.<br></br>
+                        The clinics, presented by Coventry and Warwickshire Chamber of Commerce are fully funded and aim to help people who want to start a business and micro business owners who have started one in the last 24 months.<br></br>
+                        One Nuneaton based business owner who has gained is Avy Pruthi, who has set up a design and digital experiences company called Avy Consultancy.
+                        <br></br>
+                        <br></br>
+                        Through the sessions and access to a wide programme of masterclasses and workshops, he is now director of a business that helps bring businesses to life using creative design for all touch-points.<br></br>
+                        The business continues to grow and is pushing forward with plans for further growth. <br></br>Avy was introduced to the Coventry & Warwickshire Chamber of Commerce’s Start-Up Programme in February after deciding to resign from full-time employment to pursue his dream of starting his own business.<br></br>
+                        Avy felt it was time to act on his passion for design and dream of being a business owner and explained:.
                     </p>
                 </div>
-                <div className="latest_insights">
-                    <p>LATEST INSIGHTS</p>
-                    <Row className="latest_list">
-                        <Col span={8} className="latest_item">
-                            <img src="/assets/img/shops/shop (2).png"></img>
-                            <p>Daily Logo Challenge for 50 days</p>
-                            <ul>
-                                        <li>30 June 2021</li>
-                                        <li>Design</li>
-                                        <li>Logo Identity</li>
-                                    </ul>
-                        </Col>
-                        <Col span={8} className="latest_item">
-                            <img src="/assets/img/shops/shop (3).png"></img>
-                            <p>Bringing a Business to Life: Chamber of Commerce, AVY Pruthi</p>
-                            <ul>
-                                        <li>30 June 2021</li>
-                                        <li>Business</li>
-                                    </ul>
-                        </Col>
-                        <Col span={8} className="latest_item">
-                            <img src="/assets/img/shops/shop (4).png"></img>
-                            <p>Our new Trustpilot partnership, and how it&quot;ll help your business</p>
-                            <ul>
-                                        <li>30 June 2021</li>
-                                        <li>Business</li>
-                                        <li>Patners</li>
-                                    </ul>
-                        </Col>
-                    </Row>
-                </div>
+
+
+                <InsightsSec/>
             </div>
-            <Footer setMenu = {setSmallMenu} flag={showSmallMenu} setShowContactUs = {setShowContactUs}></Footer>
+            <Footer setMenu={setSmallMenu} flag={showSmallMenu} setShowContactUs={setShowContactUs}></Footer>
         </div>
+        </section>
     );
 }
 export default HomeShop;

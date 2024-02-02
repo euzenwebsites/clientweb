@@ -12,28 +12,33 @@ import CTABanner from './components/ui/CTABanner'
 import ReadyToWork from './components/ui/ReadyToWork'
 import SmoothScroll from './components/utils/SmoothScroll'
 import CoreValues from './components/CoreValues'
+import ButtonFlip from './components/utils/ButtonFlip'
+import HorizontalScrollSection from './components/utils/HorizontalScrollSection'
+
 const page = () => {
   return (
     <div>
-                <SmoothScroll> 
-                <Hero/> 
-                <CoreValues/>
-                <LeftHeading heading="let's begin"/>
-                <CEOSec/>
-                <LeftHeading heading="how we think lorem ipsum"/>
-                <TestimonialSec/>
-                <LeftHeading heading="services that we offer"/>
-                <Service/>   
-                <Service/>
-                <Service/> 
-                <LeftHeading heading="how we do things"/>
-                <HowWeDoSec/>
-                <LeftHeading heading="clients we have work with"/>
-                <Client/>
-                <Accordion/>
-                <CTABanner/>
-                <ReadyToWork/>
-      <Home/>
+      <SmoothScroll>
+        <Hero />
+        <CoreValues />
+        <LeftHeading heading="let's begin" />
+        <CEOSec />
+        <LeftHeading heading="how we think lorem ipsum" />
+        <TestimonialSec />
+        <ButtonFlip/>
+        <LeftHeading heading="services that we offer" />
+        <Service />
+        <Service />
+        <Service />
+        <LeftHeading heading="how we do things" />
+        <HowWeDoSec />
+        <LeftHeading heading="clients we have work with" />
+        <Client />
+        <Accordion />
+        <CTABanner />
+
+        <ReadyToWork />
+        <Home />
       </SmoothScroll>
     </div>
   )

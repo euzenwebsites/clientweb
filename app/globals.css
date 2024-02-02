@@ -12,8 +12,8 @@
   }
 }
 .number-circle{
-  width: 10%;
-  height: 25%;
+  width: 60px;
+  height: 60px;
   background-color: #FF3600; 
   border-radius: 50%;
   color: #fff;
@@ -38,6 +38,7 @@
     width: 50%;
     padding-right: 140px;
     position: relative;
+    
   
 }
 .heading-left{
@@ -68,6 +69,8 @@
   }
   .number-circle{
     font-size: 18px;
+    width: 60px;
+    height: 60px;
     
   }
 }

@@ -8,9 +8,10 @@ import PopupHeader from "@/app/components/ui/PopupHeader"
 import ReadyToWork from "@/app/components/ui/ReadyToWork.js"
 import Footer from "@/app/components/ui/Footer.js"
 import Image from "next/image";
-import Image01 from "../../../public/assets/img/Number1.png"
 import WorkItem from "./WorkItem";
-
+import WorkHeading from "./WorkHeading";
+import CTABanner from "@/app/components/ui/CTABanner";
+import workImg from "@/public/assets/img/1.png"
 function HomeWork({ selectedMenu }) {
 
     const [imgNum, setImgNum] = useState(1);
@@ -47,7 +48,7 @@ function HomeWork({ selectedMenu }) {
     //             setPopup(true);
 
     //         }
-                
+
     //         else setPopup(false);
     //     }
     //     window.addEventListener("scroll", handleScroll);
@@ -56,186 +57,162 @@ function HomeWork({ selectedMenu }) {
     //     }
     // }, []);
     return (
-        <div style={{ padding: "0px 60px"}}>
-            
-            <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
-            
-            <div id="our_work--header">
+        <section>
+            <div >
+                <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu} />
+                <div className="w-[100%] flex justify-center">
+                    <div className="w-[90%]">
+                        <WorkHeading />
+                        <div className="ourwork_img">
+                            <div className={`img_item ${imgNum === 6 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                                setImgNum(6)
+                                setImgDetail(true);
+                            }}>
+                                <div ref={img1} className="flex flex-row gap-4 ">
+                                    <div>
+                                        <p className='number-circle'>01</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                        <p className="uppercase">branding</p>
+                                    </div>
+                                </div>
 
-            {/* <div  className={`flex flex-row gap-4 img_item ${ imgNum === 1 ? "img_item--show" : "img_item--hidden"}`}>
-                <div>
-                    <p className='number-circle'>01</p>
-                </div>
-                <div>
-                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                    <p className="uppercase">branding</p>
-                </div>
-            </div> */}
+                            </div>
 
-            <div>
-                
-            </div>
+                            <div className={`img_item ${imgNum === 2 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                                setImgNum(2)
+                                setImgDetail(true);
+                            }}>
+                                <div ref={img2} className="flex flex-row gap-4 ">
+                                    <div>
+                                        <p className='number-circle'>01</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                        <p className="uppercase">branding</p>
+                                    </div>
+                                </div>
 
+                            </div>
 
-            <div className="ourwork_title">
-                <h1>OUR WORK</h1>
-            </div>
+                            <div className={`img_item ${imgNum === 3 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                                setImgNum(3)
+                                setImgDetail(true)
+                            }}>
+                                <div ref={img3} className="flex flex-row gap-4 ">
+                                    <div>
+                                        <p className='number-circle'>01</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                        <p className="uppercase">branding</p>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div className="ourwork_img">
+                            <div className={`img_item ${imgNum === 4 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                                setImgNum(4)
+                                setImgDetail(true);
+                            }}>
+                                <div ref={img4} className="flex flex-row gap-4 ">
+                                    <div>
+                                        <p className='number-circle'>01</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                        <p className="uppercase">branding</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div className={`img_item ${ imgNum === 1 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                    setImgNum(1)  
-                    setImgDetail(true)
-                }}>
-                    
-                <div ref={img1} className="flex flex-row gap-4 ">
-                <div>
-                    <p className='number-circle'>01</p>
-                </div>
-                <div>
-                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                    <p className="uppercase">branding</p>
-                </div>
-                </div>
-
-                </div>
-               
-                <div className={`img_item ${ imgNum === 2 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                    setImgNum(2)  
-                    setImgDetail(true);
-                }}>
-                    <div ref={img2} className="flex flex-row gap-4 ">
-                        <div>
-                        <p className='number-circle'>01</p>
-                     </div>
-                        <div>
-                     <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                        <p className="uppercase">branding</p>
-                     </div>
+                            <div className={`img_item ${imgNum === 5 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                                setImgDetail(true)
+                                setImgNum(5)
+                            }}>
+                                <div ref={img5} className="flex flex-row gap-4 ">
+                                    <div>
+                                        <p className='number-circle'>01</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                        <p className="uppercase">branding</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <div className={`img_item ${ imgNum === 3 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                    setImgNum(3)  
-                    setImgDetail(true)
-                }}>
-                        <div ref={img3} className="flex flex-row gap-4 ">
-                            <div>
-                                <p className='number-circle'>01</p>
-                            </div>
-                            <div>
-                                <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                <p className="uppercase">branding</p>
-                            </div>
-                        </div>
-                </div>
+                {
+                    popup && (<PopupHeader setSmallMenu={setSmallMenu} />)
+                }
+                <CTABanner />
+                <ReadyToWork />
+                <Footer setMenu={setSmallMenu} flag={showSmallMenu} setShowContactUs={setShowContactUs}></Footer>
 
-                <div className={`img_item ${ imgNum === 4 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                    setImgNum(4)  
-                    setImgDetail(true);
-                }}>
-                        <div ref={img4} className="flex flex-row gap-4 ">
-                            <div>
-                                <p className='number-circle'>01</p>
-                            </div>
-                            <div>
-                                <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                <p className="uppercase">branding</p>
-                            </div>
-                        </div>
-                </div>
-
-                <div className={`img_item ${ imgNum === 5 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                    setImgDetail(true)
-                    setImgNum(5)
-                }}>
-                    <div ref={img5} className="flex flex-row gap-4 ">
-                <div>
-                    <p className='number-circle'>01</p>
-                </div>
-                <div>
-                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                    <p className="uppercase">branding</p>
-                </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            {
-                popup && (<PopupHeader setSmallMenu = {setSmallMenu}/>)
-            }
-            <Row>
-                <Col span={24} style={{backgroundColor: "lightgrey", borderBottom: "10px solid black", marginTop: 120, padding: "94px 60px"}} className="findout_container">
-                    <Row>
-                        <Col lg={12} sm={24} xs={24}>
-                            <h2 className="findout_container--title">NOW LETS FIND OUT<br/> ABOUT YOU</h2>
-                        </Col>
-                        <Col lg={12} sm={24} xs={24}>
-                            <h2 className="findout_container--text">Lörem ipsum</h2>
-                            <h2 className="findout_container--text">Lörem ipsum</h2>
-                            <h2 className="findout_container--text">Lörem ipsum</h2>
-                            <button style={{border: "none", fontSize: 18, fontWeight: 500, padding: "18px 36px", backgroundColor: "#FF3600",  borderRadius: 30, color: "white", cursor: "pointer", marginTop: 40, }}>START SURVEY</button>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
-            <ReadyToWork />
-            <Footer setMenu = {setSmallMenu} flag={showSmallMenu} setShowContactUs = {setShowContactUs}></Footer>
-            <div className={`img_item--detail ${imgDetai ? "img_item--detail-show" : "item_item--detail-hidden"}`}>
-                <div className="img_detail--header">
+                <div className={`img_item--detail ${imgDetai ? "img_item--detail-show" : "item_item--detail-hidden"}`}>
                     <div>
-                    <p className="img_detail--header-title">BLK PIZZA</p>
-                    <p className="img_detail--header-description">BRANDING</p>
+
                     </div>
-                    <Button size="large" danger shape="round" onClick={(e) => setImgDetail(false)}>CLOSE</Button>
+
+                    <div className="img_detail--header">
+                        <div>
+                            <h1 className="font-bold text-3xl sm:text-5xl">BLK PIZZA</h1>
+                            <p className="text-gray  sm:mt-8 uppercase font-bold text-xl sm:text-3xl">BRANDING</p>
+                        </div>
+                        <Button size="large" danger shape="round" onClick={(e) => setImgDetail(false)}>CLOSE</Button>
+                    </div>
+
+                    <div className="img_detail--content text-black">
+                        <div className="project_container">
+                            <div className="project">
+                                <h3 className="font-bold text-xl sm:text-3xl">PROJECT</h3>
+                                <p className="text-black">CLIENT: LOREM IPSUM</p>
+                                <p>YEAR: 2023</p>
+                            </div>
+                            <div className="service">
+                                <h3 className="font-bold text-xl sm:text-3xl">SERVICE</h3>
+                                <p>BRANDING</p>
+                            </div>
+                        </div>
+                        <div className="challenge_container">
+                            <h3 className="font-bold text-xl sm:text-3xl">CHALLENGE</h3>
+                            <p>Lörem ipsum demödade märk-dna: pensionärskuvös än aras ovina. Trumpifiering intraskade nende i tuspeska tekagon. Reskapet aberen vyr agnostigen, i ter. Pegt giganösm elykovament. </p>
+                        </div>
+                        <div className="img_list">
+                            <div className="main_img">
+                                <Image src={workImg} />
+                            </div>
+
+                            <div className=" grid grid-cols-2 gap-8 mt-8">
+                                <Image src={workImg} />
+                                <Image src={workImg} />
+                            </div>
+                        </div>
+                        <div className="approach_container">
+                            <h3 className="font-bold text-xl sm:text-3xl">APPROACH</h3>
+                            <p>Lörem ipsum demödade märk-dna: pensionärskuvös än aras ovina. Trumpifiering intraskade nende i tuspeska tekagon. Reskapet aberen vyr agnostigen, i ter. Pegt giganösm elykovament. </p>
+                        </div>
+                        <div className="mt-10">
+                            <Image src={workImg} />
+                        </div>
+                        <div className="result_container">
+                            <h3 className="font-bold text-xl sm:text-3xl">RESULT</h3>
+                            <p>Lörem ipsum demödade märk-dna: pensionärskuvös än aras ovina. Trumpifiering intraskade nende i tuspeska tekagon. Reskapet aberen vyr agnostigen, i ter. Pegt giganösm elykovament. </p>
+                        </div>
+                        <div className="py-20 text-center">
+                            <h3 className="font-bold text-3xl sm:text-5xl">BLKPIZZA.COM</h3>
+                        </div>
+                    </div>
+
                 </div>
-                <div className="img_detail--content">
-                    <div className="project_container">
-                        <div className="project">
-                            <p>PROJECT</p>
-                            <p>CLIENT: LOREM IPSUM</p>
-                            <p>YEAR: 2023</p>
-                        </div>
-                        <div className="service">
-                            <p>SERVICE</p>
-                            <p>BRANDING</p>
-                        </div>
-                    </div>
-                    <div className="challenge_container">
-                        <p>CHALLENGE</p>
-                        <p>Lörem ipsum demödade märk-dna: pensionärskuvös än aras ovina. Trumpifiering intraskade nende i tuspeska tekagon. Reskapet aberen vyr agnostigen, i ter. Pegt giganösm elykovament. </p>
-                    </div>
-                    <div className="img_list">
-                        <div className="main_img">
-                            <img src={`/assets/img/${imgNum}.png`} />
-                        </div>
-                        <div className="sub_img">
-                            <img  src={`/assets/img/${imgNum}.png`}></img>
-                            <img  src={`/assets/img/${imgNum}.png`}></img>
-                        </div>
-                    </div>
-                    <div className="approach_container">
-                        <p>APPROACH</p>
-                        <p>Lörem ipsum demödade märk-dna: pensionärskuvös än aras ovina. Trumpifiering intraskade nende i tuspeska tekagon. Reskapet aberen vyr agnostigen, i ter. Pegt giganösm elykovament. </p>
-                    </div>
-                    <div>
-                        <img src={`/assets/img/${imgNum}.png`} style={{ width: "100%", marginTop: 60}}/>
-                    </div>
-                    <div className="result_container">
-                        <p>RESULT</p>
-                        <p>Lörem ipsum demödade märk-dna: pensionärskuvös än aras ovina. Trumpifiering intraskade nende i tuspeska tekagon. Reskapet aberen vyr agnostigen, i ter. Pegt giganösm elykovament. </p>
-                    </div>
-                    <div className="site">
-                        <p>BLKPIZZA.COM</p>
-                    </div>
-                </div>
+
+                <div className={`overlay ${imgDetai ? "overlay-show" : "overlay-hidden"}`} onClick={() => {
+                    setImgDetail(false);
+                }}></div>
             </div>
-            
-            <div className={`overlay ${imgDetai ? "overlay-show" : "overlay-hidden"}`} onClick={() => {
-                setImgDetail(false);
-            }}></div>
-        </div>
+        </section>
     );
 }
 

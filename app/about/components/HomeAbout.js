@@ -47,10 +47,10 @@ function HomeAbout({selectedMenu}) {
     //         window.removeEventListener('scroll', handleScroll);
     //     }
     // }, []);
-    console.log(selectedMenu === 1)
+    // console.log(selectedMenu === 1)
     
     return (
-        <div style={{ padding: "0px 60px"}} >      
+        <div  >      
             {
                 popup && (<PopupHeader setSmallMenu = {setSmallMenu}/>)
             }

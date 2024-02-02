@@ -8,10 +8,11 @@ import SmoothScroll from '../components/utils/SmoothScroll'
 const page = () => {
   return (
     <div>
-      <SmoothScroll/>
+      <SmoothScroll>
       <HomeInsights/>
       <InsightSec/> 
       <MainFooter/>
+      </SmoothScroll>
      
       
 

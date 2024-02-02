@@ -10,18 +10,19 @@ const HeroDes = () => {
 
     <RevealWrapper origin='left' delay={800} duration={3000} distance='450px' >
     <div className='pb-10'>
-            <h2 className='text-gray pb-10 border-b border-b-gray-500 font-bold '>CORE SERVICES :</h2>
-                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
-                                <p className='font-semibold text-black padding-10  text-2xl'>Design</p>
-                                <p className='text-orange font-bold'>01</p>
+            <h2 className='text-gray pb-10 border-b-2 border-b-gray font-bold '>CORE SERVICES :</h2>
+
+                            <div className='flex justify-between items-center border-b-2 py-2 border-b-gray'>
+                                <p className='font-bold text-black padding-10  text-xl'>Design</p>
+                                <p className='text-orange font-bold text-lg'>01</p>
                             </div>
-                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
-                                <p className='font-semibold text-black padding-10  text-2xl'>Brand Strategy</p>
-                                <p className='text-orange font-bold'>02</p>
+                            <div className='flex justify-between items-center border-b-2 py-2 border-b-gray'>
+                                <p className='font-bold text-black padding-10  text-xl'>Brand Strategy</p>
+                                <p className='text-orange font-bold text-lg'>02</p>
                             </div>
-                            <div className='flex justify-between border-b py-2 border-b-gray-500'>
-                                <p className='font-semibold text-black padding-10  text-2xl'>Motion Design & Animation</p>
-                                <p className='text-orange font-bold'>03</p>
+                            <div className='flex justify-between items-center border-b-2 py-2 border-b-gray'>
+                                <p className='font-bold text-black padding-10  text-xl'>Motion Design & Animation</p>
+                                <p className='text-orange font-bold text-lg'>03</p>
                             </div>
     </div>
     </RevealWrapper>

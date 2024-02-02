@@ -8,14 +8,14 @@ const Service = () => {
     <div className='w-[90%] flex  flex-col sm:flex-row items-start sm:border-b  ' >
 
     <div className='sm:sticky top-28 w-[50%] '>
-    <div className=' flex flex-row gap-2  '>
-        <p className='number-circle'>01</p>
+    <div className=' flex flex-row gap-2 w-[100%] '>
+        <p className='number-circle w-[100%]'>01</p>
         <p className='font-bold text-6xl'>DESIGN</p>
     </div>
     </div>
     
 
-    <div className='sm:border-l py-4 sm:pl-4 sm:pb-10 sm:w-[50%] w-[100%]' >
+    <div className='sm:border-l py-4 sm:pl-4 sm:pb-10 sm:w-[50%] w-[100%] scroll-smooth' >
       
         <Reveal>
         <div> 
