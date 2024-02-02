@@ -11,12 +11,13 @@ import Accordion from './components/Accordion'
 import CTABanner from './components/ui/CTABanner'
 import ReadyToWork from './components/ui/ReadyToWork'
 import SmoothScroll from './components/utils/SmoothScroll'
-
+import CoreValues from './components/CoreValues'
 const page = () => {
   return (
     <div>
                 <SmoothScroll> 
                 <Hero/> 
+                <CoreValues/>
                 <LeftHeading heading="let's begin"/>
                 <CEOSec/>
                 <LeftHeading heading="how we think lorem ipsum"/>

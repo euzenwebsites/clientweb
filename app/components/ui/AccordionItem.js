@@ -19,7 +19,7 @@ const AccordionItem = () => {
             </div>
             
             <div className='border-l w-[10%] items-center justify-center py-2 sm:py-10'>
-                <ArrowRightOutlined className=' scale-125 pl-10 '/>
+                <ArrowRightOutlined className=' scale-125 sm:pl-10 '/>
             </div>
 
     </div>

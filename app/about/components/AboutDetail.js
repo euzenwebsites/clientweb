@@ -3,39 +3,45 @@ import "../../components/stylessheets/About.css"
 import { Row, Col } from "antd"
 import Reveal from '@/app/components/utils/Reveal'
 const AboutDetail = () => {
-  return (
-    <section className='w-[100%] flex justify-center mt-20'>
-        <Row className="w-[90%] detail_text">
-                    <Col lg={12} sm={24} xs={24} style={{ fontSize: 22}}>
+    return (
+        <section className='w-[100%] flex justify-center mt-20'>
+            <div className="w-[90%] detail_text">
+                <div className='flex flex-col sm:flex-row gap-10'>
+                    <div className='text-xl font-normal sm:font-medium' >
                         <Reveal>
-                        <p>
-                            After a decade managing projects globally for creative agencies across four continents, the pandemic led me to a transformative decision. I bid farewell to my corporate role to wholeheartedly pursue my true passion: sparking inspiration for clients.
-                        </p>
+                            <p>
+                                After a decade managing projects globally for creative agencies across four continents, the pandemic led me to a transformative decision. I bid farewell to my corporate role to wholeheartedly pursue my true passion: sparking inspiration for clients.
+                            </p><br></br>
                         </Reveal>
                         <Reveal>
-                        <p>
-                            I excel in revealing a brand&apos;s unique appeal and turning concepts into reality. Building lasting connections is my philosophy.
-                        </p>
+                            <p>
+                                I excel in revealing a brand&apos;s unique appeal and turning concepts into reality. Building lasting connections is my philosophy.
+                            </p><br></br>
                         </Reveal>
                         <Reveal>
-                        <p>
-                            My work spans various sectors, from manufacturing to fintech and luxury to transportation, and I&apos;ve earned recognition with seven prestigious awards along the way.
-                        </p>
+                            <p>
+                                My work spans various sectors, from manufacturing to fintech and luxury to transportation, and I&apos;ve earned recognition with seven prestigious awards along the way.
+                            </p><br></br>
                         </Reveal>
-                    </Col>
-                    <Col lg={12} sm={24} xs={24} className="detail_contact">
-                    <Reveal>
-                        <p>
-                            Avy partners with select strategists, storytellers, designers and content creators on complex projects on a per-need basis
-                        </p>
-                    </Reveal>
-                    <div>
-                        <button>WORK WITH US</button>
                     </div>
-                    </Col>
-                </Row>
-    </section>
-  )
+
+                    <div className='max-sm:mt-10'>
+                        <Reveal>
+                            <p className='font-bold text-3xl sm:text-5xl mt-8'>
+                                Avy partners with select strategists, storytellers, designers and content creators on complex projects on a per-need basis
+                            </p>
+                        </Reveal>
+                        <div className='mt-10'>
+                            <button className='bg-orange px-8 py-4 rounded-full font-bold text-white'>WORK WITH US</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    )
 }
 
 export default AboutDetail

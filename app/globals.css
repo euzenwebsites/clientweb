@@ -12,8 +12,8 @@
   }
 }
 .number-circle{
-  width: 60px;
-  height: 60px;
+  width: 15%;
+  height: 25%;
   background-color: #FF3600; 
   border-radius: 50%;
   color: #fff;
@@ -57,13 +57,17 @@
     padding-right:0px;
   }
   .text-height{
-    line-height: 5rem;
+    line-height: 4rem;
   }
   .left-heading__banner{
     justify-content: center;
   }
   .heading-left{
-    font-size: 56px;
+    font-size: 44px;
     line-height: 4rem;
+  }
+  .number-circle{
+    font-size: 18px;
+    
   }
 }

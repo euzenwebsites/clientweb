@@ -1,48 +1,49 @@
 "use client"
-import React from 'react'
 import Header from '@/app/components/ui/Header';
-import { Row, Col, Button, Input, Select } from "antd"
 import "../../components/stylessheets/Header.css"
 import "../../components/stylessheets/About.css"
 import { useState } from 'react';
 import AboutHeading from './AboutHeading';
 import { RevealWrapper } from 'next-reveal';
+import Image from 'next/image';
+import Man from "@/public/assets/img/man.png"
 
-const AboutHero = ({selectedMenu}) => {
-    const [scrollEnd, setScrollEnd] = useState(false);
+const AboutHero = ({ selectedMenu }) => {
     const [popup, setPopup] = useState(false);
     const [showSmallMenu, setSmallMenu] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
 
-  return (
-    <section>
-        <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
-            
-            <div id="about_header">
-                <AboutHeading/>
-            <Row style={{  borderBottom: "1px solid black", marginTop: 60}} className="title_description">
-                    <Col lg={12} sm={24} xs={24} className="title_description--text">
-                        <p>
-                            ALWAYS AIMING TO PUSH BOUNDARIES AND EXCEED EXPECTATIONS WITH EVERY PROJECT.
-                        </p>
-                        <p>
-                            AVY Pruthi
-                            Founder & CEO
-                        </p>
-                    </Col>
+    return (
+        <section className='w-[100%] flex justify-center '>
+            <div className='w-[90%] '>
 
-                    <RevealWrapper origin='right' delay={300} duration={3000} className=' w-[50%]' >
-                    <Col lg={12} sm={24} xs={24} className="title_description--image">
-                        <img src="/user.png"></img>
-                    </Col>
+                <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu} />
+                <AboutHeading />
+                <div className='flex flex-col sm:flex-row'>
+
+                    <div className='w-full relative'>
+                        <div className='w-[100%]  mt-20'>
+                            <h3 className='font-bold text-3xl sm:text-5xl '>
+                                ALWAYS AIMING TO PUSH BOUNDARIES AND EXCEED EXPECTATIONS WITH EVERY PROJECT.
+                            </h3>
+                        </div>
+                        <div className='w-[50]  font-bold text-xl sm:text-3xl mt-20 sm:mt-40 '>
+                            <p>AVY Pruthi</p>
+                            <p>Founder & CEO</p>
+                        </div>
+                    </div>
+
+                    <RevealWrapper origin='right' delay={300} duration={3000} className='w-[100%] sm:w-[50%]' >
+
+                        <Image src={Man}  />
+
                     </RevealWrapper>
-            </Row>
+                </div>
 
 
-                
             </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default AboutHero

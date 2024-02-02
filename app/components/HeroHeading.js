@@ -3,23 +3,23 @@ import React from 'react'
 import { RevealList, RevealWrapper } from 'next-reveal'
 
 
-const HeroHeading = () => {
+const HeroHeading = () => { 
   return (
-    <div className='sm:w-[100%]'>
+    <div className='sm:w-[100%] max-sm:py-4 max-sm:p-8'>
         <RevealList interval={70} delay={300}   origin='bottom' className='w-[100%] sm:w-[80%] flex'>
                         
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >W</h1>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >E</h1>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >A</h1>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >R</h1>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >E </h1><br></br>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' >W</h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' >E</h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' >A</h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height ml-2' >R</h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' >E </h1><br></br>
                          
          </RevealList>
          <RevealList interval={70} delay={300}   origin='bottom' className='w-[80%] flex'>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >A</h1>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >V</h1>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' >Y</h1>
-                        <h1 className='text-8xl sm:text-[160px] font-bold text-black text-height' ><span className='text-4xl' >®</span></h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' >A</h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' >V</h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' >Y</h1>
+                        <h1 className='text-7xl sm:text-[160px] font-bold text-black text-height' ><span className='text-3xl sm:text-4xl' >®</span></h1>
                         
          </RevealList>
 

@@ -18,11 +18,11 @@ const HorizontalScroll = ({children,width}) => {
 
   return (
     <>
-    <section className="relative h-[150vh]  mt-20 " ref={targetRef}>
-      <div className="h-[90vh] sticky top-20 right-20 flex  items-center overflow-hidden ">
+    <section className="relative sm:h-[150vh]  mt-20 " ref={targetRef}>
+      <div className="h-[90vh] sm:sticky top-20 right-20 flex  items-center overflow-hidden ">
 
         <motion.div style={xStyles}>
-          <div className='flex flex-col sm:flex-row  gap-10 w-[100%] items-center'>
+          <div className='w-[100%] flex flex-col sm:flex-row  gap-10  items-center'>
           {children}
           </div>
         </motion.div>

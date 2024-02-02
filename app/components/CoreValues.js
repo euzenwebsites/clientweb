@@ -1,11 +1,12 @@
 "use client"
 import React from 'react'
 import { RevealWrapper } from  'next-reveal'
-const HeroDes = () => {
+const CoreValues = () => {
   return (
 
-    
-    <div className="w-[80%] max-sm:hidden" >
+    <section className='w-[100%] flex justify-center mt-20'>
+    <div className='w-[90%] sm:hidden'>
+   
     
 
     <RevealWrapper origin='left' delay={800} duration={3000} distance='450px' >
@@ -27,8 +28,9 @@ const HeroDes = () => {
     </RevealWrapper>
 
     </div>
+    </section>
   
   )
 }
 
-export default HeroDes
+export default CoreValues

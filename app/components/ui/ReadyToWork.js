@@ -10,9 +10,9 @@ function ReadyToWork() {
 
                     <WorkWithUs/>
                 
-                <div className="border rounded p-20">
+                <div className="border rounded p-4 sm:p-20 flex flex-col justify-center items-center gap-10">
 
-                    <div className="grid grid-cols-2 gap-20 font-normal text-xl">
+                    <div className="w-[100%] grid grid-cols-1 sm:grid-cols-2 gap-20 font-normal text-xl">
                         <div className="sm:col-span-2 flex flex-row gap-8">
                             <label>SUBJECT</label>
                             <select className="border-b w-full pb-4">
@@ -48,77 +48,13 @@ function ReadyToWork() {
 
 
                     </div>
+
+                    <div >
+                        <button className="bg-orange py-4 px-20 uppercase text-semibold rounded-lg text-white ">send</button>
+                    </div>
                 </div>
 
-                <Row className="form_container">
-             
-                    <Col span={3}>
-                        <label>SUBJECT</label>
-                    </Col>
-            
-
-                    <RevealText>
-                    <Col span={21}>
-                    <select>
-                                <option>Select</option>
-                            </select>
-                    </Col>
-                    </RevealText>
-                    
-     
-                    <Col span={3} style={{ marginTop: 60 }}>
-                        <label>NAME</label>
-                    </Col>
-         
-
-                    <RevealText>
-
-                    <Col span={9} style={{ marginTop: 60, paddingRight: 30 }}>
-                    <input type="text" placeholder="Enter Your Name"/>
-                    </Col>
-                    </RevealText>
-
-
-                    <Col span={3} style={{ marginTop: 60, paddingLeft: 30 }}>
-                        <label>EMAIL</label>
-                    </Col>
-                    
-                    
-                    <RevealText>
-                    <Col span={9} style={{ marginTop: 60 }}>
-                    <input type="email" placeholder="Enter Your Email"/>
-                    </Col>
-                    </RevealText>
-
-                    <Col span={3} style={{ marginTop: 60 }}>
-                        <label>PHONE</label>
-                    </Col>
-
-                    <Col span={9} style={{ marginTop: 60, paddingRight: 30 }}>
-                    <input type="text" placeholder="Enter Your Phone"/>
-                    </Col>
-                    <Col span={3} style={{ marginTop: 60, paddingLeft: 30 }}>
-                        <label>BUDGET</label>
-                    </Col>
-                    <RevealText>
-                    <Col span={9} style={{ marginTop: 60 }}>
-                    <input type="text" placeholder="What did you have in mind?"/>
-                    </Col>
-                    </RevealText>
-                    <Col span={3} style={{ marginTop: 60 }}>
-                        <label>Message</label>
-                    </Col>
-
-                    <RevealText>
-                    <Col span={21} style={{ marginTop: 60 }}>
-                    <input type="text" placeholder="Tell us about you amazing idea!"/>
-                    </Col>
-                    </RevealText>
-                    <Col span={8} offset={8}>
-                        <button style={{ width: "100%"}}>SEND</button>
-                    </Col>
-                    
-                </Row>
+                
             </div>
         </section>
     );

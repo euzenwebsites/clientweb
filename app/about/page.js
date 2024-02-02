@@ -13,7 +13,7 @@ import SmoothScroll from '../components/utils/SmoothScroll'
 const page = () => {
   return (
     <div>
-      <SmoothScroll/>
+      <SmoothScroll>
       <AboutHero/>
       <AboutDetail/>
       <LeftHeading heading="philosophy" />
@@ -25,10 +25,8 @@ const page = () => {
       <CTABanner/>
       <ReadyToWork/>
 
-    
-
       <HomeAbout/>
-      
+      </SmoothScroll>
     </div>
   )
 }
