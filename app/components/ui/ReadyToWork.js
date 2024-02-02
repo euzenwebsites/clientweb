@@ -12,7 +12,7 @@ function ReadyToWork() {
                 
                 <div className="border rounded p-4 sm:p-20 flex flex-col justify-center items-center gap-10">
 
-                    <div className="w-[100%] grid grid-cols-1 sm:grid-cols-2 gap-20 font-normal text-xl">
+                    <div className="w-[100%] grid grid-cols-1 sm:grid-cols-2 gap-20 font-normal text-lg sm:text-xl">
                         <div className="sm:col-span-2 flex flex-row gap-8">
                             <label>SUBJECT</label>
                             <select className="border-b w-full pb-4">

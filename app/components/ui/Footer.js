@@ -12,16 +12,17 @@ function Footer(props) {
     const [instagram, setInstagram] = useState(false);
     return (
         <section className="w-[100%] flex flex-col items-center justify-center mt-20">
-        <div className="footer_container w-[90%] ">
+        <div className=" w-[90%] ">
 
-            <div className="grid grid-cols-2 pb-20">
-                <div className="flex justify-start">
+            <div className="flex flex-row gap-8 pb-20">
+
+                <div className="w-[30%] sm:w-[50%] flex sm:justify-start ">
                     <div>
                     <Image src={Logo} width={70} height={70}/>
                     </div>
                 </div>
 
-                <div className="flex flex-row sm:flex-col gap-8 font-semibold">
+                <div className="w-[70%] sm:w-[50%] flex flex-row sm:flex-col gap-10 font-semibold text-xs sm:text-base uppercase">
                         <div >
                             <ul className="grid  grid-cols-1 sm:grid-cols-4 gap-4">
                                 <li><Link href="/about">ABOUT</Link></li>
@@ -44,6 +45,7 @@ function Footer(props) {
                         </div>
 
                 </div>
+
             </div>
 
             <div className="border sm:p-10 flex flex-col sm:flex-row items-center">
