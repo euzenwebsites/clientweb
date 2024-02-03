@@ -21,11 +21,10 @@ const page = () => {
       <SmoothScroll>
         <Hero />
         <CoreValues />
-        <LeftHeading heading="let's begin" />
+        <LeftHeading heading="lets begin"/>
         <CEOSec />
         <LeftHeading heading="how we think lorem ipsum" />
         <TestimonialSec />
-        <ButtonFlip/>
         <LeftHeading heading="services that we offer" />
         <Service />
         <Service />

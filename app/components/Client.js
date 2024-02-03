@@ -8,13 +8,16 @@ const Client = () => {
 
     <div className='w-[100%] sm:w-[50%] mr-20'>
         <div className='w-full sm:w-[70%]'>
+        <Reveal>
             <p className='font-bold text-black text-2xl sm:text-5xl'>WHO WE&apos;VE DONE IT FOR</p>
+            </Reveal>
         </div>
                             
         <div className='mt-2 sm:mt-40 text-gray'>
             <p className='text-base text-xl'>INDUSTRIES:</p>
+            <Reveal>
             <p className='font-bold text-2xl sm:text-3xl mt-2 sm:leading-normal'>MANUFACTURING F&B TECH  FINTECH FINANCE GAMING HVAC WATER, 
-            GAS, & UTILITIES, EDUCATION TRANSPORTATION </p>
+            GAS, & UTILITIES, EDUCATION TRANSPORTATION </p></Reveal>
         </div>
     </div>
 

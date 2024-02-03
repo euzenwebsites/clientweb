@@ -18,7 +18,8 @@
     "next-reveal": "^1.0.6",
     "react": "^18",
     "react-dom": "^18",
-    "react-responsive": "^9.0.2"
+    "react-responsive": "^9.0.2",
+    "split-type": "^0.3.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

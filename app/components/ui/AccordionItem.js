@@ -6,19 +6,23 @@ const AccordionItem = () => {
   return (
     <div className='border-b flex flex-row '>
 
-            <div className='w-[90%] flex flex-row'>
+            <div className='w-[100%] flex flex-row'>
             
-            <Reveal>
+            
             <div className=' w-[20%]'>
-            <p className='text-base sm:text-xl font-medium '>30 June 2023</p>
-            </div>
-            </Reveal>
-
             <Reveal>
-            <div className='w-[80%]  '>
-            <p className='font-bold text-lg sm:text-4xl '>AVY Pruthi, Nuneaton business owner  Coven...</p>
-            </div>
+            <p className='text-base sm:text-xl font-medium '>30 June 2023</p>
             </Reveal>
+            </div>
+            
+
+            
+            <div className='w-[80%]  '>
+            <Reveal>
+            <p className='font-bold text-lg sm:text-4xl '>AVY Pruthi, Nuneaton business owner  Coven...</p>
+            </Reveal>
+            </div>
+            
 
             
             </div>

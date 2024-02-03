@@ -8,6 +8,7 @@ import { RevealWrapper } from 'next-reveal';
 import Image from 'next/image';
 import Man from "@/public/assets/img/man.png"
 
+
 const AboutHero = ({ selectedMenu }) => {
    const [scrollEnd, setScrollEnd] = useState(false);
     const [popup, setPopup] = useState(false);
@@ -24,6 +25,7 @@ const AboutHero = ({ selectedMenu }) => {
 
                     <div className='w-full relative'>
                         <div className='w-[100%]  mt-20'>
+                            
                             <h3 className='font-bold text-3xl sm:text-5xl '>
                                 ALWAYS AIMING TO PUSH BOUNDARIES AND EXCEED EXPECTATIONS WITH EVERY PROJECT.
                             </h3>

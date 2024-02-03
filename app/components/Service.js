@@ -7,7 +7,7 @@ const Service = () => {
     <section className='w-[100%] flex  justify-center mt-20 '>
     <div className='w-[90%] flex  flex-col sm:flex-row items-start sm:border-b  ' >
 
-    <div className='sm:sticky top-28 w-[50%] '>
+    <div className='sm:sticky top-20 w-[50%] '>
     <div className=' flex flex-row gap-2 w-[100%] '>
         <p className='number-circle w-[100%]'>01</p>
         <p className='font-bold text-6xl'>DESIGN</p>

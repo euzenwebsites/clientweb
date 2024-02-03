@@ -21,7 +21,7 @@ const TestimonialSec = () => {
   <section className='w-[100%] flex justify-center mt-20'>
     <div>
     <div>
-      <HorizontalScroll width="-50%">
+      <HorizontalScroll width="-55%">
       {/* <HorizontalScrollSection> */}
         <Testimonials />
         <Testimonials />
