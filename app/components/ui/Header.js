@@ -12,11 +12,11 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
 
     return (
         <div>
-            <div className={`small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
-                <p style={{ padding: "0px 20px" }}>
-                    <span style={{ float: "right", cursor: "pointer" }} onClick={(e) => setSmallMenu(false)}>X</span>
-                    <p style={{ clear: "right" }}></p>
-                </p>
+            <div className={`relative small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
+               
+                <div className="absolute top-4 right-8 ">
+                    <span style={{  cursor: "pointer" }} onClick={(e) => setSmallMenu(false)}>X</span>
+                </div>
                 <ul>
                     <li><Link href="/about" style={{ color: selectedMenu === 1 ? "#ff3600" : "black" }}>ABOUT</Link></li>
                     <li><Link href="/work" style={{ color: selectedMenu === 2 ? "#ff3600" : "black" }}>OUR WORK</Link></li>

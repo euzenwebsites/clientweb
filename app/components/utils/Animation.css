@@ -1,38 +1,41 @@
-.container{
-   perspective: 800px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-}
-.box{
+/* components/VerticalSliderButton.module.css */
+.button {
    position: relative;
-   height: 150px;
-   width: 350px;
-   transform-style: preserve-3d;
-   transition: 0.4s ease;
-}
-.box :hover{
-   transform: rotateX(90deg);
-}
-.btn{
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   background-color: black;
-   color: #fff; 
-   font-size: 3rem;
-   font-weight: 800;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   backface-visibility: hidden;
-   letter-spacing: 3px;
-}
-.upside{
-   background-color: aqua;
-   transform: rotateX(-90deg) translateZ(75px);
-}
-.front{
-   transform: translateZ(75px);
-}
+   padding: 10px 20px;
+   background-color: #3490dc;
+   color: #ffffff;
+   border: none;
+   cursor: pointer;
+   overflow: hidden;
+   transition: background-color 0.3s ease-in-out;
+ }
+ 
+ .text {
+   position: relative;
+   z-index: 2;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .button:hover {
+   background-color: #276595; /* Adjust the color on hover */
+ }
+ 
+ .button:hover .text {
+   transform: translateY(-100%);
+ }
+ @keyframes slide-vertical {
+   0% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(-10px);
+   }
+   100% {
+     transform: translateY(0);
+   }
+ }
+ 
+ .slide-vertical {
+   animation: slide-vertical 0.5s ease-in-out infinite;
+ }
+ 

@@ -1,41 +1,44 @@
 "use client"
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { Children, useLayoutEffect, useRef } from "react";
-import "./Animation.css"
+import { useRef, useEffect } from "react"
+import gsap from "gsap"
+import ScrollTrigger from "gsap/dist/ScrollTrigger"
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function HorizontalScrollSection({Children}) {
-  const component = useRef();
-  const slider = useRef();
-
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      let panels = gsap.utils.toArray(".panel");
-      gsap.to(panels, {
-        xPercent: -100 * (panels.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: slider.current,
-          pin: true,
-          scrub: 1,
-          snap: 1 / (panels.length - 1),
-          end: () => "+=" + slider.current.offsetWidth,
-          markers: true
-        }
-      });
-    }, component);
-    return () => ctx.revert();
-  });
-
+const HorizontalScrollSection = ({children}) => {
+  const sectionRef = useRef(null)
+  const triggerRef = useRef(null)
+  gsap.registerPlugin(ScrollTrigger)
+  useEffect(()=>{
+    const pin = gsap.fromTo(sectionRef.current,{
+      translateX:0
+    },{
+      translateX:"-80vw",
+      ease:"none",
+      duration:1,
+      scrollTrigger:{
+        trigger:triggerRef.current,
+        start:"top top",
+        end:"2000 top",
+        scrub:0.6,
+        pin:true,
+      }
+    })
+    return  ()=>{
+      	pin.kill()
+    }
+  },[])
   return (
-    <div className="App" ref={component}>
-      <div ref={slider} className="container">
-        <div className="description panel blue">
-          {Children}
+    <section className="mt-10 ml-10 overflow-hidden ">
+      <div ref={triggerRef}>
+        <div ref={sectionRef} className=" h-[100vh] w-[300vw] mt-10 flex flexcol sm:flex-row gap-10 relative">
+        {/* <div className=" h-[100vh] w-[100vw] flex items-center justify-center">
+              <h1>section 2</h1>
+          </div> */}
+         {children}
+          
         </div>
       </div>
-    </div>
-  );
+    </section>
+  )
 }
+
+export default HorizontalScrollSection

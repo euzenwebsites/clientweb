@@ -10,6 +10,7 @@ import OurTeam from './components/OurTeam'
 import CTABanner from '../components/ui/CTABanner'
 import ReadyToWork from '../components/ui/ReadyToWork'
 import SmoothScroll from '../components/utils/SmoothScroll'
+import HorizontalScrollSection from '../components/utils/HorizontalScrollSection'
 const page = () => {
   return (
     <div>

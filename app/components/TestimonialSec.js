@@ -18,21 +18,17 @@ const TestimonialSec = () => {
   return (
   <>
   
-  <section className='w-[100%] flex justify-center mt-20'>
-    <div>
-    <div>
-      <HorizontalScroll width="-55%">
-      {/* <HorizontalScrollSection> */}
+  <section className='mt-20' >
+    {/* <HorizontalScroll width="-45"> */}
+      <HorizontalScrollSection>
         <Testimonials />
         <Testimonials />
         <Testimonials />
         <Testimonials />
-        {/* </HorizontalScrollSection> */}
-      </HorizontalScroll>
-    </div>
-    </div>
-    
+      </HorizontalScrollSection>
+      {/* </HorizontalScroll> */}
   </section>
+
   <div className="mt-10 text-center">
   <button className="bg-orange p-4 rounded-full uppercase text-white font-semibold">
     contact us for more work

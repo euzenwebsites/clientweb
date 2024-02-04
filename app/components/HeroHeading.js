@@ -1,32 +1,46 @@
 "use client"
-import React from 'react'
-import { RevealList, RevealWrapper } from 'next-reveal'
-
+import React, { useEffect } from 'react'
+import gsap from 'gsap-trial'
+import { SplitText } from 'gsap-trial/all'
+import { ScrollTrigger } from 'gsap-trial/all'
+import { RevealWrapper } from 'next-reveal'
 
 const HeroHeading = () => { 
+  gsap.registerPlugin(SplitText,ScrollTrigger)
+  useEffect(()=>{
+    let mysplitText = new SplitText(".animate",{type:'chars'})
+    let chars = mysplitText.chars
+    gsap.from(chars,{
+      yPercent:120,
+      stagger:0.05,
+      ease:"cric.in",
+      duration:0.9,
+      scrollTrigger:{
+        trigger:".animate",
+        
+      }
+  
+    }
+  
+    )
+  })
   return (
     <div className='sm:w-[100%] max-sm:py-4 max-sm:p-8'>
-        <RevealList interval={70} delay={300}   origin='bottom' className='w-[100%] sm:w-[80%] flex'>
-                        
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >W</h1>
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >E</h1>
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height ml-8' >A</h1>
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height ml-2' >R</h1>
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >E </h1><br></br>
-                         
-         </RevealList>
-         <RevealList interval={70} delay={300}   origin='bottom' className='w-[80%] flex flex-row'>
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >A</h1>
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >V</h1>
-                        <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >Y</h1>
-                        <span className='font-extrabold text-black text-height text-5xl sm:text-5xl pt-4 pl-4' >®</span>
+
+      <div className='split1 overflow-hidden'>
+      <h1 className='text-6xl sm:text-[148px] font-bold text-black text-height uppercase animate overflow-hidden' >We are
+      <br></br> avy
+    <span className='font-extrabold text-black text-height text-4xl sm:text-5xl py-4 pl-4' >®</span>
+      </h1>
+      </div>
                         
                         
-         </RevealList>
+                        
+         
 
       <RevealWrapper origin='left' delay={800} duration={3000} distance='450px' >
-        <div className='mb-20 mt-4 pr-40'>
-          <p className='text-gray text-lg font-bold pr-44'>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
+        <div className='mb-20 mt-4 pr-20 sm:pr-40'>  
+          <p className='text-gray text-base sm:text-lg font-bold sm:pr-44'>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
         </div>
       </RevealWrapper>
     </div>

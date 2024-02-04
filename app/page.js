@@ -12,13 +12,14 @@ import CTABanner from './components/ui/CTABanner'
 import ReadyToWork from './components/ui/ReadyToWork'
 import SmoothScroll from './components/utils/SmoothScroll'
 import CoreValues from './components/CoreValues'
-import ButtonFlip from './components/utils/ButtonFlip'
-import HorizontalScrollSection from './components/utils/HorizontalScrollSection'
+import TextReveal from './components/utils/TextReveal'
+
+
 
 const page = () => {
   return (
     <div>
-      <SmoothScroll>
+      <SmoothScroll/>
         <Hero />
         <CoreValues />
         <LeftHeading heading="lets begin"/>
@@ -38,7 +39,7 @@ const page = () => {
 
         <ReadyToWork />
         <Home />
-      </SmoothScroll>
+     
     </div>
   )
 }

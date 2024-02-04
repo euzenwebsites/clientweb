@@ -22,7 +22,7 @@ function Footer(props) {
                     </div>
                 </div>
 
-                <div className="w-[70%] sm:w-[50%] flex flex-row sm:flex-col gap-10 font-semibold text-xs sm:text-base uppercase">
+                <div className="w-[70%] sm:w-[50%] flex flex-row sm:flex-col gap-10 font-semibold text-xs sm:text-sm uppercase">
                         <div >
                             <ul className="grid  grid-cols-1 sm:grid-cols-4 gap-4">
                                 <li><Link href="/about">ABOUT</Link></li>
@@ -48,10 +48,10 @@ function Footer(props) {
 
             </div>
 
-            <div className="border sm:p-10 flex flex-col sm:flex-row items-center">
+            <div className="border sm:p-10 flex flex-col sm:flex-row gap-10 items-center">
 
-                <div className="w-[100%] sm:w-[20%] max-sm:p-10">
-                    <h3 className="uppercase font-bold text-lg sm:text-4xl ">lets stay connected</h3>
+                <div className="w-[100%] sm:w-[20%] max-sm:p-10 ">
+                    <h3 className="uppercase font-bold text-lg sm:text-3xl ">lets stay connected</h3>
                 </div>
 
                 <div className="w-[100%] sm:w-[80%] grid grid-cols-3 gap-20 max-sm:p-10 max-sm:border-t">

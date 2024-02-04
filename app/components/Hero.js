@@ -8,7 +8,6 @@ import Vector from "../../public//assets/img/bg-vector.png"
 import Man from "../../public/assets/img/man.png"
 import HeroDes from './HeroDes'
 import HeroHeading from './HeroHeading'
-import ImageReveal from './utils/ImageReveal'
 const Hero = ({ selectedMenu }) => {
     
     const [popup, setPopup] = useState(false);
@@ -59,8 +58,8 @@ const Hero = ({ selectedMenu }) => {
                     <RevealWrapper origin='right' delay={800} duration={4000} distance='450px' 
                      className=' w-[90%] max-sm:h-[60%]  sm:w-[50%] '  >
                             
-                            <Image src={Vector} height={670}  className='absolute max-sm:hidden right-0 bottom-0  z-5'></Image>
-                            <Image src={Man} height={670} className='sm:absolute right-0 bottom-0 z-10'/>
+                            <Image src={Vector} height={670}  className=' absolute max-sm:hidden right-0 bottom-0  z-5'></Image>
+                            <Image src={Man} height={800} className=' sm:absolute right-0 bottom-0 z-10'/>
                         
                     </RevealWrapper>
                    

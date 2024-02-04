@@ -1,28 +1,31 @@
-import React, { Children } from 'react'
-import { gsap } from 'gsap'
-import SplitType from 'split-type'
+"use client"
+import React, { Children, useEffect } from 'react'
+import gsap from 'gsap-trial'
+import { SplitText } from 'gsap-trial/all'
+import { ScrollTrigger } from 'gsap-trial/all'
 
 const TextReveal = ({Children}) => {
-    const ourText = SplitType.create('p.our-text', { types: 'chars' })
-    const chars = ourText.chars
-    gsap.fromTo(
-        chars,
-        { 
-          y: 100,
-          opacity: 0
-        },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.05,
-          duration: 2,
-          ease: 'power4.out',
-        }
-      )
+  gsap.registerPlugin(SplitText,ScrollTrigger)
+  useEffect(()=>{
+    let mysplitText = new SplitText(".split",{type:'chars'})
+    let chars = mysplitText.chars
+    gsap.from(chars,{
+      yPercent:50,
+      stagger:0.03,
+      ease:"back.in",
+      duration:1.5,
+      scrollTrigger:{
+        trigger:".split",
+        start:"top 80%"
+      }
+  
+    }
+  
+    )
+  })
+  
   return (
-    <div className='our-text'>
-      {Children}
-    </div>
+    <div className='split overflow-hidden'>{Children}</div>
   )
 }
 

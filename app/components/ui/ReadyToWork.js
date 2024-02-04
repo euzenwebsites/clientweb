@@ -2,7 +2,7 @@ import React from "react"
 import { Row, Col, Input,Select, Button } from "antd";
 import "../stylessheets/About.css"
 import WorkWithUs from "./WorkWithUs";
-import RevealText from "../utils/RevealText";
+
 function ReadyToWork() {
     return (
         <section className='w-[100%] flex justify-center mt-20'>

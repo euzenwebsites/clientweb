@@ -18,11 +18,11 @@
 }
 .small_header {
     height: 48px;
-    padding: 24px 0px;
+    padding: 24px 18px;
     font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 .small_header ul {
     list-style-type: none;
@@ -35,18 +35,25 @@
 
 .small_header--menu {
     position: fixed;
-    right: -40vw;
-    width: 40vw;
+    right: -100vw;
+    width: 100vw;
     height: 100vh;
     background-color: white;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 44px;
 }
 .small_header--menu ul {
     list-style-type: none;
     font-size: 22px;
+    
+    
 }
 .small_header--menu ul li {
-    padding: 10px 0px;
+    padding: 10px;
+    
 }
 
 .small_header--menu-show {
@@ -54,7 +61,7 @@
     transition: right 0.5s;
 }
 .small_header--menu-hidden {
-    right: -40vw;
+    right: -100vw;
     transition: right 0.5s;
 }
 .overlay {
@@ -159,7 +166,9 @@
         top: 0vw;
         width: 100vw;
         height: 100vh;
-        
+        background-color: white;
+        z-index: 1010;
+        overflow-y: scroll;
     }
     
     .contact_us--container-show {
@@ -167,7 +176,7 @@
         transition: left, 0.5s;
     }
     .contact_us--container-hidden {
-        left: 0;
+        left: -100vw;
         transition: left, 0.5s;
     }
     
@@ -179,32 +188,40 @@
         justify-content: space-between;
     }
     .contact_us--title p {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         margin: 0;
         line-height: 1;
     
     }
     .contact_us--form {
-        margin: 18px;
-        padding: 20px;
+        margin: 24px;
+        border: 1px solid black;
+        padding: 18px;
+        
     }
     .contact_us--form label{
-        font-size: 16px;
+        font-size: 14px;
+        margin-right: 24px;
     }
     .contact_us--form select, .contact_us--form input {
-        width: 100%;
+        width: 80%;
         height: 100%;
-        font-size: 16px;
-        
+        font-size: 14px;
+        border: none;
+        padding-bottom: 12px;
+        border-bottom: 1px solid black;
+        margin-left: 18px;
     }
     
     .contact_us--form select:focus, .contact_us--form input:focus {
         font-weight: 600;
-       
+        outline: none;
+        border: none;
+        border-bottom: 3px solid black;
     }
     
     .form_item {
-        margin-bottom: 18px;
+        margin-bottom: 20px;
     }
 }
