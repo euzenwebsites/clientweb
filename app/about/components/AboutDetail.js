@@ -2,6 +2,7 @@ import React from 'react'
 import "../../components/stylessheets/About.css"
 import { Row, Col } from "antd"
 import Reveal from '@/app/components/utils/Reveal'
+import ButtonFlip from '@/app/components/utils/ButtonFlip'
 const AboutDetail = () => {
     return (
         <section className='w-[100%] flex justify-center mt-20'>
@@ -32,7 +33,7 @@ const AboutDetail = () => {
                             </p>
                         </Reveal>
                         <div className='mt-10'>
-                            <button className='bg-orange px-8 py-4 rounded-full font-bold text-white'>WORK WITH US</button>
+                            <ButtonFlip text="WORK WITH US" />
                         </div>
 
                     </div>

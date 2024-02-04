@@ -1,4 +1,5 @@
-// "use client"
+"use client"
+import ContactUsBtn from './ui/ContactUsBtn';
 // import React, { useRef } from 'react';
 // import { useScroll, useTransform, motion } from 'framer-motion';
 import Testimonials from './ui/Testimonials';
@@ -29,11 +30,17 @@ const TestimonialSec = () => {
       {/* </HorizontalScroll> */}
   </section>
 
-  <div className="mt-10 text-center">
-  <button className="bg-orange p-4 rounded-full uppercase text-white font-semibold">
-    contact us for more work
-  </button>
-</div>
+      <div className="mt-10 text-center">
+      <button onClick={() => {
+          props.setMenu(false);
+          props.setShowContactUs(true)
+      }}>
+        <ButtonFlip text="contact us for more work" />
+        </button>
+        
+      </div>
+
+      
 </>
 
   

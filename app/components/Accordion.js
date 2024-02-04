@@ -1,6 +1,7 @@
 import React from 'react'
 import AccordionItem from './ui/AccordionItem.js'
-
+import ButtonFlip from './utils/ButtonFlip.js'
+import Link from 'next/link.js'
 
 const Accordion = () => {
   return (
@@ -14,11 +15,13 @@ const Accordion = () => {
             <AccordionItem/>
 
         </div>
-                        
-        <div className='mt-10 flex justify-center'>
-            <button className='bg-orange p-4 font-bold text-white rounded-full '>READ MORE</button>
-                            
+        <div className='w-[100%] flex justify-center'>
+        <div className='mt-10  w-[50%] flex justify-center'>
+          <Link href="/insights" className='w-full flex justify-center'>
+          <ButtonFlip text="READ MORE" />   
+          </Link>                         
         </div>
+        </div> 
 
     </div>
     </section>

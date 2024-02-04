@@ -1,41 +1,31 @@
-/* components/VerticalSliderButton.module.css */
-.button {
-   position: relative;
-   padding: 10px 20px;
-   background-color: #3490dc;
-   color: #ffffff;
-   border: none;
-   cursor: pointer;
-   overflow: hidden;
-   transition: background-color 0.3s ease-in-out;
- }
- 
- .text {
-   position: relative;
-   z-index: 2;
-   transition: transform 0.3s ease-in-out;
- }
- 
- .button:hover {
-   background-color: #276595; /* Adjust the color on hover */
- }
- 
- .button:hover .text {
-   transform: translateY(-100%);
- }
- @keyframes slide-vertical {
-   0% {
-     transform: translateY(0);
-   }
-   50% {
-     transform: translateY(-10px);
-   }
-   100% {
-     transform: translateY(0);
-   }
- }
- 
- .slide-vertical {
-   animation: slide-vertical 0.5s ease-in-out infinite;
- }
- 
+.slideout-anim-wrap {
+  height: 60px;
+  font: normal normal 700 1em/4em Arial,sans-serif;
+  overflow: hidden;
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 1.1em;
+  border-radius: 35px;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+.slideout-anim-wrap, 
+.slide-anim-text {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s ease-in;       
+}
+.slideout-anim-wrap span {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.slideout-anim-wrap:hover 
+.slide-anim-text{
+  margin-top: -4em;
+}
+.blue{
+  background-color: #ff3600;	
+}

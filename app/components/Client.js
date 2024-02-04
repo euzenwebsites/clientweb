@@ -1,5 +1,6 @@
 import React from 'react'
 import Reveal from './utils/Reveal'
+import ButtonFlip from './utils/ButtonFlip'
 
 const Client = () => {
   return (
@@ -47,10 +48,8 @@ const Client = () => {
                             <p className='font-bold text-3xl sm:text-5xl' >EXACTRAK</p>
                             </Reveal>
                             
-    <button className='text-white bg-orange p-4 rounded-full font-bold mt-10 '>
-      
-      WORK WITH US
-      </button>
+    
+      <ButtonFlip text=" WORK WITH US"/>
     </div>
 </div>
 </section>
