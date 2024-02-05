@@ -44,7 +44,7 @@
 .heading-left{
   font-weight: 700;
   line-height: 4.5rem;
-  font-size: 72px;
+  font-size: 4.5rem;
   text-transform: uppercase ;
   padding: 12px 0px;
   
@@ -64,13 +64,21 @@
     justify-content: center;
   }
   .heading-left{
-    font-size: 44px;
+    font-size: 2.5rem;
     line-height: 4rem;
   }
   .number-circle{
     font-size: 18px;
     width: 60px;
     height: 60px;
+    
+  }
+}
+@media (max-width: 1024px){
+  .heading-left{
+    font-size: 3.5rem;
+    line-height: 3rem;
+    
     
   }
 }

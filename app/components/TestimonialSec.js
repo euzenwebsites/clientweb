@@ -31,7 +31,7 @@ const TestimonialSec = () => {
       {/* </HorizontalScroll> */}
   </section>
 
-      <div className="mt-10 text-center">
+      <div className=" text-center">
         <ContactUsBtn type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}
         text="contact us for more work"/>
       </div>
