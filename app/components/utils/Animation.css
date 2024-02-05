@@ -2,12 +2,13 @@
   height: 60px;
   font: normal normal 700 1em/4em Arial,sans-serif;
   overflow: hidden;
-  width: 40%;
+  width: 100%;
   display: inline-block;
   margin-bottom: 1.1em;
   border-radius: 35px;
   text-transform: uppercase;
   margin-top: 18px;
+  padding: 0px 18px;
 }
 .slideout-anim-wrap, 
 .slide-anim-text {

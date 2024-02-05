@@ -1,6 +1,6 @@
 "use client"
 import ContactUsBtn from './ui/ContactUsBtn';
-// import React, { useRef } from 'react';
+import React, { useState } from 'react';
 // import { useScroll, useTransform, motion } from 'framer-motion';
 import Testimonials from './ui/Testimonials';
 import ButtonFlip from './utils/ButtonFlip';
@@ -8,6 +8,7 @@ import HorizontalScroll from './utils/HorizontalScroll';
 import HorizontalScrollSection from './utils/HorizontalScrollSection';
 
 const TestimonialSec = () => {
+  const [showContactUs, setShowContactUs] = useState(false);
   // const targetRef = useRef();
   // const { scrollYProgress } = useScroll({
   //   target: targetRef,
@@ -31,13 +32,8 @@ const TestimonialSec = () => {
   </section>
 
       <div className="mt-10 text-center">
-      <button onClick={() => {
-          props.setMenu(false);
-          props.setShowContactUs(true)
-      }}>
-        <ButtonFlip text="contact us for more work" />
-        </button>
-        
+        <ContactUsBtn type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}
+        text="contact us for more work"/>
       </div>
 
       

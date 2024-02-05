@@ -26,8 +26,9 @@ const InsightItem = () => {
               <li className='border-l border-l-gray pl-4'>Business</li>
               <li className='border-l border-l-gray pl-4'>Design</li>
             </ul>
-            
-            <ButtonFlip text="read article" redirect="/shop"/>
+            <Link href="/shop">
+            <ButtonFlip text="read article" />
+            </Link>
            
           </div>
         </div>

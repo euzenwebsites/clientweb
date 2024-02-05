@@ -48,7 +48,8 @@ function HomeInsights({ selectedMenu }) {
         }
     }, []);
     return (
-        <div >
+        <section className="w-[100%] flex justify-center">
+        <div className="w-[90%]" >
             <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
             <InsightHeading/>
             {
@@ -57,6 +58,7 @@ function HomeInsights({ selectedMenu }) {
 
             
         </div>
+        </section>
     )
 }
 

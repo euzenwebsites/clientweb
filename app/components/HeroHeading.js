@@ -27,11 +27,11 @@ const HeroHeading = () => {
   return (
     <div className='sm:w-[100%] max-sm:py-4 max-sm:p-8'>
 
-      <div className='split1 overflow-hidden'>
+      <div className='split1 overflow-hidden flex items-start justify-start'>
       <h1 className='text-6xl sm:text-[148px] font-bold text-black text-height uppercase animate overflow-hidden' >We are
-      <br></br> avy
-    <span className='font-extrabold text-black text-height text-4xl sm:text-5xl py-4 pl-4' >®</span>
-      </h1>
+      <br></br> avy</h1>
+    <span className='font-extrabold text-black text-height text-4xl sm:text-5xl pl-4' >®</span>
+      
       </div>
                         
                         

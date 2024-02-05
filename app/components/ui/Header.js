@@ -38,7 +38,7 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
             }}>
             </div>
 
-            <div className="lg_header">
+            <div className="lg_header my-4">
                 <Link href="/"><img src="/icon.png"></img></Link>
                 <ul>
                     <li><Link href="/about" style={{ color: selectedMenu === 1 ? "#ff3600" : "black" }}>ABOUT</Link></li>

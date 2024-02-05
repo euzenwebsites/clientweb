@@ -1,8 +1,12 @@
+"use client"
 import React from 'react'
 import Reveal from './utils/Reveal'
-import ButtonFlip from './utils/ButtonFlip'
+import ContactUsBtn from './ui/ContactUsBtn'
+import { useState } from 'react'
 
 const Client = () => {
+  const [showContactUs, setShowContactUs] = useState(false);
+
   return (
     <section className='w-[100%] flex justify-center mt-20'>
     <div className="w-[90%] flex flex-col sm:flex-row gap-10" >
@@ -22,7 +26,7 @@ const Client = () => {
         </div>
     </div>
 
-    <div className='w-[100%] sm:w-[50%] leading-normal'>
+    <div className='w-[100%] sm:w-[50%] flex flex-col gap-4'>
                             <Reveal>
                             <p className='font-bold text-3xl sm:text-5xl' >DUBAI EXPO</p>
                             </Reveal>
@@ -49,7 +53,8 @@ const Client = () => {
                             </Reveal>
                             
     
-      <ButtonFlip text=" WORK WITH US"/>
+      <ContactUsBtn type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}
+        text=" WORK WITH US"/>
     </div>
 </div>
 </section>

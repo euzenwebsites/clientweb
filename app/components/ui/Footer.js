@@ -43,7 +43,7 @@ function Footer(props) {
                                 <li>+44 7365 536 636</li>
                             </ul>
                         </div>
-
+ 
                 </div>
 
             </div>

@@ -57,99 +57,99 @@ function HomeWork({ selectedMenu }) {
     //     }
     // }, []);
     return (
-        <section>
-            <div >
+        <section className="w-[100%] flex flex-col justify-center items-center">
+            <div className="w-[90%]">
                 <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu} />
-                <div className="w-[100%] flex justify-center">
-                    <div className="w-[90%]">
-                        <WorkHeading />
-                        <div className="ourwork_img">
-                            <div className={`img_item ${imgNum === 6 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                                setImgNum(6)
-                                setImgDetail(true);
-                            }}>
-                                <div ref={img1} className="flex flex-row gap-4 ">
-                                    <div>
-                                        <p className='number-circle'>01</p>
-                                    </div>
-                                    <div>
-                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                        <p className="uppercase">branding</p>
-                                    </div>
+                <WorkHeading />
+
+                <div className="">
+
+
+                    <div className="ourwork_img">
+                        <div className={`img_item ${imgNum === 6 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                            setImgNum(6)
+                            setImgDetail(true);
+                        }}>
+                            <div ref={img1} className="flex flex-row gap-4 ">
+                                <div>
+                                    <p className='number-circle'>01</p>
                                 </div>
-
-                            </div>
-
-                            <div className={`img_item ${imgNum === 2 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                                setImgNum(2)
-                                setImgDetail(true);
-                            }}>
-                                <div ref={img2} className="flex flex-row gap-4 ">
-                                    <div>
-                                        <p className='number-circle'>01</p>
-                                    </div>
-                                    <div>
-                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                        <p className="uppercase">branding</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div className={`img_item ${imgNum === 3 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                                setImgNum(3)
-                                setImgDetail(true)
-                            }}>
-                                <div ref={img3} className="flex flex-row gap-4 ">
-                                    <div>
-                                        <p className='number-circle'>01</p>
-                                    </div>
-                                    <div>
-                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                        <p className="uppercase">branding</p>
-                                    </div>
+                                <div>
+                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase">branding</p>
                                 </div>
                             </div>
 
-                            <div className={`img_item ${imgNum === 4 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                                setImgNum(4)
-                                setImgDetail(true);
-                            }}>
-                                <div ref={img4} className="flex flex-row gap-4 ">
-                                    <div>
-                                        <p className='number-circle'>01</p>
-                                    </div>
-                                    <div>
-                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                        <p className="uppercase">branding</p>
-                                    </div>
+                        </div>
+
+                        <div className={`img_item ${imgNum === 2 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                            setImgNum(2)
+                            setImgDetail(true);
+                        }}>
+                            <div ref={img2} className="flex flex-row gap-4 ">
+                                <div>
+                                    <p className='number-circle'>01</p>
+                                </div>
+                                <div>
+                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase">branding</p>
                                 </div>
                             </div>
 
-                            <div className={`img_item ${imgNum === 5 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
-                                setImgDetail(true)
-                                setImgNum(5)
-                            }}>
-                                <div ref={img5} className="flex flex-row gap-4 ">
-                                    <div>
-                                        <p className='number-circle'>01</p>
-                                    </div>
-                                    <div>
-                                        <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                        <p className="uppercase">branding</p>
-                                    </div>
+                        </div>
+
+                        <div className={`img_item ${imgNum === 3 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                            setImgNum(3)
+                            setImgDetail(true)
+                        }}>
+                            <div ref={img3} className="flex flex-row gap-4 ">
+                                <div>
+                                    <p className='number-circle'>01</p>
+                                </div>
+                                <div>
+                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase">branding</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={`img_item ${imgNum === 4 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                            setImgNum(4)
+                            setImgDetail(true);
+                        }}>
+                            <div ref={img4} className="flex flex-row gap-4 ">
+                                <div>
+                                    <p className='number-circle'>01</p>
+                                </div>
+                                <div>
+                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase">branding</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={`img_item ${imgNum === 5 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
+                            setImgDetail(true)
+                            setImgNum(5)
+                        }}>
+                            <div ref={img5} className="flex flex-row gap-4 ">
+                                <div>
+                                    <p className='number-circle'>01</p>
+                                </div>
+                                <div>
+                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase">branding</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
                 {
                     popup && (<PopupHeader setSmallMenu={setSmallMenu} />)
                 }
-                <CTABanner />
-                <ReadyToWork />
-                <Footer setMenu={setSmallMenu} flag={showSmallMenu} setShowContactUs={setShowContactUs}></Footer>
+
 
                 <div className={`img_item--detail ${imgDetai ? "img_item--detail-show" : "item_item--detail-hidden"}`}>
                     <div>
@@ -212,6 +212,9 @@ function HomeWork({ selectedMenu }) {
                     setImgDetail(false);
                 }}></div>
             </div>
+            <CTABanner />
+            <ReadyToWork />
+            <Footer setMenu={setSmallMenu} flag={showSmallMenu} setShowContactUs={setShowContactUs}></Footer>
         </section>
     );
 }

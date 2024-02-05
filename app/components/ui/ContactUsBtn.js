@@ -6,29 +6,21 @@ import { Button, Col, Row } from "antd";
 import { RevealWrapper } from 'next-reveal'
 import Image from "next/image";
 import Logo from "@/public/logo.png"
+import ButtonFlip from "../utils/ButtonFlip";
 
-function ContactUsBtn({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu }) {
+function ContactUsBtn({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu, text }) {
 
     const [showSmallMenu, setSmallMenu] = useState(false);
+
 
     return (
         <div>
             <div>
-            <button className="bg-orange text-white" onClick={() => {
+                <button onClick={() => {
                     setShowContactUs(true);
-                }}>CONTACT US</button>
-
+                }}><ButtonFlip text={text} />
+                </button>
             </div>
-            <div className={`relative small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
-                
-            </div>
-
-            <div className={`overlay ${showSmallMenu || showContactUs ? "overlay-show" : "overlay-hidden"}`} onClick={() => {
-                setSmallMenu(false);
-                setShowContactUs(false);
-            }}>
-            </div>
-
 
             {/* ---------------------contact us container ------------------------- */}
 

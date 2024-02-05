@@ -1,9 +1,12 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react';
 import "../../components/stylessheets/About.css"
-import { Row, Col } from "antd"
 import Reveal from '@/app/components/utils/Reveal'
 import ButtonFlip from '@/app/components/utils/ButtonFlip'
+import ContactUsBtn from '@/app/components/ui/ContactUsBtn'
 const AboutDetail = () => {
+  const [showContactUs, setShowContactUs] = useState(false);
+
     return (
         <section className='w-[100%] flex justify-center mt-20'>
             <div className="w-[90%] detail_text">
@@ -33,7 +36,8 @@ const AboutDetail = () => {
                             </p>
                         </Reveal>
                         <div className='mt-10'>
-                            <ButtonFlip text="WORK WITH US" />
+                        <ContactUsBtn type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}
+        text="WORK WITH US" />
                         </div>
 
                     </div>
