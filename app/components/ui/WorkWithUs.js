@@ -63,10 +63,10 @@ const WorkWithUs = () => {
 
         <div className="flex flex-row gap-8">
           <div className='box1'>
-            <h3 className="text-2xl sm:text-8xl font-black font-bold uppercase ">are you</h3>
+            <h3 className="text-2xl sm:text-9xl font-black font-bold uppercase ">are you</h3>
           </div>
           <div className='box2'>
-            <h3 className="text-2xl sm:text-8xl font-black font-bold uppercase">ready to</h3>
+            <h3 className="text-2xl sm:text-9xl font-black font-bold uppercase">ready to</h3>
           </div>
         </div>
 
@@ -74,20 +74,21 @@ const WorkWithUs = () => {
 
           <div className='box1 w-[70%] flex flex-row items-center'>
             <div className="bg-[#000] h-[2px] w-[50%]"></div>
-            <h3 className=" text-2xl sm:text-8xl font-black font-bold uppercase pl-2 ">work</h3>
+            <h3 className=" text-2xl sm:text-9xl font-black font-bold uppercase pl-2 ">work</h3>
           </div>
 
           <div className='box2 w-[30%] flex items-center '>
-          <div className="bg-black h-[2px] w-[100%]"></div>
+            <div className="bg-black h-[2px] w-[100%]"></div>
           </div>
+          
         </div>
 
         <div className='box1 w-[100%] flex flex-row gap-4 items-center'>
-        <h3 className=" text-2xl sm:text-8xl font-black font-bold uppercase pl-2 ">with</h3>
+        <h3 className=" text-2xl sm:text-9xl font-black font-bold uppercase pl-2 ">with</h3>
         <div className="bg-[#000] h-[2px] w-[50%]"></div>
         <div className="flex flex-row gap-2 items-center text-4xl sm:text-7xl">
-                <div className="bg-orange rounded-full p-4 sm:p-8 text-2xl sm:text-8xl">
-                <h3 className="text-white font-black uppercase">us</h3>
+                <div className="w-[100px] h-[100px] bg-orange rounded-full  p-4 sm:p-8 text-2xl sm:text-5xl flex justify-center items-center">
+                <h3 className="text-white font-black uppercase ">us</h3>
                 </div>
                 <h3 className=" font-black uppercase">?</h3>
         </div>

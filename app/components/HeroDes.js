@@ -9,7 +9,7 @@ const HeroDes = () => {
     
 
     <RevealWrapper origin='left' delay={800} duration={3000} distance='450px' >
-    <div className='pb-10'>
+    <div className='pb-16'>
             <h2 className='text-gray pb-10 border-b-2 border-b-gray font-bold '>CORE SERVICES :</h2>
 
                             <div className='flex justify-between items-center border-b-2 py-2 border-b-gray'>

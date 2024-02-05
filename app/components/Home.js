@@ -1,21 +1,9 @@
 "use client"
 import React, { useState } from "react"
-import Header from "./ui/Header";
-
 import './stylessheets/home.css';
 import Footer from "./ui/Footer"
-import ReadyToWork from "./ui/ReadyToWork"
 import PopupHeader from "./ui/PopupHeader";
 import { useEffect, useRef } from "react";
-import LeftHeading from "./ui/LeftHeading";
-import CEOSec from "./CEOSec";
-import Testimonials from "./ui/Testimonials";
-import Service from "./Service";
-import HowWeDo from "./ui/HowWeDo";
-import Client from "./Client";
-import Accordion from "./Accordion";
-import TestimonialSec from "./TestimonialSec";
-import HowWeDoSec from "./HowWeDoSec";
 
 function Home({ selectedMenu }) {
     const homeRef = useRef(null)

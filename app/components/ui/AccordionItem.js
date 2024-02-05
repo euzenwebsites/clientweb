@@ -1,6 +1,7 @@
 import React from 'react'
 import { ArrowRightOutlined, UnorderedListOutlined } from '@ant-design/icons';
 import Reveal from '../utils/Reveal';
+import Link from 'next/link';
 
 const AccordionItem = () => {
   return (
@@ -23,7 +24,9 @@ const AccordionItem = () => {
       </div>
 
       <div className='border-l w-[10%] items-center justify-center py-2 sm:py-8'>
+        <Link href="/insights">
         <ArrowRightOutlined className=' scale-125 sm:pl-10 ' />
+        </Link>
       </div>
 
     </div>

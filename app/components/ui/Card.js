@@ -5,7 +5,7 @@ import Reveal from '../utils/Reveal'
 const Card = () => {
   return (
 
-  <div className='border p-8 flex flex-col w-[100vw] sm:w-[40vw] '>
+  <div className='border p-8 flex flex-col w-[100vw] sm:w-[40vw] h-[100vh] sm:h-[450px] '>
     <div className='w-[100%] mb-8 flex  flex-row  gap-4'>
       <div className='h-[2px] bg-gray '></div>
       <div><h6 className='text-gray text-lg sm:text-xl uppercase font-bold'>web design</h6></div>

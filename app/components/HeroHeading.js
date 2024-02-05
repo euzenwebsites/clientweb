@@ -19,14 +19,15 @@ const HeroHeading = () => {
                         <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >A</h1>
                         <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >V</h1>
                         <h1 className='text-7xl sm:text-[168px] font-bold text-black text-height' >Y</h1>
-                        <span className='font-extrabold text-black text-height text-5xl sm:text-5xl pt-4 pl-4' >®</span>
+                        <span className='font-extrabold text-black text-height text-2xl sm:text-5xl sm:pt-4 sm:pl-4' >®</span>
                         
                         
          </RevealList>
 
       <RevealWrapper origin='left' delay={800} duration={3000} distance='450px' >
-        <div className='mb-20 mt-4 pr-40'>
-          <p className='text-gray text-lg font-bold pr-44'>We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
+        <div className='mb-20 mt-4 pr-16 sm:pr-40'>
+          <p className='text-gray text-lg font-bold pr-16 sm:pr-44'>
+            We ignite collaboration with ambitious brands & businesses, marketers, and executives, crafting. Jaw-dropping creative solutions across industries</p>
         </div>
       </RevealWrapper>
     </div>

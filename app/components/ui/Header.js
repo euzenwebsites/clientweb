@@ -12,7 +12,7 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
 
     return (
         <div>
-            <div className={`relative small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
+            <div className={`relative  small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
                
                 <div className="absolute top-4 right-8 ">
                     <span style={{  cursor: "pointer" }} onClick={(e) => setSmallMenu(false)}>X</span>
@@ -54,7 +54,7 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
                 </ul>
             </div>
 
-            <div className={`small_header`}>
+            <div className={`small_header mt-4`}>
                 <Link href="/"><img src="/icon.png"></img></Link>
                 <ul>
                     <li onClick={() => {
