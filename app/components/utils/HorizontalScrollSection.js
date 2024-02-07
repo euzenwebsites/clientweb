@@ -17,7 +17,7 @@ const HorizontalScrollSection = ({children}) => {
       scrollTrigger:{
         trigger:triggerRef.current,
         start:"top top",
-        end:"2000 top",
+        end:"3000 top",
         scrub:0.6,
         pin:true,
       }
@@ -29,7 +29,7 @@ const HorizontalScrollSection = ({children}) => {
   return (
     <section className="mt-10 ml-10 overflow-hidden ">
       <div ref={triggerRef}>
-        <div ref={sectionRef} className=" h-[100vh] w-[300vw] mt-10 flex flexcol sm:flex-row gap-10 relative">
+        <div ref={sectionRef} className=" h-[70vh] w-[300vw] mt-10 flex flex-col sm:flex-row gap-10 relative">
         {/* <div className=" h-[100vh] w-[100vw] flex items-center justify-center">
               <h1>section 2</h1>
           </div> */}
