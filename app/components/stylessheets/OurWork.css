@@ -24,37 +24,38 @@
 }
 .img_item--show:nth-child(1) {
     background-image: url('../../../public/assets/img/1.png');
-    background-size: 100% 100%;
+    background-size: cover;
     height: 850px;
     transition: height, 0.5s;
 }
 .img_item--show:nth-child(2) {
     background-image: url('../../../public/assets/img/2.png');
-    background-size: 100% 100%;
+    background-size: cover;
     height: 850px;
     transition: height, 0.5s;
 }
 .img_item--show:nth-child(3) {
     background-image: url('../../../public/assets/img/3.png');
-    background-size: 100% 100%;
+    background-size: cover;
     height: 850px;
     transition: height, 0.5s;
 }
 .img_item--show:nth-child(4) {
     background-image: url('../../../public/assets/img/1.png');
-    background-size: 100% 100%;
+    background-size: cover;
     height: 850px;
     transition: height, 0.5s;
 }
 .img_item--show:nth-child(5) {
     background-image: url('../../../public/assets/img/1.png');
-    background-size: 100% 100%;
+    background-size: cover;
     height: 850px;
     transition: height, 0.5s;
 }
 .img_item--hidden {
     background-image: none;
     transition: height, 0.5s;
+    border-bottom: 0.5px solid rgb(57, 57, 57);
 }
 
 .img_item .our-work__heading{
@@ -216,16 +217,15 @@
     width: 69vw;
     height: 100vh;
     z-index: 1000;
-    background: white;
-    overflow-y: scroll;
+   
 }
 .contactus_overlay--show {
     left: 0px;
-    transition: left, 0.5s;
+    
 }
 .contactus_overlay-hidden {
     left: -69vw;
-    transition: left, 0.5s;
+   
 }
 @media (max-width: 640px){
     .img_detail--header {
@@ -240,11 +240,22 @@
     }
     .img_item--detail {
         position: fixed;
-        left: 0vw;
+        left: -100vw;
         top: 0px;
         width: 100vw;
         height: 100vh;
-        
+        z-index: 1000;
+        background: white;
+        overflow-y: scroll;
+    }
+    
+    .img_item--detail-show {
+        left: 0px;
+        transition: left, 0.5s;
+    }
+    .item_item--detail-hidden {
+        left: -100vw;
+        transition: left, 0.5s;
     }
     .img_detail--content {
         margin-top: 20px;

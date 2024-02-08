@@ -20,7 +20,7 @@ const TestimonialSec = () => {
   return (
   <>
   
-  <section className='mt-20' >
+  <section className='mt-20 mb-10' >
     {/* <HorizontalScroll width="-45"> */}
       <HorizontalScrollSection>
         <Testimonials />

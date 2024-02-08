@@ -3,7 +3,7 @@ import LatestInsights from './LatestInsights'
 
 const InsightsSec = () => {
   return (
-    <section>
+    <section className='mb-40'>
         <div>
             <div className='mt-10 mb-20 '>
                 <h3 className='font-bold text-2xl sm:text-5xl uppercase'>latest insights </h3>

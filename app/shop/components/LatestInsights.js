@@ -2,7 +2,7 @@ import React from 'react'
 
 const LatestInsights = () => {
   return (
-    <div className=' flex flex-col '>
+    <div className=' flex flex-col s'>
 
         <div className='w-[100%] '>
         <img src="/assets/img/shops/shop (1).png" />

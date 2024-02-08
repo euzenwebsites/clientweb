@@ -6,10 +6,11 @@ import { Button, Col, Row } from "antd";
 import { RevealWrapper } from 'next-reveal'
 import Image from "next/image";
 import Logo from "@/public/logo.png"
+import { useRouter } from "next/navigation";
 function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu }) {
 
     const [showSmallMenu, setSmallMenu] = useState(false);
-
+    const router = useRouter()
     return (
         <div>
             <div className={`relative  small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
@@ -41,10 +42,10 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
             <div className="lg_header my-4">
                 <Link href="/"><img src="/icon.png"></img></Link>
                 <ul>
-                    <li><Link href="/about" style={{ color: selectedMenu === 1 ? "#ff3600" : "black" }}>ABOUT</Link></li>
-                    <li><Link href="/work" style={{ color: selectedMenu === 2 ? "#ff3600" : "black" }}>OUR WORK</Link></li>
-                    <li><Link href="/insights" style={{ color: selectedMenu === 3 ? "#ff3600" : "black" }}>INSIGHTS</Link></li>
-                    <li><Link href="/shop" style={{ color: selectedMenu === 4 ? "#ff3600" : "black" }}>SHOP</Link></li>
+                    <li><Link href="/about"  className={` hover:text-orange ${router.pathname == "/about" ? "active" : " "}`}>ABOUT</Link></li>
+                    <li><Link href="/work"  className={` hover:text-orange ${router.pathname == "/work" ? "active" : " "}`}>OUR WORK</Link></li>
+                    <li><Link href="/insights"  className={` hover:text-orange ${router.pathname == "/insights" ? "active" : " "}`}>INSIGHTS</Link></li>
+                    <li><Link href="/shop"  className={` hover:text-orange ${router.pathname == "/shop" ? "active" : " "}}`}>SHOP</Link></li>
                 </ul>
                 <ul>
                     <li onClick={() => {

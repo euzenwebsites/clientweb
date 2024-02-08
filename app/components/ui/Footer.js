@@ -12,7 +12,7 @@ function Footer(props) {
     const [instagram, setInstagram] = useState(false);
     return (
         <section className="w-[100%] flex flex-col items-center justify-center mt-20">
-        <div className=" w-[90%] ">
+        <div className=" w-[90%] flex flex-col justify-center">
 
             <div className="flex flex-row gap-8 pb-20">
 
@@ -69,7 +69,7 @@ function Footer(props) {
 
             </div>
             
-            <div className="mt-10 flex flex-col sm:flex-row justify-between text-sm sm:text-base font-bold uppercase">
+            <div className=" mt-8 mb-20 flex flex-col sm:flex-row  justify-between text-sm sm:text-base font-bold uppercase">
                 <div>
                 <p>AVY© CONSULTANCY. DESIGN, BRAND & MOTION</p>
                 

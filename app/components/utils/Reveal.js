@@ -24,7 +24,7 @@ const Reveal = ({children}) => {
       }}
       initial="hidden"
       animate={mainControls}
-      transition={{duration:1.3,delay:0.35,ease: "easeInOut"}}
+      transition={{duration:1.7,delay:0.35,ease: "easeInOut"}}
       >
         {children}
         </motion.div>

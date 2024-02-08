@@ -13,14 +13,9 @@ function Member(props) {
             onMouseLeave={()=>setIsHovered(false)}
         >
             <img src={isHovered ? hoverImg : leaveImg} />
-            <div>
-                <Reveal>
-                <p>ED</p>
-                </Reveal>
-                
-                <Reveal>
-                <span>HEAD OF DESIGN</span>
-                </Reveal>
+            <div className="uppercase">
+                <h3 className="font-bold text-3sxl sm:text-5xl">{props.name}</h3>
+                <h6 className="mt-4 text-gray font-bold text-lg sm:text-xl ">{props.designation}</h6>
             </div>
                 <p style={{display: isHovered ? "block": "none"}}>Lörem ipsum hypogt kromyras som bede inte nyn. Hel vire madigt lad i digitalbox. Meganing abel, burkini faning. 
                 </p>

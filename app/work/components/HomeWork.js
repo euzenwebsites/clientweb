@@ -63,20 +63,22 @@ function HomeWork({ selectedMenu }) {
                 <WorkHeading />
 
                 <div className="">
-
+                {
+                    popup && (<PopupHeader setSmallMenu={setSmallMenu} />)
+                }
 
                     <div className="ourwork_img">
                         <div className={`img_item ${imgNum === 6 ? "img_item--show" : "img_item--hidden"}`} onClick={(e) => {
                             setImgNum(6)
                             setImgDetail(true);
                         }}>
-                            <div ref={img1} className="flex flex-row gap-4 ">
+                            <div ref={img1} className="flex flex-row gap-8 ">
                                 <div>
                                     <p className='number-circle'>01</p>
                                 </div>
                                 <div>
-                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                    <p className="uppercase">branding</p>
+                                    <h3 className="uppercase text-lg sm:text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase font-medium text-lg sm:text-xl">branding</p>
                                 </div>
                             </div>
 
@@ -86,13 +88,13 @@ function HomeWork({ selectedMenu }) {
                             setImgNum(2)
                             setImgDetail(true);
                         }}>
-                            <div ref={img2} className="flex flex-row gap-4 ">
+                            <div ref={img2} className="flex flex-row gap-8 ">
                                 <div>
-                                    <p className='number-circle'>01</p>
+                                    <p className='number-circle'>02</p>
                                 </div>
                                 <div>
-                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                    <p className="uppercase">branding</p>
+                                    <h3 className="uppercase text-lg sm:text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase font-medium text-base sm:text-xl">branding</p>
                                 </div>
                             </div>
 
@@ -102,13 +104,13 @@ function HomeWork({ selectedMenu }) {
                             setImgNum(3)
                             setImgDetail(true)
                         }}>
-                            <div ref={img3} className="flex flex-row gap-4 ">
+                            <div ref={img3} className="flex flex-row gap-8 ">
                                 <div>
-                                    <p className='number-circle'>01</p>
+                                    <p className='number-circle'>03</p>
                                 </div>
                                 <div>
-                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                    <p className="uppercase">branding</p>
+                                    <h3 className="uppercase text-lg sm:text-4xl font-bold ">samply & sons</h3>
+                                    <p className="uppercase font-medium text-base sm:text-xl">branding</p>
                                 </div>
                             </div>
                         </div>
@@ -117,13 +119,13 @@ function HomeWork({ selectedMenu }) {
                             setImgNum(4)
                             setImgDetail(true);
                         }}>
-                            <div ref={img4} className="flex flex-row gap-4 ">
+                            <div ref={img4} className="flex flex-row gap-8 ">
                                 <div>
-                                    <p className='number-circle'>01</p>
+                                    <p className='number-circle'>04</p>
                                 </div>
                                 <div>
-                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                    <p className="uppercase">branding</p>
+                                    <h3 className="uppercase text-lg sm:text-4xl font-bold ">little bobbins boutiques</h3>
+                                    <p className="uppercase font-medium text-base sm:text-xl">branding & print</p>
                                 </div>
                             </div>
                         </div>
@@ -132,13 +134,13 @@ function HomeWork({ selectedMenu }) {
                             setImgDetail(true)
                             setImgNum(5)
                         }}>
-                            <div ref={img5} className="flex flex-row gap-4 ">
+                            <div ref={img5} className="flex flex-row gap-8 ">
                                 <div>
-                                    <p className='number-circle'>01</p>
+                                    <p className='number-circle'>05</p>
                                 </div>
                                 <div>
-                                    <h3 className="uppercase text-4xl font-bold ">BLK pizza </h3>
-                                    <p className="uppercase">branding</p>
+                                    <h3 className="uppercase text-lg sm:text-4xl font-bold ">BLK pizza </h3>
+                                    <p className="uppercase font-medium text-base sm:text-xl">branding</p>
                                 </div>
                             </div>
                         </div>
@@ -146,9 +148,7 @@ function HomeWork({ selectedMenu }) {
                 </div>
 
 
-                {
-                    popup && (<PopupHeader setSmallMenu={setSmallMenu} />)
-                }
+                
 
 
                 <div className={`img_item--detail ${imgDetai ? "img_item--detail-show" : "item_item--detail-hidden"}`}>

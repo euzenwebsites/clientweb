@@ -11,7 +11,7 @@ const HorizontalScrollSection = ({children}) => {
     const pin = gsap.fromTo(sectionRef.current,{
       translateX:0
     },{
-      translateX:"-80vw",
+      translateX:"-75vw",
       ease:"none",
       duration:1,
       scrollTrigger:{
@@ -27,9 +27,9 @@ const HorizontalScrollSection = ({children}) => {
     }
   },[])
   return (
-    <section className="mt-10 ml-10 overflow-hidden ">
+    <section className=" overflow-hidden  ">
       <div ref={triggerRef}>
-        <div ref={sectionRef} className=" h-[70vh] w-[300vw] mt-10 flex flex-col sm:flex-row gap-10 relative">
+        <div ref={sectionRef} className=" h-[80vh] w-[300vw] mt-10 flex flex-col sm:flex-row  relative">
         {/* <div className=" h-[100vh] w-[100vw] flex items-center justify-center">
               <h1>section 2</h1>
           </div> */}

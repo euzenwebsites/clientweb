@@ -5,12 +5,13 @@ import Reveal from '@/app/components/utils/Reveal'
 import ButtonFlip from '@/app/components/utils/ButtonFlip'
 import ContactUsBtn from '@/app/components/ui/ContactUsBtn'
 const AboutDetail = () => {
-  const [showContactUs, setShowContactUs] = useState(false);
+    const [showContactUs, setShowContactUs] = useState(false);
 
     return (
-        <section className='w-[100%] flex justify-center mt-20'>
+        <section className='w-[100%] flex justify-center mb-10'>
             <div className="w-[90%] detail_text">
                 <div className='flex flex-col sm:flex-row gap-10'>
+                    
                     <div className='text-xl font-normal sm:font-medium' >
                         <Reveal>
                             <p>
@@ -35,9 +36,9 @@ const AboutDetail = () => {
                                 Avy partners with select strategists, storytellers, designers and content creators on complex projects on a per-need basis
                             </p>
                         </Reveal>
-                        <div className='mt-10'>
-                        <ContactUsBtn type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}
-        text="WORK WITH US" />
+                        <div className='mt-10 w-[100%]'>
+                            <ContactUsBtn type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}
+                                text="WORK WITH US" />
                         </div>
 
                     </div>

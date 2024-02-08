@@ -4,7 +4,7 @@ import "../stylessheets/PopupHeader.css"
 import { Col, Row } from "antd";
 
 function PopupHeader(props) {
-    return (
+    return ( 
         <div>
             <div className={`popup_header`}>
                 <div>

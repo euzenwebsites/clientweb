@@ -53,6 +53,11 @@
 .text-height{
     line-height: 9.5rem;
 }
+.active {
+  color: #FF3600;
+
+
+}
 @media (max-width: 640px) {
   .left-heading__banner-inner{
     width: 100%;

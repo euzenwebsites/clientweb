@@ -13,8 +13,7 @@ const CardSec = () => {
                         <Card/>
                         <Card/>
                         <Card/>
-                        <Card/>
-                        </HorizontalScrollSection>
+                      </HorizontalScrollSection>
                     </div>
        
         </div>
