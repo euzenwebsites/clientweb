@@ -14,6 +14,8 @@ const HowWeDoSec = () => {
           <HowWeDo />
           <img src="/assets/img/line.png" className='h-2 mt-56 mx-4 max-sm:hidden' ></img>
           <HowWeDo />
+          <img src="/assets/img/line.png" className='h-2 mt-56 mx-4 max-sm:hidden' ></img>
+          <HowWeDo />
         {/* </HorizontalScroll> */}
         </HorizontalScrollSection>
       </div>

@@ -15,36 +15,36 @@ function HomeShop({ selectedMenu }) {
     const [showSmallMenu, setSmallMenu] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         window.scrollTo(0, 0);
-    //     }, 0);
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 0);
 
-    //     // Prevent scrolling during page loading
-    //     document.body.style.overflow = 'hidden';
+        // Prevent scrolling during page loading
+        document.body.style.overflow = 'hidden';
 
-    //     // Re-enable scrolling after a short delay
-    //     setTimeout(() => {
-    //         document.body.style.overflow = 'auto';
-    //     }, 100);
+        // Re-enable scrolling after a short delay
+        setTimeout(() => {
+            document.body.style.overflow = 'auto';
+        }, 100);
 
-    //     const handleScroll = () => {
-    //         const scrollTrigger = document.getElementById("shop_header");
-    //         const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
-    //         console.log(triggerPosition);
-    //         if(triggerPosition < 50){
-    //             setPopup(true);
+        const handleScroll = () => {
+            const scrollTrigger = document.getElementById("shop_header");
+            const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
+            console.log(triggerPosition);
+            if(triggerPosition < 50){
+                setPopup(true);
 
-    //         }
+            }
 
-    //         else setPopup(false);
-    //     }
-    //     window.addEventListener("scroll", handleScroll);
+            else setPopup(false);
+        }
+        window.addEventListener("scroll", handleScroll);
 
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     }
-    // }, []);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
     return (
         <section className="w-[100%] flex justify-center ">
         <div className="w-[90%]" >
@@ -52,7 +52,7 @@ function HomeShop({ selectedMenu }) {
 
             <div className=" flex flex-col gap-8">
 
-                    <div>
+                    <div id="shop_header">
                     <img src="/assets/img/shops/shop1_detail.png"  />
                     </div>
 

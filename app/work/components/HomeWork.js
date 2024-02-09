@@ -27,40 +27,42 @@ function HomeWork({ selectedMenu }) {
     const [showContactUs, setShowContactUs] = useState(false);
 
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         window.scrollTo(0, 0);
-    //     }, 0);
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 0);
 
-    //     // Prevent scrolling during page loading
-    //     document.body.style.overflow = 'hidden';
+        // Prevent scrolling during page loading
+        document.body.style.overflow = 'hidden';
 
-    //     // Re-enable scrolling after a short delay
-    //     setTimeout(() => {
-    //         document.body.style.overflow = 'auto';
-    //     }, 100);
+        // Re-enable scrolling after a short delay
+        setTimeout(() => {
+            document.body.style.overflow = 'auto';
+        }, 100);
 
-    //     const handleScroll = () => {
-    //         const scrollTrigger = document.getElementById("our_work--header");
-    //         const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
-    //         console.log(triggerPosition);
-    //         if(triggerPosition < 50){
-    //             setPopup(true);
+        const handleScroll = () => {
+            const scrollTrigger = document.getElementById("our_work--header");
+            const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
+            console.log(triggerPosition);
+            if(triggerPosition < 50){
+                setPopup(true);
 
-    //         }
+            }
 
-    //         else setPopup(false);
-    //     }
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     }
-    // }, []);
+            else setPopup(false);
+        }
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
     return (
-        <section className="w-[100%] flex flex-col justify-center items-center">
+        <section className="w-[100%] flex flex-col justify-center items-center" >
             <div className="w-[90%]">
+                <div className="w-full" id="our_work--header">
                 <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu} />
                 <WorkHeading />
+                </div>
 
                 <div className="">
                 {

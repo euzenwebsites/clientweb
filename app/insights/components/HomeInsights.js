@@ -50,8 +50,10 @@ function HomeInsights({ selectedMenu }) {
     return (
         <section className="w-[100%] flex justify-center">
         <div className="w-[90%]" >
+            <div className="w-full" id="insight_title">
             <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
             <InsightHeading/>
+            </div>
             {
                 popup && (<PopupHeader setSmallMenu = {setPopupMenu}/>)
             }

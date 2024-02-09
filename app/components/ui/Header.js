@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import Link from "next/link";
 import "../stylessheets/Header.css"
-import { Button, Col, Row } from "antd"; 
+import { Button, Col, Row } from "antd";
 import { RevealWrapper } from 'next-reveal'
 import Image from "next/image";
 import Logo from "@/public/logo.png"
@@ -14,9 +14,9 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
     return (
         <div>
             <div className={`relative  small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
-               
+
                 <div className="absolute top-4 right-8 ">
-                    <span style={{  cursor: "pointer" }} onClick={(e) => setSmallMenu(false)}>X</span>
+                    <span style={{ cursor: "pointer" }} onClick={(e) => setSmallMenu(false)}>X</span>
                 </div>
                 <ul>
                     <li><Link href="/about" style={{ color: selectedMenu === 1 ? "#ff3600" : "black" }}>ABOUT</Link></li>
@@ -32,7 +32,7 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
                 </ul>
 
             </div>
-            
+
             <div className={`overlay ${showSmallMenu || showContactUs ? "overlay-show" : "overlay-hidden"}`} onClick={() => {
                 setSmallMenu(false);
                 setShowContactUs(false);
@@ -42,10 +42,10 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
             <div className="lg_header my-4">
                 <Link href="/"><img src="/icon.png"></img></Link>
                 <ul>
-                    <li><Link href="/about"  className={` hover:text-orange ${router.pathname == "/about" ? "active" : " "}`}>ABOUT</Link></li>
-                    <li><Link href="/work"  className={` hover:text-orange ${router.pathname == "/work" ? "active" : " "}`}>OUR WORK</Link></li>
-                    <li><Link href="/insights"  className={` hover:text-orange ${router.pathname == "/insights" ? "active" : " "}`}>INSIGHTS</Link></li>
-                    <li><Link href="/shop"  className={` hover:text-orange ${router.pathname == "/shop" ? "active" : " "}}`}>SHOP</Link></li>
+                    <li><Link href="/about" className={` hover:text-orange ${router.pathname == "/about" ? "active" : " "}`}>ABOUT</Link></li>
+                    <li><Link href="/work" className={` hover:text-orange ${router.pathname == "/work" ? "active" : " "}`}>OUR WORK</Link></li>
+                    <li><Link href="/insights" className={` hover:text-orange ${router.pathname == "/insights" ? "active" : " "}`}>INSIGHTS</Link></li>
+                    <li><Link href="/shop" className={` hover:text-orange ${router.pathname == "/shop" ? "active" : " "}}`}>SHOP</Link></li>
                 </ul>
                 <ul>
                     <li onClick={() => {

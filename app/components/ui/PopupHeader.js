@@ -4,7 +4,7 @@ import "../stylessheets/PopupHeader.css"
 import { Col, Row } from "antd";
 
 function PopupHeader(props) {
-    return ( 
+    return (
         <div>
             <div className={`popup_header`}>
                 <div>
@@ -15,13 +15,13 @@ function PopupHeader(props) {
                         }}>
                             <img src="/assets/img/icons/mdi_menu.png"></img>
                         </li>
-                        
+
                     </ul>
                 </div>
-                
+
             </div>
         </div>
-        
+
     );
 }
 
