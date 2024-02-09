@@ -1,11 +1,10 @@
-import React, { useState } from "react"
+
 import Link from "next/link";
 import "../stylessheets/PopupHeader.css"
-import { Col, Row } from "antd";
 
 function PopupHeader(props) {
     return (
-        <div>
+        <div> 
             <div className={`popup_header`}>
                 <div>
                     <Link href="/"><img src="/icon.png"></img></Link>

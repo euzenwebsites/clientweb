@@ -27,7 +27,7 @@ function HomeWork({ selectedMenu }) {
     const [showContactUs, setShowContactUs] = useState(false);
 
 
-    useEffect(() => {
+    useEffect(() => {  
         setTimeout(() => {
             window.scrollTo(0, 0);
         }, 0);
@@ -43,7 +43,6 @@ function HomeWork({ selectedMenu }) {
         const handleScroll = () => {
             const scrollTrigger = document.getElementById("our_work--header");
             const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
-            console.log(triggerPosition);
             if(triggerPosition < 50){
                 setPopup(true);
 

@@ -11,7 +11,7 @@ import InsightHeading from "./InsightHeading";
 
 
 
-function HomeInsights({ selectedMenu }) {
+function HomeInsights({ selectedMenu }) {   
 
     const [popup, setPopup] = useState(false);
     const [showSmallMenu, setSmallMenu] = useState(false);
@@ -49,14 +49,15 @@ function HomeInsights({ selectedMenu }) {
     }, []);
     return (
         <section className="w-[100%] flex justify-center">
+           {/* {
+                    popup && (<PopupHeader setSmallMenu={setSmallMenu} />)
+                } */}
         <div className="w-[90%]" >
             <div className="w-full" id="insight_title">
             <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu}/>
             <InsightHeading/>
             </div>
-            {
-                popup && (<PopupHeader setSmallMenu = {setPopupMenu}/>)
-            }
+            
 
             
         </div>

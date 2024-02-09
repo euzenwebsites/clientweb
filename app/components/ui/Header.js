@@ -55,7 +55,7 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
                 </ul>
             </div>
 
-            <div className={`small_header mt-4`}>
+            <div className={`small_header`}>
                 <Link href="/"><img src="/icon.png"></img></Link>
                 <ul>
                     <li onClick={() => {
@@ -66,7 +66,7 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
 
                 </ul>
             </div>
-
+ 
             {/* ---------------------contact us container ------------------------- */}
 
             <div className={`contact_us--container ${showContactUs ? "contact_us--container-show" : "contact_us--container-hidden"}`}>

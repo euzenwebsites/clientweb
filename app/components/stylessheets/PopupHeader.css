@@ -23,7 +23,7 @@
 .popup_header ul li {
     display: inline;
     cursor: pointer;
-}
+} 
 .popup_menu {
     position: fixed;
     right: -100vw;
@@ -87,9 +87,10 @@
 .menu_list ul li:hover > a {
     color: red !important
 }
+/* ////////////////// */
 .red_img {
     position: absolute;
-    bottom: 0;
+    bottom: 0; 
     right: 0;
     height: 100%;
 }
@@ -113,4 +114,23 @@
 .form_container select:focus, .form_container input:focus {
     border-bottom: 3px solid black;
     font-weight: 600;
+}
+@media (max-width: 640px) {
+    .avy_img{
+        display: none;
+    }
+    .red_img{
+        display: none;
+    }
+    .menu_list ul li{
+        font-size: 22px;
+    }
+    .menu_list {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: 0;
+        
+    }
+
 }
