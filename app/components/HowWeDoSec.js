@@ -5,7 +5,7 @@ import HorizontalScrollSection from './utils/HorizontalScrollSection'
 
 const HowWeDoSec = () => {
   return ( 
-    <section className='w-[100%] flex justify-center sm:gap-10 '>
+    <section className='w-[100%] flex justify-center sm:gap-10 mt-10'>
       <div className='w-[90%] flex items-center' >
         <HorizontalScrollSection >
         {/* <HorizontalScroll width="-10"> */}

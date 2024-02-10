@@ -39,7 +39,7 @@ const HorizontalScrollSection = ({ children }) => {
   return (
     <section className="  overflow-hidden">
       <div ref={triggerRef}>
-        <div ref={sectionRef} className=" sm:h-[90vh] sm:w-[170vw] sm:mt-40 sm:ml-10 max-sm:p-4 flex flex-col sm:flex-row   relative">
+        <div ref={sectionRef} className=" sm:h-[90vh] sm:w-[170vw] sm:mt-32  max-sm:p-4 flex flex-col sm:flex-row   relative">
         
          {children}
           

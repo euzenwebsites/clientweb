@@ -7,13 +7,13 @@ const AccordionItem = () => {
   return (
     <div className='border-b flex flex-row '>
 
-      <div className='w-[100%] flex flex-row items-center'>
-        <div className=' w-[20%]'>
+      <div className='w-[100%] flex flex-col sm:flex-row sm:items-center max-sm:my-4 max-sm:gap-4'>
+        <div className=' sm:w-[20%]'>
           <Reveal>
             <p className='text-base sm:text-lg font-medium '>30 June 2023</p>
           </Reveal>
         </div>
-        <div className='w-[80%]  '>
+        <div className='sm:w-[80%]  '>
           <Reveal>
             <p className='font-bold text-lg sm:text-2xl '>AVY Pruthi, Nuneaton business owner  Coven...</p>
           </Reveal>
@@ -25,7 +25,7 @@ const AccordionItem = () => {
 
       <div className='border-l w-[10%] items-center justify-center py-2 sm:py-8'>
         <Link href="/insights">
-        <ArrowRightOutlined className=' scale-125 sm:pl-10 ' />
+        <ArrowRightOutlined className=' scale-125 pl-4 max-sm:pt-10 sm:pl-10 ' />
         </Link>
       </div>
 

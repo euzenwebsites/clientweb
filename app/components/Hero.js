@@ -18,7 +18,7 @@ const Hero = ({ selectedMenu }) => {
 
 
   return (
-    <div className='w-[100%] sm:h-screen box-border bg-[#dadce1] flex flex-col h-full relative sm:pl-10 '  id='hero_section'>
+    <div className='w-[100%] sm:h-[100%] box-border bg-[#dadce1] flex flex-col h-full relative sm:pl-10 '  id='hero_section'>
       <Header type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}></Header>
 
       <div className='flex flex-col sm:flex-row '>

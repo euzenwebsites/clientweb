@@ -23,6 +23,7 @@
   align-items: center; 
   justify-content: center;
 }
+
 .left-heading__banner{
   background-color: hsl(223, 11%, 87%);
   margin-top: 36px;
@@ -43,11 +44,7 @@
   
 }
 .heading-left{
-  font-weight: 700;
-  line-height: 4.5rem;
-  font-size: 4.5rem;
-  text-transform: uppercase ;
-  padding: 12px 0px;
+ line-height: 3.5rem;
   
 }
 .text-height{
@@ -70,9 +67,9 @@
     justify-content: center;
   }
   .heading-left{
-    font-size: 22px;
-    line-height: 4rem;
-  }
+    line-height: 2rem;
+     
+   }
   .number-circle{
     font-size: 18px;
     width: 60px;

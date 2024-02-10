@@ -13,51 +13,47 @@ function AboutHero({ selectedMenu }) {
     const [popup, setPopup] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
 
-    useEffect(() => {
-        // Prevent scrolling during page loading
-        document.body.style.overflow = 'hidden';
+    // useEffect(() => {
+    //     // Prevent scrolling during page loading
+    //     document.body.style.overflow = 'hidden';
 
-        // Re-enable scrolling after a short delay
-        setTimeout(() => {
-            document.body.style.overflow = 'auto';
-        }, 100);
+    //     // Re-enable scrolling after a short delay
+    //     setTimeout(() => {
+    //         document.body.style.overflow = 'auto';
+    //     }, 100);
 
-        const handleScroll = () => {
-            const scrollTrigger = document.getElementById("about_header1");
-            const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
-            if(triggerPosition < 50){
-                setPopup(true);
-            }
-            else setPopup(false);
-        }
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, []);
+    //     const handleScroll = () => {
+    //         const scrollTrigger = document.getElementById("about_header1");
+    //         const triggerPosition = scrollTrigger.getBoundingClientRect().bottom;
+    //         if(triggerPosition < 50){
+    //             setPopup(true);
+    //         }
+    //         else setPopup(false);
+    //     }
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     }
+    // }, []);
 
     return (
-        <section className='w-[100%] flex justify-center ' >
+        <section className='w-[100%] flex justify-center '  id='about_header1'>
             <div className='w-[90%] border-b-2'>
-                <div className="w-full" id='about_header1'>
                 <Header showContactUs={showContactUs} setShowContactUs={setShowContactUs} selectedMenu={selectedMenu} />
-                    <AboutHeading />
-                </div>
+                <AboutHeading />
 
                 <div className="">
-                    {
-                        popup && (<PopupHeader setSmallMenu={setSmallMenu} />)
-                    }  
+                     
                 </div>
                 <div className='flex flex-col sm:flex-row mt-4'>
                     <div className='w-full relative'>
                         <div className='w-[100%] sm:w-[70%] mt-20 '>
-                            <h3 className='font-bold text-3xl sm:text-5xl '>
+                            <h3 className='font-bold text-3xl xl:text-4xl 2xl:text-5xl'>
                                 ALWAYS AIMING TO PUSH BOUNDARIES AND EXCEED EXPECTATIONS WITH EVERY PROJECT.
                             </h3>
                         </div>
 
-                        <div className='w-[50%]  font-bold text-xl sm:text-3xl mt-20 sm:mt-56 '>
+                        <div className='w-[50%]  font-bold text-xl sm:text-3xl mt-20 sm:mt-48 '>
                             <p>AVY Pruthi</p>
                             <p>Founder & CEO</p>
                         </div>

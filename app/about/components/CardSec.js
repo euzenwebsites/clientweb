@@ -6,7 +6,7 @@ import HorizontalScroll from '@/app/components/utils/HorizontalScroll'
 import HorizontalScrollSection from '@/app/components/utils/HorizontalScrollSection'
 const CardSec = () => {
   return (
-    <section className='w-[100%] flex justify-center '>
+    <section className='w-[100%] flex justify-center max-sm:mt-10'>
         <div className='w-[90%]'>
                     <div >
                       <HorizontalScrollSection>

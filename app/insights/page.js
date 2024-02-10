@@ -11,7 +11,6 @@ const page = () => {
       <SmoothScroll>
       <HomeInsights/>
       <InsightSec/> 
-      <MainFooter/>
       </SmoothScroll>
      
       

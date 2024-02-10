@@ -9,7 +9,7 @@ const Card = () => {
 
       <div className='flex flex-row items-center mb-2 gap-2 '>
         <div className='w-[30%] sm:w-[40%] h-[2px] bg-gray '></div>
-        <div className='max-sm:w-[40%]'><h6 className='text-gray text-base  uppercase font-bold '>web design</h6></div>
+        <div className='max-sm:w-[40%]'><h6 className='text-gray text-xs xl:text-xs 2xl:text-base   uppercase font-bold '>web design</h6></div>
         <div className='w-[30%] sm:w-[40%] h-[2px] bg-gray '></div>
       </div>
 

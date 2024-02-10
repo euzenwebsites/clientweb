@@ -48,11 +48,10 @@
     justify-content: space-between;
     
 }
-.toolbar span{
+
+.toolbar button{
     font-size: 16px;
     font-weight: 600;
-}
-.toolbar p{
     margin: 0;
     cursor: pointer;
 }
@@ -132,5 +131,10 @@
         left: 0;
         
     }
-
+    .popup_header div {
+        padding: 16px 16px;
+    }
+    .popup_menu {
+        background-color: #fff;
+    }
 }

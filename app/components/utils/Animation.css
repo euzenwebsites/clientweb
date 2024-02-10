@@ -6,7 +6,7 @@
   display: inline-block;
   margin-bottom: 1.1em;
   border-radius: 35px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
   margin-top: 18px;
   padding: 0px 18px;
 }
@@ -29,4 +29,15 @@
 }
 .blue{
   background-color: #ff3600;	
+}
+@media (max-width: 640px) {
+  .slideout-anim-wrap {
+    height: 40px;
+    font: normal normal 700 1em/2.5em Arial,sans-serif;
+    
+  }
+  .slideout-anim-wrap:hover 
+.slide-anim-text{
+  margin-top: -3em;
+}
 }

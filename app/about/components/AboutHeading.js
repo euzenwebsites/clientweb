@@ -1,30 +1,31 @@
 "use client"
 import React from 'react'
-import { RevealList } from 'next-reveal'
-const AboutHeading = () => {
-  return ( 
-    <div className='flex flex-col sm:flex-row mt-10'>
-        <RevealList interval={90} delay={500} origin='bottom' 
-       easing='cubic-bezier(0.5, 1, 1, 1)' className='w-[100%] flex flex-row items-start justify-start '>
-                        
-                        <h1 className='text-6xl  sm:text-[12.5rem] font-bold text-black text-height' >A</h1>
-                        <h1 className='text-6xl  sm:text-[12.5rem] font-bold text-black text-height' >B</h1>
-                        <h1 className='text-6xl  sm:text-[12.5rem] font-bold text-black text-height' >O</h1>
-                        <h1 className='text-6xl  sm:text-[12.5rem] font-bold text-black text-height' >U</h1>
-                        <h1 className='text-6xl  sm:text-[12.5rem] font-bold text-black text-height' >T</h1>
-                      
-                        <h1 className='text-6xl  sm:text-[12.5rem] font-bold text-black text-height' >A</h1>
-                        <h1 className='text-6xl  sm:text-[12.5rem] font-bold text-black text-height' >N</h1>
-                        <h1 className='text-6xl   sm:text-[12.5rem] font-bold text-black text-height' >Y</h1>
-                          <span className='text-5xl font-bold text-black  pl-4 ' >®</span>
+import { RevealList, RevealWrapper } from 'next-reveal'
 
 
-                         
-         </RevealList>
-        
+const HeroHeading = () => {
+  return (
+    <div className='sm:w-[100%] flex flex-col sm:flex-row gap-4 mt-6 sm:mt-10'>
+      <RevealList interval={70} delay={300} origin='bottom' className=' flex mb-2 sm:mb-4'>
+
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black ' >A</h1>
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black ' >B</h1>
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black  ' >O</h1>
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black  ' >U</h1>
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black ' >T </h1>
+
+      </RevealList>
+      <RevealList interval={70} delay={300} origin='bottom' className=' flex flex-row items-start'>
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black ' >A</h1>
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black ' >V</h1>
+        <h1 className='text-6xl lg:text-[9rem] xl:text-[10rem] font-bold text-black ' >Y</h1>
+        <span className='font-extrabold font-black  text-2xl sm:text-4xl pl-4' >®</span>
+
+
+      </RevealList>
     </div>
-   
+
   )
 }
 
-export default AboutHeading
+export default HeroHeading

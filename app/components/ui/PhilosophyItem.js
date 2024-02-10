@@ -15,7 +15,7 @@ const PhilosophyItem = (props) => {
           <p className='text-white text-xl sm:text-3xl font-bold'>{props.number}</p>
         </div>
 
-        <p className='font-bold text-xl sm:text-5xl'>{props.heading}</p>
+        <p className='font-bold text-xl xl:text-4xl 2xl:text-5xl'>{props.heading}</p>
       </div>
 
 

@@ -6,7 +6,6 @@ import PopupHeader from "./ui/PopupHeader";
 import { useEffect, useRef } from "react";
 
 function Home({ selectedMenu }) {
-    const homeRef = useRef(null)
     const [popup, setPopup] = useState(false);
     const [showSmallMenu, setSmallMenu] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
@@ -33,22 +32,13 @@ function Home({ selectedMenu }) {
             else setPopup(false);
         }
         window.addEventListener("scroll", handleScroll);
-
-        // var heroHeight = document.getElementById("hero_section").getBoundingClientRect().height;
-        // var headerHeight = document.getElementById("header_section").getBoundingClientRect().height;
-
-
-        // document.getElementsByClassName("main-title")[0].style.height = `${heroHeight - headerHeight}px`;
-        // return () => {
-        //     window.removeEventListener('scroll', handleScroll); 
-        // }
     }, [])
-    // console.log("//////////////////", selectedMenu)
+  
     return (
-        <div ref={homeRef}>
+        <div >
             <div className="main" >
                 { 
-                    popup && (<PopupHeader setSmallMenu = {setSmallMenu}/>)
+                    popup && (<PopupHeader setSmallMenu = {setSmallMenu} />)
                 }
        <Footer setMenu = {setSmallMenu} flag={showSmallMenu} setShowContactUs = {setShowContactUs}></Footer>
 

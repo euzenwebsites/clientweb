@@ -32,7 +32,7 @@ const AboutDetail = () => {
 
                     <div className='max-sm:mt-10'>
                         <Reveal>
-                            <p className='font-bold text-3xl sm:text-5xl mt-8'>
+                            <p className='font-bold text-3xl xl:text4-xl 2xl:text-5xl mt-8'>
                                 Avy partners with select strategists, storytellers, designers and content creators on complex projects on a per-need basis
                             </p>
                         </Reveal>

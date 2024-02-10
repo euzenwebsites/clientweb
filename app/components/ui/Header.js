@@ -12,7 +12,7 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
     const [showSmallMenu, setSmallMenu] = useState(false);
     const router = useRouter()
     return (
-        <div>
+        <div className="w-full">
             <div className={`relative  small_header--menu  ${showSmallMenu ? "small_header--menu-show" : "small_header--menu-hidden"}`}>
 
                 <div className="absolute top-4 right-8 ">
@@ -55,18 +55,15 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
                 </ul>
             </div>
 
-            <div className={`small_header`}>
-                <Link href="/"><img src="/icon.png"></img></Link>
-                <ul>
-                    <li onClick={() => {
-                        setSmallMenu(!showSmallMenu);
-                    }}>
-                        <img src="/assets/img/icons/mdi_menu.png"></img>
-                    </li>
+            <div className={`small_header mt-4`}>
+                <Link href="/"><img src="/icon.png"></img></Link> 
 
-                </ul>
+                <img src="/assets/img/icons/mdi_menu.png" onClick={() => {
+                    setSmallMenu(!showSmallMenu);
+                }}></img>
+
             </div>
- 
+
             {/* ---------------------contact us container ------------------------- */}
 
             <div className={`contact_us--container ${showContactUs ? "contact_us--container-show" : "contact_us--container-hidden"}`}>

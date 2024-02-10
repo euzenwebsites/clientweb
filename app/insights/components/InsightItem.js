@@ -17,11 +17,11 @@ const InsightItem = () => {
         <div className='w-[100%] sm:w-[60%] flex flex-col justify-between max-sm:mt-4'>
 
           <div className=''>
-            <h3 className='text-3xl  sm:text-5xl font-bold'>AVY Pruthi, Nuneaton business owner – Coventry & Warwickshire Chamber workshops</h3>
+            <h3 className='text-2xl xl:text-4xl 2xl:text-5xl font-bold'>AVY Pruthi, Nuneaton business owner – Coventry & Warwickshire Chamber workshops</h3>
           </div>
 
           <div className='mt-2  flex flex-col sm:flex-row justify-between max-sm:items-start'>
-            <ul className='flex flex-row items-center gap-10 text-gray font-bold max-sm:py-8 text-lg'>
+            <ul className='flex flex-row items-center gap-10 text-gray font-bold max-sm:py-8 text-sm sm:text-lg'>
               <li>30 June 2021</li>
               <li className='border-l border-l-gray pl-4'>Business</li>
               <li className='border-l border-l-gray pl-4'>Design</li>
