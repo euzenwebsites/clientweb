@@ -41,7 +41,7 @@ const InsightSec = () => {
     }
   }, []);
   return (
-    <section className='w-[100%] flex flex-col items-center justify-center gap-10 mt-20'>
+    <section className='w-[100%] flex flex-col items-center justify-center gap-10 mt-8 sm:mt-20'>
       <div className='w-[90%]'>
 
         <div className="flex sm:flex-row flex-col gap-4 sm:gap-8 text-xs">

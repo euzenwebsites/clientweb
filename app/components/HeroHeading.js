@@ -8,17 +8,17 @@ const HeroHeading = () => {
     <div className='sm:w-[100%] max-sm:py-4 max-sm:p-8 gap-4'>
       <RevealList interval={70} delay={300} origin='bottom' className=' flex mb-2 sm:mb-4'>
 
-        <h1 className='text-6xl sm:text-[9.5rem] font-bold text-black text-height' >W</h1>
-        <h1 className='text-6xl sm:text-[9.5rem] font-bold text-black text-height' >E</h1>
-        <h1 className='text-6xl md:text-[9.5rem] font-bold text-black text-height ml-8' >A</h1>
-        <h1 className='text-6xl md:text-[9.5rem] font-bold text-black text-height ml-2' >R</h1>
-        <h1 className='text-6xl md:text-[9.5rem] font-bold text-black text-height' >E </h1><br></br>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black ' >W</h1>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black ' >E</h1>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black  ml-4' >A</h1>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black  ' >R</h1>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black ' >E </h1><br></br>
 
       </RevealList>
       <RevealList interval={70} delay={300} origin='bottom' className=' flex flex-row items-start'>
-        <h1 className='text-6xl md:text-[9.5rem] font-bold text-black text-height' >A</h1>
-        <h1 className='text-6xl md:text-[9.5rem] font-bold text-black text-height' >V</h1>
-        <h1 className='text-6xl md:text-[9.5rem] font-bold text-black text-height' >Y</h1>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black ' >A</h1>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black ' >V</h1>
+        <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black ' >Y</h1>
         <span className='font-extrabold font-black  text-2xl sm:text-4xl pl-4' >®</span>
 
 
