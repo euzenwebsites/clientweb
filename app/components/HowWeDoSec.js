@@ -7,7 +7,7 @@ const HowWeDoSec = () => {
   return ( 
     <section className='w-[100%] flex justify-center sm:gap-10 mt-10'>
       <div className='w-[90%] flex items-center' >
-        <HorizontalScrollSection >
+        <HorizontalScrollSection width="60" >
         {/* <HorizontalScroll width="-10"> */}
           <HowWeDo />
           <img src="/assets/img/line.png" className='h-2 mt-56 mx-4 max-sm:hidden' ></img>

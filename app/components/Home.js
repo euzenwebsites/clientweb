@@ -40,7 +40,8 @@ function Home({ selectedMenu }) {
                 { 
                     popup && (<PopupHeader setSmallMenu = {setSmallMenu} />)
                 }
-       <Footer setMenu = {setSmallMenu} flag={showSmallMenu} setShowContactUs = {setShowContactUs}></Footer>
+       <Footer setMenu = {setSmallMenu} flag={showSmallMenu} setShowContactUs = {setShowContactUs}
+       showContactUs={showContactUs} ></Footer>
 
             </div>
         </div>

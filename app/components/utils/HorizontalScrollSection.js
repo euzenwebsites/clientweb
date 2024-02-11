@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
 
-const HorizontalScrollSection = ({ children }) => {
+const HorizontalScrollSection = ({ children,width }) => {
   const sectionRef = useRef(null)
   const triggerRef = useRef(null)
   gsap.registerPlugin(ScrollTrigger)
@@ -15,7 +15,7 @@ const HorizontalScrollSection = ({ children }) => {
       const pin = gsap.fromTo(sectionRef.current, {
         translateX: 0,
       }, {
-        translateX: "-75vw",
+        translateX: `-${width || 'defaultWidth'}vw`,
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -39,7 +39,7 @@ const HorizontalScrollSection = ({ children }) => {
   return (
     <section className="  overflow-hidden">
       <div ref={triggerRef}>
-        <div ref={sectionRef} className=" sm:h-[90vh] sm:w-[170vw] sm:mt-32  max-sm:p-4 flex flex-col sm:flex-row   relative">
+        <div ref={sectionRef} className=" sm:h-[90vh] sm:w-[170vw] sm:ml-20 sm:mt-36  max-sm:p-4 flex flex-col sm:flex-row   relative">
         
          {children}
           

@@ -5,7 +5,7 @@ import { RevealList, RevealWrapper } from 'next-reveal'
 
 const HeroHeading = () => {
   return (
-    <div className='sm:w-[100%] max-sm:py-4 max-sm:p-8 gap-2 sm:gap-4'>
+    <div className='sm:w-[100%]  max-sm:pl-8 max-sm:pt-8 gap-2 sm:gap-4'>
       <RevealList interval={70} delay={300} origin='bottom' className=' flex mb-2 sm:mb-4'>
 
         <h1 className='text-6xl xl:text-[10rem] 2xl:text-[12.5rem] font-bold text-black ' >W</h1>

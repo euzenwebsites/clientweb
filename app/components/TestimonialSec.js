@@ -22,7 +22,7 @@ const TestimonialSec = () => {
   
   <section className='mt-20 mb-10' >
     {/* <HorizontalScroll width="-45"> */}
-      <HorizontalScrollSection>
+      <HorizontalScrollSection width="65">
         <Testimonials />
         <Testimonials />
         <Testimonials />

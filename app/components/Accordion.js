@@ -16,7 +16,7 @@ const Accordion = () => {
 
         </div>
         <div className='w-[100%] flex justify-center'>
-        <div className='mt-10  sm:w-[10%] flex justify-center'>
+        <div className='mt-10  sm:w-[20%] flex justify-center'>
           <Link href="/insights" className='w-full flex justify-center '>
           <ButtonFlip text="READ MORE" />   
           </Link>                         

@@ -9,7 +9,7 @@ const CardSec = () => {
     <section className='w-[100%] flex justify-center max-sm:mt-10'>
         <div className='w-[90%]'>
                     <div >
-                      <HorizontalScrollSection>
+                      <HorizontalScrollSection width="60">
                         <Card/>
                         <Card/>
                         <Card/>

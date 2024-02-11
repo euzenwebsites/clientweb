@@ -14,26 +14,27 @@ const Hero = ({ selectedMenu }) => {
   const [showSmallMenu, setSmallMenu] = useState(false);
   const [showContactUs, setShowContactUs] = useState(false);
 
-  
+
 
 
   return (
-    <div className='w-[100%] sm:h-[100%] box-border bg-[#dadce1] flex flex-col h-full relative sm:pl-10 '  id='hero_section'>
+    <div className='w-[100%] sm:h-[100%] box-border bg-[#dadce1] flex flex-col h-full relative sm:pl-10 ' id='hero_section'>
       <Header type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}></Header>
 
       <div className='flex flex-col sm:flex-row '>
 
-        <div className=" flex flex-col " >
+        <div className=" flex flex-col max-sm:pb-[570px]" >
           <HeroHeading />
           <HeroDes />
         </div>
 
+        
 
-        <RevealWrapper origin='right' delay={800} duration={4000} distance='450px'
-          className=' w-[90%] max-sm:h-[60%]  sm:w-[50%] '  >
+        <RevealWrapper origin='right' delay={100} duration={4000} distance='450px'
+          className=' w-[100%] max-sm:h-[60%]  sm:w-[50%] '  >
 
-          <Image src={Vector} height={600} className=' absolute max-sm:hidden right-0 bottom-0  z-5'></Image>
-          <Image src={Man} height={700} className=' sm:absolute right-0 bottom-0 z-10' />
+          <Image src={Vector} height={600} className=' absolute  right-0 bottom-0  z-5'></Image>
+          <Image src={Man} height={700} className=' absolute sm:right-0 bottom-0 z-10' />
 
         </RevealWrapper>
 
