@@ -8,7 +8,7 @@ const CTABanner = () => {
   const [showContactUs, setShowContactUs] = useState(false);
 
   return (
-    <section className='bg-[#DBDDE2] w-[100%] flex justify-center py-10  sm:py-20 mt-20 '>
+    <section className='bg-[#DBDDE2] w-[100%] flex justify-center py-10  sm:py-20 mt-4 sm:mt-20 '>
 
       <div className='w-[90%]  grid grid-cols-1 sm:grid-cols-2 gap-8 uppercase'>
         

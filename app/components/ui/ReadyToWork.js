@@ -6,7 +6,7 @@ import ButtonFlip from "../utils/ButtonFlip";
 
 function ReadyToWork() {
     return (
-        <section className='w-[100%] flex justify-center mt-20'>
+        <section className='w-[100%] flex justify-center sm:mt-20'>
         <div className=" w-[90%]">
 
                     <WorkWithUs/>
@@ -63,7 +63,7 @@ function ReadyToWork() {
 
                     </div>
 
-                    <div className="w-[40%]" >
+                    <div className="w-[80%] sm:w-[40%]" >
                         <ButtonFlip text="send"/>
                     </div>
                 </div>
