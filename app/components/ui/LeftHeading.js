@@ -10,7 +10,7 @@ const LeftHeading = (props) => {
         <div className="w-[100%] sm:w-[50%] pr-10 sm:pr-40 p-4">
         <RevealSlide>
           <div >
-              <h3 className="font-bold text-4xl xl:text-5xl 2xl:text-6xl uppercase " style={{lineHeight:"3.5rem",fontWeight:"900"}}> {props.heading}</h3>
+              <h3 className="font-bold text-4xl xl:text-5xl 2xl:text-6xl uppercase " style={{lineHeight:"3.5rem"}}> {props.heading}</h3>
           </div>
         </RevealSlide>
         </div>
