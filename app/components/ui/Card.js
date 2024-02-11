@@ -20,7 +20,7 @@ const Card = () => {
 
       <div className='mt-6 '>
         <Reveal>
-          <p className='font-medium text-xs sm:text-base '>
+          <p className='font-semibold text-xs sm:text-base '>
             Great service from the team at AVY! Needed help with refreshing an old website and creating a new landing page. Nothing was too much of a hassle for them to sort out and were happy to accommodate my demanding needs. Very responsive to communication and well priced. Overall a flawless experience and will be using this agency again. Thank you to the team at AVY!
           </p>
         </Reveal>

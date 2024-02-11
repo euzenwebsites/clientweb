@@ -55,10 +55,10 @@ function Header({ showContactUs, setShowContactUs, setSelectedMenu, selectedMenu
                 </ul>
             </div>
 
-            <div className={`small_header mt-4 mx-2`}>
-                <Link href="/"><img src="/icon.png"></img></Link> 
+            <div className={`small_header mt-2 mx-2`}>
+                <Link href="/"><img src="/icon.png" className="h-[25px]"></img></Link> 
 
-                <img src="/assets/img/icons/mdi_menu.png" onClick={() => {
+                <img src="/assets/img/icons/mdi_menu.png" className="h-[30px]" onClick={() => {
                     setSmallMenu(!showSmallMenu);
                 }}></img>
 

@@ -7,12 +7,12 @@ const CEOSec = () => {
       <div className="w-[90%] grid sm:grid-cols-2 grid-cols-1 gap-10" >
         <Reveal>
           <div className=''>
-            <p className='font-bold text-3xl md:text-4xl sm:text-5xl sm:leading-normal '>
+            <p className='font-bold text-2xl md:text-4xl sm:text-5xl sm:leading-normal '>
                &quot;THE DIFFERENCE BETWEEN ORDINARY AND EXTRAORDINARY IS THAT LITTLE EXTRA. &quot;</p>
-            <p className='text-xl text-[#727272] mt-2' >- JIMMY JOHNSON</p>
+            <p className='text-lg text-[#727272] mt-2' >- JIMMY JOHNSON</p>
           </div>
         </Reveal>
-        <div className='text-xl font-medium '>
+        <div className='text-lg sm:text-xl font-medium '>
          
             <p >We transform your ideas into reality through cutting-edge design, branding,
               and motion. We&apos;re not just experts; we&apos;re passionate strategists and visionary storytellers

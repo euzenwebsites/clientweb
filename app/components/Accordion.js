@@ -5,9 +5,9 @@ import Link from 'next/link.js'
 
 const Accordion = () => {
   return (
-    <section className='w-[100%] flex justify-center mt-20'>
+    <section className='w-[100%] flex justify-center mt-10 sm:mt-20'>
     <div className='w-[90%] '>
-    <h3 className='font-bold text-4xl sm:text-7xl mb-20'>INSIGHTS</h3>
+    <h3 className='font-bold text-4xl sm:text-7xl mb-10 sm:mb-20'>INSIGHTS</h3>
         <div>
             <AccordionItem/>
             <AccordionItem/>

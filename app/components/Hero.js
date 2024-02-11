@@ -34,7 +34,7 @@ const Hero = ({ selectedMenu }) => {
           className=' w-[100%] max-sm:h-[60%]  sm:w-[50%] '  >
 
           <Image src={Vector} height={600} className=' absolute  right-0 bottom-0  z-5'></Image>
-          <Image src={Man} height={700} className=' absolute sm:right-0 bottom-0 z-10' />
+          <Image src={Man} height={600} className=' absolute sm:right-0 bottom-0 z-10' />
 
         </RevealWrapper>
 

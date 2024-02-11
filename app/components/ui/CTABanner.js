@@ -31,7 +31,7 @@ const CTABanner = () => {
           </Reveal>
           </div>
 
-          <div className='mt-4 sm:mt-8'>
+          <div className='mt-6 sm:mt-8'>
           <ContactUsBtn type={true} showContactUs={showContactUs} setShowContactUs={setShowContactUs}
         text="start a surway"/>
           </div>

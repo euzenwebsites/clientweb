@@ -58,7 +58,7 @@ const WorkWithUs = () => {
   }, []); // Empty dependency array ensures the effect runs only once
 
   return (
-    <section className='my-20 '>
+    <section className='my-12 sm:my-20 '>
       <div className=' flex flex-col justify-center gap-2 sm:gap-8 overflow-hidden'>
 
         <div className="flex flex-row gap-2  sm:gap-8">
