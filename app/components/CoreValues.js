@@ -9,7 +9,7 @@ const CoreValues = () => {
    
     
 
-    <RevealWrapper origin='left' delay={500} duration={3000} distance='450px' >
+    <RevealWrapper origin='left' delay={100} duration={2000} distance='450px' >
     <div className='pb-10'>
             <h2 className='text-gray pb-10 border-b border-b-gray-500 font-bold '>CORE SERVICES :</h2>
                             <div className='flex justify-between border-b py-2 border-b-gray-500'>

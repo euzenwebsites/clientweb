@@ -3,7 +3,7 @@ import React from 'react'
 import { RevealList } from 'next-reveal'
 const WorkHeading = () => {
   return ( 
-    <div className='flex flex-col sm:flex-row gap-4 mt-10'>
+    <div className='flex flex-col sm:flex-row gap-2 sm:gap-4 mt-10'>
         <RevealList interval={90} delay={500} origin='bottom' 
        easing='cubic-bezier(0.5, 1, 1, 1)' className=' flex flex-row '>
                         
